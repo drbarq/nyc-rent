@@ -191,122 +191,157 @@
   },
   "harlem": {
     "meal": {
-      "casual": 0,
-      "note": "—"
+      "casual": 34,
+      "note": "Melba's signature fried chicken with eggnog waffles is $31 and her catfish strips ~$22; Charles' Pan-Fried Chicken keeps a full plate around $20; Vinatería's handmade pastas anchor the Frederick Douglass Blvd restaurant row in the mid-$20s. Soul-food portions run enormous, so mid-$30s with a drink and tip is the honest number, with a cheap chicken-shack-and-lunch-special tier well below it."
     },
     "dating": {
-      "score": 5,
-      "note": "—"
+      "score": 6,
+      "note": "The age fit is the selling point: the Frederick Douglass Blvd row — Harlem Tavern's beer-garden corner at 116th up through the wine bars near Vinatería at 119th — and Ginny's Supper Club under Red Rooster draw a genuinely grown 30s-to-50s crowd, and weekend brunch is the neighborhood's real social engine. It's a regulars culture more than a singles circuit: the scene is historically Black and deeply rooted, people know each other, and plenty of residents still run their app dates downtown. At 37 you'll never feel old here; you will have to show up repeatedly to get past acquaintance."
     },
     "thingsToDo": {
-      "score": 5,
-      "note": "—"
+      "score": 7,
+      "note": "The Apollo is mid-renovation — a $65M overhaul, marquee relit June 2026, phased reopening from late 2026 — but its programming continues next door at the Apollo Stages at the Victoria. Live jazz is the everyday luxury: Minton's Playhouse (bebop's birthplace, revived as a supper club), Bill's Place's BYOB Friday-Saturday parlor sets in a W 133rd brownstone, and Ginny's Supper Club. The Studio Museum reopened Nov 2025 in its new seven-story Adjaye-designed building, and Marcus Garvey Park anchors summer programming."
     },
-    "sources": []
+    "sources": [
+      "The Infatuation — The Best Restaurants In Harlem (2025)",
+      "Apollo Theater — Renovation Project / phased reopening announcements (2025-26)",
+      "Studio Museum in Harlem — New building public opening, November 15, 2025"
+    ]
   },
   "ridgewood": {
     "meal": {
-      "casual": 0,
-      "note": "—"
+      "casual": 30,
+      "note": "Michelin-listed Rolo's is the anchor — polenta bread, potato croquettes, and lasagna off the wood grill in the $20s, with a cheaper café-bakery mode by day; Gottscheer Hall serves German pub grub with cheap pints under its 1924 rafters. (The Houdini Kitchen Laboratory pizzeria in the old 1880s brewery closed during the pandemic; a low-key pizzeria called Pàn took over the space.) Around $30 a head — Bushwick economics with better bread."
     },
     "dating": {
       "score": 5,
-      "note": "—"
+      "note": "Thin but unusually friendly: Nowadays is one of the few NYC club spaces where talking to strangers is normal — its Mister Sunday parties are beloved for exactly that — and TV Eye runs free Tuesday karaoke, Tinder Live tapings, and ballroom dance nights where the crowd actually mixes. Gottscheer Hall's communal tables do the rest. The crowd is late-20s-to-early-30s Bushwick-creative spillover, weeknights are dead, and at 37 you'll often be the elder in the room; most residents date a train ride away."
     },
     "thingsToDo": {
-      "score": 5,
-      "note": "—"
+      "score": 6,
+      "note": "Two genuine citywide draws sit on the Bushwick border: Nowadays, a 16,000-sq-ft indoor/outdoor club and backyard that hosts the long-running Mister Sunday parties, and TV Eye, a four-bar 'funhaus' of punk shows, comedy, karaoke, and dance nights. Add Gottscheer Hall — a 1924 German beer hall that hosts the Ridgewood Market bazaar — and destination dining at Rolo's. Daytime culture is thin, but Bushwick's entire club belt is a short walk west."
     },
-    "sources": []
+    "sources": [
+      "Time Out New York — Ridgewood, Queens guide to bars, restaurants and things to do (2025)",
+      "MICHELIN Guide — Rolo's, Queens entry (2025)",
+      "Bushwick Daily — The Houdini Kitchen Has Been Replaced By A Mysterious Pizzeria called Pàn (2021)",
+      "Atlas Obscura — Gottscheer Hall (2024)"
+    ]
   },
   "crown-heights": {
     "meal": {
-      "casual": 0,
-      "note": "—"
+      "casual": 32,
+      "note": "Chavela's, the Franklin Ave Oaxacan anchor, keeps mains around $20 with $8 margaritas on tap; tiny Cambodian spot Bong and the bagel-line institution Bagel Pub hold the cheap tier, and Caribbean takeout counters toward Nostrand go cheaper still. Low $30s with a drink and tip; the strip lost its beloved pizza anchor when Barboncino closed in Feb 2025."
     },
     "dating": {
-      "score": 5,
-      "note": "—"
+      "score": 7,
+      "note": "Franklin Ave is a real going-out strip with a late-20s-to-mid-30s creative crowd: Franklin Park's beer garden — the Infatuation calls it a younger Union Pool — turns into a party on weekends and hosts a famous monthly reading series that's a known mixer, Crown Inn is dark and crowded enough to meet someone, and Two Saints and tiki bar Super Power fill the gaps; Friends and Lovers on Classon adds DJ nights. At 37 you're at the older edge of the room but not out of place — pound for pound one of Brooklyn's best singles scenes for the rent."
     },
     "thingsToDo": {
-      "score": 5,
-      "note": "—"
+      "score": 6,
+      "note": "Franklin Park doubles as a venue with its monthly reading series, Friends and Lovers books DJs and live shows on Classon, and the western edge touches the Brooklyn Museum (free First Saturdays programming) and Brooklyn Botanic Garden. Eastern Parkway hosts the West Indian American Day Carnival every Labor Day — one of the city's biggest events — and Prospect Park is a ten-minute walk. Beyond the Franklin Ave strip, nightlife thins out fast."
     },
-    "sources": []
+    "sources": [
+      "The Infatuation — 11 Reasons To Spend A Day On Crown Heights' Franklin Avenue (2025)",
+      "The Infatuation — The Best Bars In Crown Heights & Prospect Heights (2025)",
+      "Brooklyn Magazine — Barboncino, NYC's First Unionized Pizzeria, is Closing (2025)"
+    ]
   },
   "prospect-heights": {
     "meal": {
-      "casual": 0,
-      "note": "—"
+      "casual": 36,
+      "note": "Pasta Night on Vanderbilt does a fettuccine bolognese for $25; Lowerline's New Orleans po'boys and oysters keep dinner under $30; Bib Gourmand Mexican at Alta Calidad sits in between. With a drink and tip a normal night lands mid-to-high $30s — and a destination tier (Persian standout Sofreh, Cafe Mado in the old Oxalis space) waits above it for actual date nights, even after garden-to-table icon Olmsted closed in August 2025."
     },
     "dating": {
-      "score": 5,
-      "note": "—"
+      "score": 6,
+      "note": "More date-spot than meet-spot: Weather Up's candlelit cocktail room is built for date two, Soda Bar's big backyard is where the neighborhood actually mingles, and the Vanderbilt Ave bar row plus Saturday Open Streets (noon-10pm, May-Sept) makes running into the same faces easy — though the scene hasn't fully replaced Ode to Babel, the Black-owned 30s-plus clubhouse that closed in June 2023. The neighborhood reads brownstone-coupled and stroller-heavy, and Barclays event crowds arrive and leave by subway without touching the local bars. Excellent place to live while dating; modest place to start it."
     },
     "thingsToDo": {
-      "score": 5,
-      "note": "—"
+      "score": 7,
+      "note": "Outsized anchors for a small neighborhood: Barclays Center for arena shows and Nets/Liberty games, the Brooklyn Museum with its free First Saturdays, Brooklyn Botanic Garden, and Prospect Park plus the Grand Army Plaza greenmarket at the front door; Vanderbilt Ave closes to cars every Saturday noon-10pm, May through September. What's missing is small live-music rooms and late-night density — for that you borrow Crown Heights or Fort Greene."
     },
-    "sources": []
+    "sources": [
+      "The Infatuation — The Best Restaurants In Prospect Heights (2025)",
+      "Prospect Heights Open Streets — Vanderbilt Avenue Open Street returns for 2026, Saturdays 12-10pm",
+      "The Infatuation — The Best Bars In Crown Heights & Prospect Heights (2025)",
+      "Time Out New York — Olmsted is closing after nearly a decade (Aug 2025)",
+      "Brooklyn Magazine — After eight years, Ode to Babel is closing in June (2023)"
+    ]
   },
   "fort-greene": {
     "meal": {
-      "casual": 0,
-      "note": "—"
+      "casual": 40,
+      "note": "Miss Ada's modern-Mediterranean small plates and Roman's natural-wine Italian both push a relaxed dinner past $50; the cheaper tier is real too — Black Iris pita sandwiches and Island Shack's jerk chicken and roti land well under $25, with Olea's reasonable Mediterranean menu in between. Around $40 a head is the honest weekly number."
     },
     "dating": {
-      "score": 5,
-      "note": "—"
+      "score": 6,
+      "note": "Brownstone Brooklyn's grown-up scene: the bar at Roman's, DSK's communal kölsch-hall tables on Fulton St, and dives like Alibi run solidly 30s-40s, so 37 is squarely the demographic rather than the ceiling. The catch is volume — this is a neighborhood of settled creatives and stroller couples more than a circuit, and the realistic play is becoming a regular (the Saturday Greenmarket and BAM crowds are genuine low-stakes mixers) rather than dropping into a singles strip."
     },
     "thingsToDo": {
-      "score": 5,
-      "note": "—"
+      "score": 7,
+      "note": "BAM is a world-class anchor — the Harvey Theater, the Howard Gilman Opera House, BAM Rose Cinemas' indie programming, and the fall Next Wave Festival — with the Center for Fiction's bookstore-café around the corner and Barclays Center a few blocks west for arena shows. Add Fort Greene Park's Olmsted-and-Vaux 30 acres and its Saturday Greenmarket; what's missing is small live-music rooms and anything resembling late-night density."
     },
-    "sources": []
+    "sources": [
+      "The Infatuation — The 19 Best Restaurants In Fort Greene (2025)",
+      "Time Out New York — Fort Greene neighborhood guide (2025)",
+      "The Infatuation — Where To Eat Before A Show At Brooklyn Academy Of Music (2025)"
+    ]
   },
   "bed-stuy": {
     "meal": {
-      "casual": 0,
-      "note": "—"
+      "casual": 32,
+      "note": "Saraghina's Neapolitan pies run about $20 on the back patio; Peaches does Southern mains in the $20s and handles every dining situation from weeknight solo to group brunch; For All Things Good's Oaxacan memelas stay under $15. A real dinner with a drink and tip lands low $30s — among the cheapest weekly eating on this list."
     },
     "dating": {
-      "score": 5,
-      "note": "—"
+      "score": 6,
+      "note": "Quietly one of Brooklyn's better 30s scenes: the Infatuation's line on Doris is literally 'if you want to meet someone… come here' — backyard, DJ, disco ball, a late-20s-to-late-30s creative crowd — and Bar LunÀtico's nightly live music puts strangers at shared tables. It's brownstone-bar energy rather than a strip: a handful of rooms (Doris, LunÀtico, Dynaco's cash-only fireplace den) where regulars actually talk, with none of Williamsburg's tourist flood. The trade-off is thinness — fewer rooms, fewer organized ways in, and density does less of the work for you."
     },
     "thingsToDo": {
-      "score": 5,
-      "note": "—"
+      "score": 6,
+      "note": "Bar LunÀtico — musician-owned — stages live music essentially every night; the Billie Holiday Theatre at Restoration Plaza has produced Black theater since 1972; Herbert Von King Park's amphitheater runs summer shows; and the Stuyvesant Heights brownstone blocks are a destination in themselves. For clubs, cinemas, and big rooms you borrow Bushwick next door or ride the A into Manhattan."
     },
-    "sources": []
+    "sources": [
+      "The Infatuation — The Best Restaurants In Bed-Stuy (2025)",
+      "The Infatuation — The 16 Best Bars In Bed-Stuy (2025)",
+      "Edible Brooklyn — Where to Eat and Drink in Bed-Stuy (2022)"
+    ]
   },
   "chelsea": {
     "meal": {
-      "casual": 0,
-      "note": "—"
+      "casual": 42,
+      "note": "Los Tacos No. 1 in Chelsea Market is the famous cheap anchor — standing-room adobada tacos around $6 — but a normal sit-down night at Tia Pol's tapas bar or Hey Yuet's Cantonese dim sum room climbs fast once wine is involved, and Tikito 'can get pricey fast' per the Infatuation. Low-$40s a head is realistic; the cheap-canteen tier downtown neighborhoods lean on is thin here."
     },
     "dating": {
-      "score": 5,
-      "note": "—"
+      "score": 6,
+      "note": "Chelsea is the historic center of gay New York, and for gay men it remains a real, layered scene that skews 30s-plus and established: the Eagle on W 28th has anchored leather and fetish nightlife since the 1970s, g Lounge reopened on W 19th in 2025, and the crowd is intentional rather than trendy — even as the louder bar strip migrated north to Hell's Kitchen (Barracuda, a 1990s institution, closed in March 2025). For straight singles it's thinner: after-work bars, Thursday gallery-opening wine crowds — a genuinely good free mixer — and an older, residential population; expect to do much of your dating in adjacent Flatiron and the Villages."
     },
     "thingsToDo": {
-      "score": 5,
-      "note": "—"
+      "score": 8,
+      "note": "The gallery district — roughly W 18th to W 28th between Tenth and Eleventh Aves, 100+ galleries including Gagosian, David Zwirner, and Pace, all free, with Thursday-evening openings that double as social events. The High Line runs the length of the neighborhood, the Whitney Museum sits at its southern foot, the Joyce Theater books world-class dance, and Chelsea Market handles any weekend visitor. What it lacks is small live-music rooms and late-late nightlife."
     },
-    "sources": []
+    "sources": [
+      "The Infatuation — The 23 Best Restaurants In Chelsea (2025)",
+      "NYC Tourism — Gay Guide to Chelsea (2025)",
+      "Art-Collecting.com — Chelsea Art Galleries / Gallery Guide (2026)"
+    ]
   },
   "west-village": {
     "meal": {
-      "casual": 0,
-      "note": "—"
+      "casual": 48,
+      "note": "The most expensive 'casual' on this list: Via Carota's walk-in-only cacio e pepe night easily runs $60+ with a glass of wine (and a 1-3 hour wait), L'Artusi is celebration-tier Italian, and even the unpretentious layer — Malatesta's under-$20 handwritten-menu pastas, Daddies' in-and-out-under-$50 pizza, a Joe's Pizza slice — sits next to $20 cocktails. Budget high-$40s a head for a normal week."
     },
     "dating": {
-      "score": 5,
-      "note": "—"
+      "score": 7,
+      "note": "Polished, moneyed, and genuinely social: Dante, Employees Only, Little Branch, and The Spaniard fill from 7pm with finance and media professionals, the crowd runs late-20s-to-40s, and this is the rare Manhattan scene that skews older and wealthier rather than younger — a 37-year-old is squarely the demographic. Cubbyhole, the city's best-known lesbian bar since 1994, anchors the queer-women's scene. Honest caveats: weekends import a younger going-out-photo crowd, and meeting people here means being comfortable in $22-cocktail rooms where everyone looks like they made reservations."
     },
     "thingsToDo": {
-      "score": 5,
-      "note": "—"
+      "score": 8,
+      "note": "Two of the most famous basements in American culture: the Comedy Cellar on MacDougal, where A-list comics drop in unannounced nightly, and the Village Vanguard, jazz's holiest room since 1935 — plus Smalls and Mezzrow for late-set jazz and the IFC Center for indie film and November's DOC NYC festival. Washington Square Park is the eastern edge. Nightly, walkable, world-class; what it isn't is cheap, loud, or edgy."
     },
-    "sources": []
+    "sources": [
+      "The Infatuation — The Best Restaurants In The West Village (2025)",
+      "The Infatuation — The 19 Best Bars In The West Village (2025)",
+      "NYC Tourism — Smalls, Manhattan nightlife profile (2025)"
+    ]
   }
 }

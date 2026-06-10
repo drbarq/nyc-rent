@@ -636,6 +636,10 @@ input[type='range']::-moz-range-thumb {
   color: var(--paper);
 }
 
+.map-toggle.trains-toggle {
+  top: 50px;
+}
+
 /* AI judge panel */
 .judges {
   background: var(--paper-dim);

@@ -1,7 +1,8 @@
-import type { FeatureCollection } from 'geojson'
+import type { Feature, FeatureCollection } from 'geojson'
 import maplibregl, { Map as MlMap, MapMouseEvent, StyleSpecification } from 'maplibre-gl'
 import 'maplibre-gl/dist/maplibre-gl.css'
 import { useEffect, useRef, useState } from 'react'
+import { LINE_COLORS } from '../lib/mta'
 import hoodsRaw from '../../data/neighborhoods.geojson?raw'
 import ruledRaw from '../../data/ruledout.geojson?raw'
 import type { Scored } from '../lib/score'
@@ -43,6 +44,8 @@ interface Props {
   legend: LegendSpec
   /** The active destination — the pin follows it. */
   anchor: AnchorSpec
+  /** Show the subway overlay (routes + stations, lazy-loaded). */
+  trains: boolean
   selectedId: NeighborhoodId | null
   onSelect: (id: NeighborhoodId | null) => void
   /** A considered-but-excluded area was clicked. */
@@ -55,10 +58,8 @@ interface Props {
 interface Tip {
   x: number
   y: number
-  name: string
-  /** null = a ruled-out area (no rank/score). */
-  rank: number | null
-  composite: number
+  title: string
+  body: string
 }
 
 // Free CARTO "light_all" raster tiles — near-white paper, no token (attribution required).
@@ -163,6 +164,7 @@ export function MapView({
   chips,
   legend,
   anchor,
+  trains,
   selectedId,
   onSelect,
   onSelectRuledOut,
@@ -174,6 +176,7 @@ export function MapView({
   const hoverIdRef = useRef<NeighborhoodId | null>(null)
   const chipsRef = useRef(new Map<NeighborhoodId, maplibregl.Marker>())
   const anchorRef = useRef<maplibregl.Marker | null>(null)
+  const subwayLoadedRef = useRef(false)
   const [ready, setReady] = useState(false)
   const [tip, setTip] = useState<Tip | null>(null)
 
@@ -244,9 +247,8 @@ export function MapView({
         setTip({
           x: e.point.x,
           y: e.point.y,
-          name: String(feature.properties?.name ?? id),
-          rank: s.rank,
-          composite: s.composite,
+          title: String(feature.properties?.name ?? id),
+          body: `#${s.rank} · ${Math.round(s.composite * 100)}`,
         })
       }
     })
@@ -266,9 +268,8 @@ export function MapView({
       setTip({
         x: e.point.x,
         y: e.point.y,
-        name: String(feature.properties?.name ?? ''),
-        rank: null,
-        composite: 0,
+        title: String(feature.properties?.name ?? ''),
+        body: 'passed — click for why',
       })
     })
 
@@ -299,6 +300,7 @@ export function MapView({
       mapRef.current = null
       chipsRef.current.clear() // markers died with the map (StrictMode remounts)
       anchorRef.current = null
+      subwayLoadedRef.current = false
       setReady(false)
     }
     // The map is created exactly once; registry is static data.
@@ -313,6 +315,84 @@ export function MapView({
     const tag = marker.getElement().querySelector('.tag')
     if (tag) tag.textContent = anchor.label
   }, [anchor, ready])
+
+  // Subway overlay: lazy-load on first toggle, then flip layer visibility.
+  useEffect(() => {
+    const map = mapRef.current
+    if (!map || !ready) return
+    const setVisibility = (visible: boolean) => {
+      for (const id of ['subway-lines', 'subway-stations']) {
+        if (map.getLayer(id)) {
+          map.setLayoutProperty(id, 'visibility', visible ? 'visible' : 'none')
+        }
+      }
+    }
+    if (!trains || subwayLoadedRef.current) {
+      setVisibility(trains)
+      return
+    }
+    subwayLoadedRef.current = true
+    Promise.all([
+      fetch('/subway-lines.geojson').then((r) => r.json()),
+      fetch('/subway-stations.geojson').then((r) => r.json()),
+    ])
+      .then(([lines, stations]: [FeatureCollection, FeatureCollection]) => {
+        if (mapRef.current !== map || map.getSource('subway-lines')) return
+        map.addSource('subway-lines', { type: 'geojson', data: lines })
+        map.addSource('subway-stations', { type: 'geojson', data: stations })
+        // Official MTA route colors, keyed on the dataset's "service" property.
+        const colorMatch = [
+          'match',
+          ['get', 'service'],
+          ...Object.entries(LINE_COLORS).flatMap(([line, color]) => [line, color]),
+          '#808183', // shuttles and anything unmapped
+        ] as unknown as maplibregl.ExpressionSpecification
+        map.addLayer(
+          {
+            id: 'subway-lines',
+            type: 'line',
+            source: 'subway-lines',
+            layout: { 'line-cap': 'round', 'line-join': 'round' },
+            paint: {
+              'line-color': colorMatch,
+              'line-width': ['interpolate', ['linear'], ['zoom'], 10, 1, 13, 2.5],
+              'line-opacity': 0.85,
+            },
+          },
+          'hood-line',
+        )
+        map.addLayer(
+          {
+            id: 'subway-stations',
+            type: 'circle',
+            source: 'subway-stations',
+            minzoom: 11,
+            paint: {
+              'circle-radius': ['interpolate', ['linear'], ['zoom'], 11, 1.4, 14, 4],
+              'circle-color': '#ffffff',
+              'circle-stroke-color': '#0f0f0f',
+              'circle-stroke-width': 1,
+            },
+          },
+          'hood-line',
+        )
+        map.on('mousemove', 'subway-stations', (e: MapMouseEvent & { features?: Feature[] }) => {
+          const f = e.features?.[0]
+          if (!f) return
+          setTip({
+            x: e.point.x,
+            y: e.point.y,
+            title: String(f.properties?.name ?? ''),
+            body: String(f.properties?.line ?? ''),
+          })
+        })
+        map.on('mouseleave', 'subway-stations', () => setTip(null))
+      })
+      .catch((err) => {
+        subwayLoadedRef.current = false
+        console.error('[subway] overlay failed to load', err)
+      })
+  }, [trains, ready])
 
   // Recolor polygons whenever colors change — feature-state keeps this under 100ms (PRD F2).
   useEffect(() => {
@@ -383,14 +463,7 @@ export function MapView({
       <div ref={containerRef} className="map" role="application" aria-label="Map of candidate NYC neighborhoods, colored by composite score" />
       {tip && (
         <div className="map-tip" style={{ left: tip.x, top: tip.y }} aria-hidden="true">
-          {tip.name}{' '}
-          {tip.rank != null ? (
-            <span className="tip-score num">
-              #{tip.rank} · {Math.round(tip.composite * 100)}
-            </span>
-          ) : (
-            <span className="tip-score">passed — click for why</span>
-          )}
+          {tip.title} <span className="tip-score num">{tip.body}</span>
         </div>
       )}
       <div className="legend" aria-hidden="true">

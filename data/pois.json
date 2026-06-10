@@ -166,7 +166,7 @@
           "ferry": false,
           "timeMin": 65,
           "timeMax": 90,
-          "transfersMin": 1,
+          "transfersMin": 2,
           "transfersMax": 3,
           "note": "M to Myrtle Av then the J/Z to Sutphin Blvd for the AirTrain, or L from Halsey to Broadway Junction and the A to Howard Beach; clunky but workable — a car runs ~$50-65."
         },
@@ -737,7 +737,7 @@
           "timeMax": 25,
           "transfersMin": 0,
           "transfersMax": 0,
-          "note": "The A express from W 4 St hits 59 St-Columbus Circle in three stops — call it 15 minutes to the park's corner; the local C/E or the 1 from Christopher St run closer to 25."
+          "note": "The A express from W 4 St hits 59 St-Columbus Circle in four stops — call it 15 minutes to the park's corner; the local C/E or the 1 from Christopher St run closer to 25."
         }
       }
     },

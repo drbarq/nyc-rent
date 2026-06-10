@@ -261,178 +261,210 @@
   },
   "harlem": {
     "parks": {
-      "score": 5,
-      "note": "—"
+      "score": 8,
+      "note": "Central Park's quieter north end starts at 110th St — the Harlem Meer, the Conservatory Garden, and the new $160M Davis Center whose Gottesman Pool opened in 2025 — and inside the neighborhood 20-acre Marcus Garvey Park and 23-acre St. Nicholas Park (plus Morningside and Jackie Robinson) cover the everyday."
     },
     "gyms": {
       "score": 5,
-      "note": "—"
+      "note": "125th Street is a budget-chain cluster — PureGym (ex-Blink) at 301 W 125th, Planet Fitness at 208 W 125th, plus an NYSC and Lucille Roberts — but there's no climbing or real boutique scene; the closest wall is VITAL Upper East at 1506 Lexington Ave, an awkward crosstown trip."
     },
     "groceries": {
-      "score": 5,
-      "note": "—"
+      "score": 8,
+      "note": "Trader Joe's (121 W 125th St) and a full Whole Foods (100 W 125th St) sit two blocks apart, with a Lidl and a Lincoln Market also working the 125th Street corridor — grocery access that genuinely rivals downtown."
     },
     "coffee": {
-      "score": 5,
-      "note": "—"
+      "score": 6,
+      "note": "Double Dutch Espresso near Morningside Park has free wifi, real seating, and a back patio, and Manhattanville Coffee on Edgecombe Ave is a spacious, high-ceilinged room built for a laptop day; a solid bench, just shallower than downtown's."
     },
     "laundry": {
-      "note": "—"
+      "note": "Brownstone and prewar walkup stock means in-unit washer/dryers aren't standard, but Central Harlem beats downtown tenement land — renovated brownstone floor-throughs and newer 125th-corridor buildings increasingly include them (Apartments.com shows 120+ Central Harlem rentals with W/D), and laundromats dot nearly every avenue."
     },
-    "sources": []
+    "sources": [
+      "Central Park Conservancy / centralpark.com — the $160M Davis Center at the Harlem Meer opened April 2025, Gottesman Pool June 2025; NYC Parks — Marcus Garvey (20 acres) and St. Nicholas (23 acres) among the Historic Harlem Parks",
+      "New York YIMBY / Crain's New York — Trader Joe's at 121 W 125th St; Whole Foods Market — Harlem store at 100 W 125th St; Yelp — Lidl and Lincoln Market among 125th St grocery options",
+      "The Infatuation / Tripadvisor — wifi-and-seating coverage of Double Dutch Espresso and Manhattanville Coffee; puregym.com / planetfitness.com — 125th Street locations"
+    ]
   },
   "ridgewood": {
     "parks": {
-      "score": 5,
-      "note": "—"
+      "score": 4,
+      "note": "Rosemary's Playground and hilltop Grover Cleveland Playground (with Manhattan-skyline views) handle everyday needs but are playgrounds, not parks; Highland Park and the wild Ridgewood Reservoir add 50+ acres of forest and wetlands, but they sit at the neighborhood's far southern edge."
     },
     "gyms": {
       "score": 5,
-      "note": "—"
+      "note": "PureGym (formerly Blink) runs a 24-hour gym inside the landmarked old Ridgewood Theatre at 55-27 Myrtle Ave, two blocks from the Myrtle-Wyckoff L/M stop, and MetroRock's rope-and-bouldering gym at 321 Starr St is just over the Bushwick line; beyond that, boutique options are thin."
     },
     "groceries": {
       "score": 5,
-      "note": "—"
+      "note": "No Trader Joe's or Whole Foods — C-Town at 64-01 Fresh Pond Rd and a Food Bazaar near the Bushwick border do the heavy lifting, and old-school spots like Valentino Food Market cover the Italian-deli end; a fancy grocery run means leaving the neighborhood."
     },
     "coffee": {
-      "score": 5,
-      "note": "—"
+      "score": 6,
+      "note": "Milk & Pull (7-78 Seneca Ave) and Topos Bookstore Cafe (7-88 Woodward Ave) are the dependable laptop rooms, with Norma's Corner Shoppe on Catalpa Ave for free wifi — though Norma's closes mid-afternoon. A real WFH rotation exists; it's just small."
     },
     "laundry": {
-      "note": "—"
+      "note": "Rowhouse and small prewar multifamily stock, so in-unit washer/dryers are genuinely rare at any price — some landlord-occupied rowhouses offer basement hookups, but the default is the laundromats scattered along Myrtle, Seneca, and Fresh Pond Road."
     },
-    "sources": []
+    "sources": [
+      "NYC Parks — Grover Cleveland Playground sits on a hill with skyline views; Rosemary's Playground bounded by Woodbine/Woodward/Madison/Fairview; Highland Park and the Ridgewood Reservoir's 50+ acres straddle the Queens-Brooklyn line",
+      "QNS / PR Newswire / puregym.com — Blink Fitness (now PureGym) opened in the former Ridgewood Theatre at 55-27 Myrtle Ave; MetroRock Bushwick at 321 Starr St",
+      "joe.coffee / Yelp — Norma's Corner Shoppe at 59-02 Catalpa Ave, Milk & Pull at 7-78 Seneca Ave, and Topos Bookstore Cafe among Ridgewood's laptop-friendly cafes; ctownsupermarkets.com — store at 64-01 Fresh Pond Rd"
+    ]
   },
   "crown-heights": {
     "parks": {
-      "score": 5,
-      "note": "—"
+      "score": 6,
+      "note": "Brower Park (home of the Brooklyn Children's Museum, plus a skate park) and the tree-lined Eastern Parkway malls cover daily green needs, and from the Franklin Ave end the Brooklyn Botanic Garden and Prospect Park are a 10-15 minute walk; east of Kingston Ave the main option is Lincoln Terrace Park."
     },
     "gyms": {
       "score": 5,
-      "note": "—"
+      "note": "Blink Fitness at 250 Utica Ave (24 hours, by the 3/4 trains) and a Crunch are the two chains, with Dean CrossFit and Murder of Crows covering the strength-community end; no climbing in the neighborhood — Bouldering Project in Gowanus is a ride away."
     },
     "groceries": {
       "score": 5,
-      "note": "—"
+      "note": "Urban Market by Key Food at 653 Nostrand Ave, a Foodtown on Franklin Ave, and Western Beef on Empire Blvd are the workhorses, plus deep bodega and Caribbean-market coverage; there's no Trader Joe's or Whole Foods without leaving the neighborhood."
     },
     "coffee": {
-      "score": 5,
-      "note": "—"
+      "score": 6,
+      "note": "Colina Cuervo doubles as one of Brooklyn's best breakfast rooms and works for weekday laptop sessions (skip weekends — brunch crowds win), French-Senegalese Cafe Rue Dix tolerates a working coffee, and most shops along Franklin and Nostrand offer free wifi; tiny Little Zelda is espresso-only territory."
     },
     "laundry": {
-      "note": "—"
+      "note": "Classic brownstone floor-throughs mostly lack washer/dryers unless gut-renovated — and Crown Heights has lots of gut renovations where in-unit W/D is a headline amenity — so check listings carefully; otherwise the laundromats along Nostrand and Franklin are the routine."
     },
-    "sources": []
+    "sources": [
+      "NYC Parks / Wikipedia — Brower Park houses the Brooklyn Children's Museum plus a skate park; Brooklyn Botanic Garden borders Crown Heights at Eastern Parkway and Washington Ave; TrailLink — the 2-mile Eastern Parkway trail ends at Lincoln Terrace Park",
+      "blinkfitness.com / Rate Your Burn — Blink at 250 Utica Ave is one of two chain gyms (with Crunch), plus Dean CrossFit and Murder of Crows",
+      "Edible Brooklyn / DNAinfo / Your Brooklyn Guide — freelancer-approved Crown Heights coffee at Colina Cuervo, Cafe Rue Dix, and Little Zelda; Brooklyn Paper / NYCity News Service — Nostrand Ave supermarket coverage including Key Food/Urban Market and the Associated redevelopment"
+    ]
   },
   "prospect-heights": {
     "parks": {
-      "score": 5,
-      "note": "—"
+      "score": 9,
+      "note": "Prospect Park's 526 Olmsted-designed acres start at Grand Army Plaza, the Brooklyn Botanic Garden and little Mount Prospect Park line Eastern Parkway, and the Brooklyn Museum steps function as the neighborhood's front porch (free First Saturdays). The strongest park setup of these neighborhoods."
     },
     "gyms": {
-      "score": 5,
-      "note": "—"
+      "score": 7,
+      "note": "Chelsea Piers Fitness opened a luxury club at 595 Dean St in Pacific Park, Bouldering Project Brooklyn — the former Brooklyn Boulders in Gowanus, renovated with 60% more terrain and hot yoga — is a short ride west, and PureGym (ex-Blink) on Atlantic Ave covers the budget end."
     },
     "groceries": {
-      "score": 5,
-      "note": "—"
+      "score": 6,
+      "note": "Lincoln Market on Dean St is a genuinely good modern full-service grocery, backed by Key Food and Foodtown options near Vanderbilt Ave and dense bodega coverage; the nearest Trader Joe's is at City Point, and the Navy Yard Wegmans is an easy motorcycle errand."
     },
     "coffee": {
-      "score": 5,
-      "note": "—"
+      "score": 7,
+      "note": "Sit & Wonder on Washington Ave — exposed brick, back garden — is the workhorse WFH room, Hungry Ghost on Flatbush draws the freelancer crowd (better for short stints; the tables wobble), and Milk Bar and Lincoln Station round out a comfortable rotation along Vanderbilt."
     },
     "laundry": {
-      "note": "—"
+      "note": "Same brownstone reality as Fort Greene and Crown Heights — classic prewar floor-throughs mostly send you to the laundromat, while gut renovations and the newer Pacific Park towers along Dean St and Atlantic Ave commonly include in-unit washer/dryers."
     },
-    "sources": []
+    "sources": [
+      "NYC Parks / Wikipedia — Prospect Park's 526 acres begin at Grand Army Plaza; Brooklyn Botanic Garden sits on the Prospect Heights border along Eastern Parkway and Washington Ave",
+      "fitness.chelseapiers.com — Chelsea Piers Fitness Prospect Heights at 595 Dean St; Time Out New York — the former Brooklyn Boulders reopened as Bouldering Project Brooklyn in Gowanus with 60% more bouldering terrain",
+      "Patch (Prospect Heights) — coverage of the big modern Lincoln Market grocery on Dean St; hungryghostcoffee.com / On the Grid — Hungry Ghost's Prospect Heights shop and Sit & Wonder on Washington Ave"
+    ]
   },
   "fort-greene": {
     "parks": {
-      "score": 5,
-      "note": "—"
+      "score": 7,
+      "note": "Fort Greene Park — 30 acres, Brooklyn's first park, redesigned by Olmsted and Vaux in 1867 — is the literal center of the neighborhood, with big lawns, a hilltop monument, and a year-round Saturday Greenmarket at the entrance; Prospect Park is one stop away on the B/Q for the full-scale version."
     },
     "gyms": {
-      "score": 5,
-      "note": "—"
+      "score": 6,
+      "note": "Crunch Fitness has a Fort Greene club and PureGym (formerly Blink) runs a 24-hour gym at 1134 Fulton St in Clinton Hill, with the Dodge YMCA in adjacent Downtown Brooklyn; solid everyday coverage, but no climbing anchor — Brooklyn Boulders territory means a ride to Gowanus."
     },
     "groceries": {
-      "score": 5,
-      "note": "—"
+      "score": 8,
+      "note": "A full Whole Foods sits in the 300 Ashland complex, Greene Grape Provisions on Fulton St does butcher-counter and gourmet groceries, Trader Joe's is at City Point in Downtown Brooklyn, and the 74,000 sq ft Navy Yard Wegmans is on the northern edge — quietly one of the best-fed neighborhoods on this list."
     },
     "coffee": {
-      "score": 5,
-      "note": "—"
+      "score": 7,
+      "note": "Hungry Ghost (Stumptown beans, communal tables, fast wifi) and Coffee Project NY are genuinely laptop-friendly on weekdays, the Center for Fiction's cafe and reading room is a sleeper work spot, and BKG Coffee Roasters covers Clinton Hill with a big back patio."
     },
     "laundry": {
-      "note": "—"
+      "note": "The brownstone floor-throughs that define Fort Greene and Clinton Hill rarely have in-unit washer/dryers; the newer towers clustered around Flatbush and Ashland Place usually do. Corner laundromats along Myrtle and Fulton plus wash-and-fold pickup (Liox, Rinse) cover everyone else."
     },
-    "sources": []
+    "sources": [
+      "NYC Parks / Wikipedia — Fort Greene Park is a 30-acre park, Brooklyn's first, redesigned by Olmsted and Vaux in 1867; GrowNYC — Fort Greene Greenmarket runs Saturdays year-round at the park entrance",
+      "The Bridge / Patch — Whole Foods at the 300 Ashland complex in Fort Greene; 74,000 sq ft Wegmans opened at the Brooklyn Navy Yard; greenegrape.com — Greene Grape Provisions on Fulton St",
+      "Your Brooklyn Guide / halfhalftravel.com — laptop-friendly Fort Greene cafes including Hungry Ghost, Coffee Project NY, and the Center for Fiction cafe; puregym.com — 24-hour gym at 1134 Fulton St, Clinton Hill"
+    ]
   },
   "bed-stuy": {
     "parks": {
       "score": 5,
-      "note": "—"
+      "note": "Herbert Von King Park — an original Olmsted-Vaux design with an outdoor amphitheater and free summer concerts — is the neighborhood's town square, backed by smaller Saratoga and Fulton Parks; the tree-lined brownstone blocks themselves do a lot of the green work, but a real park day means Prospect Park."
     },
     "gyms": {
       "score": 5,
-      "note": "—"
+      "note": "PureGym (formerly Blink) runs a 24-hour gym at 1413 Fulton St near the Kingston-Throop C stop, the Bedford-Stuyvesant YMCA is a genuine community institution, and Planet Fitness covers the budget end — fine for basics, but no climbing or boutique anchor; MetroRock in Bushwick is the nearest wall."
     },
     "groceries": {
       "score": 5,
-      "note": "—"
+      "note": "No Trader Joe's or Whole Foods — Super Foodtown of Bed-Stuy, Key Food, and Food Bazaar are the workhorses, with cheap KiCoPi-family produce markets and deep bodega coverage filling gaps; fine day to day, but a specialty run means leaving the neighborhood."
     },
     "coffee": {
-      "score": 5,
-      "note": "—"
+      "score": 7,
+      "note": "A sneaky-good WFH bench: Playground Coffee Shop has the table space and the scene, Stonefruit Espresso pairs a long communal table with a plant shop, Odd Fox at 525 Throop Ave is explicitly built for laptop work, and Daily Press holds down the eastern edge with a heated patio."
     },
     "laundry": {
-      "note": "—"
+      "note": "Classic brownstone stock — in-unit washer/dryers only show up in gut-renovated floor-throughs, so most people use the laundromat blanket: Stuy-Wash-N-Dry on Stuyvesant Avenue, LaundryBee at 566 Nostrand Ave, and pickup wash-and-fold services like Lav Express that cover the whole neighborhood."
     },
-    "sources": []
+    "sources": [
+      "NYC Parks / Wikipedia — Herbert Von King Park is one of Brooklyn's first parks, designed by Olmsted and Vaux, with an amphitheater and indoor dance studio",
+      "Brokelyn / halfhalftravel.com / bkmag.com — freelance-friendly Bed-Stuy cafes including Playground Coffee, Stonefruit Espresso, Odd Fox, and Daily Press",
+      "puregym.com — 24-hour gym at 1413 Fulton St; ymcanyc.org — Bedford-Stuyvesant YMCA; NYC Food Policy Center Bed-Stuy foodscape — Super Foodtown, Key Food, and Food Bazaar as the area's supermarkets"
+    ]
   },
   "chelsea": {
     "parks": {
-      "score": 5,
-      "note": "—"
+      "score": 8,
+      "note": "The High Line runs the length of the neighborhood and Hudson River Park's Chelsea section adds Piers 62-64 (lawns, skatepark, carousel) plus Chelsea Waterside Park at W 23rd with a recently doubled 7,400 sq ft dog run; nothing here is a big lawn-sprawl park, but the combined waterfront package is excellent."
     },
     "gyms": {
-      "score": 5,
-      "note": "—"
+      "score": 10,
+      "note": "Chelsea Piers Fitness on Pier 60 is the ceiling for this whole list — 150,000 sq ft with an 11,000 sq ft climbing wall, a 75-foot pool, and a quarter-mile indoor track for roughly $140-180/mo, a real Denver-substitute — and Equinox, Crunch, and a dense boutique-studio layer back it up."
     },
     "groceries": {
-      "score": 5,
-      "note": "—"
+      "score": 9,
+      "note": "A full Whole Foods at 250 7th Ave (24th St) and a Trader Joe's at 675 6th Ave (21st St) sit four blocks apart inside the neighborhood, with Eataly's Flatiron flagship a short walk east — grocery logistics about as easy as Manhattan gets."
     },
     "coffee": {
-      "score": 5,
-      "note": "—"
+      "score": 8,
+      "note": "Coffee Project NY's Chelsea flagship is one of the biggest laptop-friendly rooms in the area, Variety Coffee Roasters and Telegraphe Cafe both welcome workers, and Intelligentsia inside the High Line Hotel is the scenic option; deep bench, though seats go fast on weekdays."
     },
     "laundry": {
-      "note": "—"
+      "note": "Split stock like Hell's Kitchen: the newer doorman buildings and converted lofts commonly include in-unit washer/dryers (Chelsea consistently shows 150+ W/D listings on rental sites), while the Eighth and Ninth Avenue walkups mostly rely on basement laundry rooms or the corner laundromat."
     },
-    "sources": []
+    "sources": [
+      "fitness.chelseapiers.com / nyctourism.com — Chelsea Piers Fitness on Pier 60: 150,000 sq ft, 11,000+ sq ft climbing wall, 75-foot pool, quarter-mile indoor track, ~$140-180/mo",
+      "wholefoodsmarket.com — Chelsea store at 250 7th Ave; nyc.com — Trader Joe's Chelsea at 675 6th Ave at W 21st St",
+      "hudsonriverpark.org / Wikipedia — Chelsea Waterside Park at W 23rd St with its expanded 7,400 sq ft dog run, across from Piers 62-64; theworkingline.com — laptop-friendly Chelsea cafes including Coffee Project NY, Variety, and Telegraphe"
+    ]
   },
   "west-village": {
     "parks": {
-      "score": 5,
-      "note": "—"
+      "score": 7,
+      "note": "The Hudson River Park piers are the backyard: Pier 45 at Christopher St is a 900-foot pier with a big sunbathing lawn, Pier 46 at Charles St adds a turf field, and Little Island's sculpted hills sit at the northern edge — plus Washington Square Park is a ten-minute walk east."
     },
     "gyms": {
-      "score": 5,
-      "note": "—"
+      "score": 7,
+      "note": "Skews premium: Equinox Greenwich Avenue (saltwater pool, full spa) and Equinox Printing House anchor the high end, with TMPL West Village and boxing-focused Gotham Gym in between; budget options and climbing are what's missing — the McBurney YMCA on W 14th is the value play."
     },
     "groceries": {
-      "score": 5,
-      "note": "—"
+      "score": 6,
+      "note": "No Trader Joe's or Whole Foods inside the neighborhood — Citarella at 424 6th Ave is a legitimately great fish-and-butcher market, Gristedes at Sheridan Square covers staples at a markup, and the rest is small-format specialty shops; the Chelsea Trader Joe's at 6th Ave and 21st St is the closest big run."
     },
     "coffee": {
-      "score": 5,
-      "note": "—"
+      "score": 7,
+      "note": "Partners Coffee at 44 Charles St is the reliable work corner (fast wifi, window bar seating), with Amano Cafe, two-floor Whistle & Fizz, and 787 Coffee rounding out the laptop-tolerant bench — though plenty of the prettiest West Village cafes are tiny and laptop-hostile by design."
     },
     "laundry": {
-      "note": "—"
+      "note": "Prewar townhouses and walkups dominate, so in-unit washer/dryers are scarce and self-service laundromats are thinner on the ground than anywhere else on this list; most residents default to wash-and-fold pickup services like Liox, Rinse, and Laundry Luna that blanket the 10014 zip."
     },
-    "sources": []
+    "sources": [
+      "hudsonriverpark.org — Pier 45 at Christopher St (900-foot pier with lawn) and Pier 46 at Charles St (turf lawn) in the West Village section",
+      "citarella.com / Yelp — Citarella Gourmet Market West Village at 424 6th Ave; Gristedes at 3 Sheridan Square; equinox.com — Equinox Greenwich Avenue with saltwater pool",
+      "Yelp / theworkingline.com / atly.com — Partners Coffee at 44 Charles St plus laptop-friendly West Village spots Amano Cafe, Whistle & Fizz, and 787 Coffee; lioxclean.com / laundryluna.com — wash-and-fold pickup coverage in the West Village"
+    ]
   }
 }

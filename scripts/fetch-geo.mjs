@@ -30,9 +30,14 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 const TMP_DIR = join(ROOT, 'scripts', '.tmp')
 const RAW_PATH = join(TMP_DIR, 'nta2020-raw.geojson')
 const DATA_DIR = join(ROOT, 'data')
+const PUBLIC_DIR = join(ROOT, 'public')
 const OUT_GEOJSON = join(DATA_DIR, 'neighborhoods.geojson')
 const OUT_RULEDOUT = join(DATA_DIR, 'ruledout.geojson')
 const OUT_NTA_CODES = join(DATA_DIR, 'nta-codes.json')
+// Subway overlay layers are lazy-fetched at runtime, so they live in public/
+// (served as static files) instead of being bundled.
+const OUT_SUBWAY_LINES = join(PUBLIC_DIR, 'subway-lines.geojson')
+const OUT_SUBWAY_STATIONS = join(PUBLIC_DIR, 'subway-stations.geojson')
 
 // NYC Open Data — "2020 Neighborhood Tabulation Areas (NTAs)" (dataset 9nt8-h7nd).
 // Primary: the geospatial export endpoint. Fallback: the Socrata resource API
@@ -149,32 +154,76 @@ const ALL_IDS = Object.keys(NTA_MAP)
 
 // --- Step 1: download (with cache) -----------------------------------------
 
-async function download() {
-  if (existsSync(RAW_PATH) && statSync(RAW_PATH).size > 100_000) {
-    console.log(`[fetch-geo] using cached raw download: ${RAW_PATH}`)
+async function downloadTo(path, sources, minFeatures, label) {
+  if (existsSync(path) && statSync(path).size > 50_000) {
+    console.log(`[fetch-geo] using cached raw download: ${path}`)
     return
   }
   mkdirSync(TMP_DIR, { recursive: true })
   let lastErr
-  for (const url of SOURCES) {
+  for (const url of sources) {
     try {
-      console.log(`[fetch-geo] downloading ${url}`)
+      console.log(`[fetch-geo] downloading ${label}: ${url}`)
       const res = await fetch(url, { redirect: 'follow' })
       if (!res.ok) throw new Error(`HTTP ${res.status}`)
       const text = await res.text()
       const parsed = JSON.parse(text) // throws if not JSON
-      if (parsed.type !== 'FeatureCollection' || !Array.isArray(parsed.features) || parsed.features.length < 100) {
+      if (parsed.type !== 'FeatureCollection' || !Array.isArray(parsed.features) || parsed.features.length < minFeatures) {
         throw new Error(`unexpected payload (type=${parsed.type}, features=${parsed.features?.length})`)
       }
-      writeFileSync(RAW_PATH, text)
-      console.log(`[fetch-geo] cached ${parsed.features.length} NTA features -> ${RAW_PATH}`)
+      writeFileSync(path, text)
+      console.log(`[fetch-geo] cached ${parsed.features.length} ${label} features -> ${path}`)
       return
     } catch (err) {
       lastErr = err
       console.warn(`[fetch-geo] source failed (${err.message}); trying next...`)
     }
   }
-  throw new Error(`all download sources failed: ${lastErr?.message}`)
+  throw new Error(`all ${label} download sources failed: ${lastErr?.message}`)
+}
+
+const download = () => downloadTo(RAW_PATH, SOURCES, 100, 'NTA')
+
+// MTA subway layers via NY State Open Data (free, no key): service-line
+// geometries (dataset s692-irgq) and stations (dataset 39hk-dx4f).
+const SUBWAY_LINES_RAW = join(TMP_DIR, 'subway-lines-raw.geojson')
+const SUBWAY_STATIONS_RAW = join(TMP_DIR, 'subway-stations-raw.geojson')
+const SUBWAY_LINES_SOURCES = ['https://data.ny.gov/resource/s692-irgq.geojson?$limit=100']
+const SUBWAY_STATIONS_SOURCES = ['https://data.ny.gov/resource/39hk-dx4f.geojson?$limit=1000']
+
+function buildSubway() {
+  mkdirSync(PUBLIC_DIR, { recursive: true })
+  // Service lines: keep route designation ("service": "1","A","G"…), drop the
+  // Staten Island Railway (off-map), simplify the dense linework hard.
+  execFileSync(
+    'npx',
+    [
+      'mapshaper', SUBWAY_LINES_RAW,
+      '-filter', 'service != "SIR"',
+      '-filter-fields', 'service,service_name',
+      '-simplify', '8%', 'keep-shapes',
+      '-o', 'format=geojson', 'precision=0.0001', OUT_SUBWAY_LINES,
+    ],
+    { cwd: ROOT, stdio: 'inherit' },
+  )
+  // Stations: points with display name + daytime routes ("N W").
+  execFileSync(
+    'npx',
+    [
+      'mapshaper', SUBWAY_STATIONS_RAW,
+      '-filter', 'borough != "SI"',
+      '-each', 'name = stop_name, line = daytime_routes',
+      '-filter-fields', 'name,line',
+      '-o', 'format=geojson', 'precision=0.0001', OUT_SUBWAY_STATIONS,
+    ],
+    { cwd: ROOT, stdio: 'inherit' },
+  )
+  const lines = JSON.parse(readFileSync(OUT_SUBWAY_LINES, 'utf8'))
+  const stations = JSON.parse(readFileSync(OUT_SUBWAY_STATIONS, 'utf8'))
+  if (lines.features.length < 20) throw new Error(`subway lines output suspiciously small: ${lines.features.length}`)
+  if (stations.features.length < 300) throw new Error(`subway stations output suspiciously small: ${stations.features.length}`)
+  const kb = (statSync(OUT_SUBWAY_LINES).size + statSync(OUT_SUBWAY_STATIONS).size) / 1024
+  console.log(`[fetch-geo] subway overlay: ${lines.features.length} route segments, ${stations.features.length} stations, ${kb.toFixed(0)}KB (lazy-loaded, not bundled)`)
 }
 
 // --- Step 2: verify NTA_MAP codes exist in the real file --------------------
@@ -269,9 +318,12 @@ function validate(outPath, expectedIds) {
 // --- main --------------------------------------------------------------------
 
 await download()
+await downloadTo(SUBWAY_LINES_RAW, SUBWAY_LINES_SOURCES, 20, 'subway lines')
+await downloadTo(SUBWAY_STATIONS_RAW, SUBWAY_STATIONS_SOURCES, 300, 'subway stations')
 verifyCodes()
 buildGeo(NTA_MAP, DISPLAY_NAMES, OUT_GEOJSON)
 buildGeo(RULED_OUT, RULED_OUT_NAMES, OUT_RULEDOUT)
+buildSubway()
 writeNtaCodes()
 validate(OUT_GEOJSON, ALL_IDS)
 validate(OUT_RULEDOUT, Object.keys(RULED_OUT))

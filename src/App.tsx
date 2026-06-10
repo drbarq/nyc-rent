@@ -67,6 +67,7 @@ export default function App() {
   const [settingsOpen, setSettingsOpen] = useState(false)
   const [focus, setFocus] = useState<{ id: NeighborhoodId; n: number } | null>(null)
   const [mapMode, setMapMode] = useState<'score' | 'rent'>('score')
+  const [trains, setTrains] = useState(false)
   const [poiId, setPoiId] = useState('office')
   const [settings, updateSettings] = useSettings()
   const rents = useRents()
@@ -260,6 +261,7 @@ export default function App() {
           chips={chips}
           legend={legend}
           anchor={anchor}
+          trains={trains}
           selectedId={selectedId}
           onSelect={(id) => {
             setSelectedId(id)
@@ -286,6 +288,17 @@ export default function App() {
             aria-pressed={mapMode === 'rent'}
           >
             Rent
+          </button>
+        </div>
+
+        <div className="map-toggle trains-toggle">
+          <button
+            type="button"
+            className={trains ? 'on' : ''}
+            onClick={() => setTrains((t) => !t)}
+            aria-pressed={trains}
+          >
+            Trains
           </button>
         </div>
 
