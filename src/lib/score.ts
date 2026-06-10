@@ -38,15 +38,17 @@ export function rentForScore(f: RentFigure): number | null {
 }
 
 /**
- * Signed budget fit, normalized 0..1. Under $4K scores up; the $4.0–4.5K
- * "stretch zone" declines gently; above $4.5K it falls off steeply (no cliff at $4K).
+ * Signed budget fit, normalized 0..1, anchored on a configurable target.
+ * Under target scores up; the target→target+$500 "stretch zone" declines gently;
+ * past that it falls off steeply (no cliff at the target itself).
  */
-export function budgetScore(rent: number | null): number {
+export function budgetScore(rent: number | null, target: number = BUDGET_TARGET): number {
   if (rent == null) return 0.5 // unknown: neutral, never invented
-  if (rent <= 3200) return 1
-  if (rent <= BUDGET_TARGET) return 1 - ((rent - 3200) / 800) * 0.35 // 1.00 → 0.65
-  if (rent <= STRETCH_ZONE_MAX) return 0.65 - ((rent - BUDGET_TARGET) / 500) * 0.2 // 0.65 → 0.45
-  return clamp01(0.45 - ((rent - STRETCH_ZONE_MAX) / 1100) * 0.45) // 0.45 → 0 at $5.6K
+  const stretchMax = target + (STRETCH_ZONE_MAX - BUDGET_TARGET)
+  if (rent <= target - 800) return 1
+  if (rent <= target) return 1 - ((rent - (target - 800)) / 800) * 0.35 // 1.00 → 0.65
+  if (rent <= stretchMax) return 0.65 - ((rent - target) / 500) * 0.2 // 0.65 → 0.45
+  return clamp01(0.45 - ((rent - stretchMax) / 1100) * 0.45) // 0.45 → 0 at target+$1.6K
 }
 
 /** Door-to-door midpoint mapped so ~10 min ≈ 1.0 and ~45 min ≈ 0, minus a transfer penalty. */
@@ -131,11 +133,12 @@ export function scoreAll(
   moto: Record<NeighborhoodId, MotoInfo>,
   weights: Weights,
   motoOn: boolean,
+  budgetTarget: number = BUDGET_TARGET,
 ): Record<NeighborhoodId, Scored> {
   const rows = ids.map((id) => {
     const rent = rentForScore(rents[id])
     const subs = {
-      budget: budgetScore(rent),
+      budget: budgetScore(rent, budgetTarget),
       commute: commuteScore(commute[id]),
       vibe: vibeScore(vibe[id]),
       moto: motoScore(moto[id]),

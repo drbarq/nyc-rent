@@ -1,0 +1,561 @@
+{
+  "pois": [
+    {
+      "id": "jfk",
+      "label": "JFK Airport (flights home)",
+      "short": "JFK",
+      "lng": -73.7781,
+      "lat": 40.6413,
+      "commute": {
+        "east-village": {
+          "lines": [
+            "J",
+            "Z",
+            "AIRTRAIN"
+          ],
+          "ferry": false,
+          "timeMin": 70,
+          "timeMax": 90,
+          "transfersMin": 1,
+          "transfersMax": 2,
+          "note": "Walk to Essex St for the J/Z straight to Sutphin Blvd, then the $8.75 AirTrain; slow but only one transfer — a car runs ~$70-100."
+        },
+        "lower-east-side": {
+          "lines": [
+            "J",
+            "Z",
+            "AIRTRAIN"
+          ],
+          "ferry": false,
+          "timeMin": 65,
+          "timeMax": 90,
+          "transfersMin": 1,
+          "transfersMax": 2,
+          "note": "One of the easier downtown JFK rides: J/Z from Delancey-Essex runs direct to Sutphin Blvd-Archer Av for the AirTrain."
+        },
+        "williamsburg": {
+          "lines": [
+            "L",
+            "A",
+            "J",
+            "AIRTRAIN"
+          ],
+          "ferry": false,
+          "timeMin": 70,
+          "timeMax": 95,
+          "transfersMin": 1,
+          "transfersMax": 3,
+          "note": "L to Broadway Junction, A to Howard Beach, AirTrain — or the slow one-seat J from Marcy Av to Sutphin; budget ~80 min either way, or a ~$55-75 car."
+        },
+        "east-williamsburg": {
+          "lines": [
+            "L",
+            "A",
+            "AIRTRAIN"
+          ],
+          "ferry": false,
+          "timeMin": 65,
+          "timeMax": 90,
+          "transfersMin": 2,
+          "transfersMax": 3,
+          "note": "L to Broadway Junction, A to Howard Beach, then the AirTrain; tolerable off-peak, miserable with luggage at rush — a car is ~$55-70."
+        },
+        "greenpoint": {
+          "lines": [
+            "G",
+            "E",
+            "AIRTRAIN"
+          ],
+          "ferry": false,
+          "timeMin": 80,
+          "timeMax": 105,
+          "transfersMin": 2,
+          "transfersMax": 3,
+          "note": "The worst of the ten: G to Court Sq, E to Jamaica, AirTrain — call it 90 minutes on a good day; most people just book a ~$60-80 car."
+        },
+        "bushwick": {
+          "lines": [
+            "L",
+            "A",
+            "J",
+            "AIRTRAIN"
+          ],
+          "ferry": false,
+          "timeMin": 60,
+          "timeMax": 85,
+          "transfersMin": 1,
+          "transfersMax": 3,
+          "note": "Best-placed of the Brooklyn picks: L to Broadway Junction then A to Howard Beach, or J/Z along Broadway straight to Sutphin; ~$50-65 by car."
+        },
+        "astoria": {
+          "lines": [
+            "N",
+            "W",
+            "7",
+            "E",
+            "AIRTRAIN"
+          ],
+          "ferry": false,
+          "timeMin": 75,
+          "timeMax": 100,
+          "transfersMin": 3,
+          "transfersMax": 3,
+          "note": "Awkward Queens-to-Queens trip: N/W to the 7 to the E at Roosevelt Av, then AirTrain — roughly 90 minutes, so most people pay ~$50-70 for a car."
+        },
+        "long-island-city": {
+          "lines": [
+            "E",
+            "AIRTRAIN"
+          ],
+          "ferry": false,
+          "timeMin": 60,
+          "timeMax": 80,
+          "transfersMin": 1,
+          "transfersMax": 2,
+          "note": "Surprisingly clean: one E train from Court Sq to Sutphin Blvd-Archer Av, then the $8.75 AirTrain."
+        },
+        "hells-kitchen": {
+          "lines": [
+            "LIRR",
+            "E",
+            "AIRTRAIN"
+          ],
+          "ferry": false,
+          "timeMin": 55,
+          "timeMax": 80,
+          "transfersMin": 1,
+          "transfersMax": 2,
+          "note": "Fastest of the ten: LIRR from Moynihan/Penn to Jamaica in ~20 minutes plus AirTrain, or the cheaper one-seat E; a cab is $90-120 with the $70 flat fare, tolls, and fees."
+        },
+        "yorkville": {
+          "lines": [
+            "4",
+            "5",
+            "6",
+            "LIRR",
+            "AIRTRAIN"
+          ],
+          "ferry": false,
+          "timeMin": 65,
+          "timeMax": 90,
+          "transfersMin": 2,
+          "transfersMax": 3,
+          "note": "4/5/6 to Grand Central, LIRR to Jamaica in ~20 minutes, then AirTrain — long but smooth; a cab runs $90-120 either direction."
+        }
+      }
+    },
+    {
+      "id": "lga",
+      "label": "LaGuardia Airport",
+      "short": "LGA",
+      "lng": -73.874,
+      "lat": 40.7769,
+      "commute": {
+        "east-village": {
+          "lines": [
+            "F",
+            "M",
+            "Q70"
+          ],
+          "ferry": false,
+          "timeMin": 55,
+          "timeMax": 75,
+          "transfersMin": 1,
+          "transfersMax": 2,
+          "note": "F or M out to Jackson Heights-Roosevelt Av, then the free Q70 to the terminals; a car is ~$40-60."
+        },
+        "lower-east-side": {
+          "lines": [
+            "F",
+            "Q70"
+          ],
+          "ferry": false,
+          "timeMin": 55,
+          "timeMax": 80,
+          "transfersMin": 1,
+          "transfersMax": 2,
+          "note": "F from Delancey or East Broadway to Roosevelt Av, then the free Q70; workable, or a ~$40-60 car."
+        },
+        "williamsburg": {
+          "lines": [
+            "G",
+            "7",
+            "Q70"
+          ],
+          "ferry": false,
+          "timeMin": 55,
+          "timeMax": 80,
+          "transfersMin": 2,
+          "transfersMax": 3,
+          "note": "No good rail link from north Brooklyn: G to Court Sq, 7 to 74 St, free Q70 — most people pay $35-60 for a car instead."
+        },
+        "east-williamsburg": {
+          "lines": [
+            "L",
+            "G",
+            "7",
+            "Q70"
+          ],
+          "ferry": false,
+          "timeMin": 60,
+          "timeMax": 85,
+          "transfersMin": 2,
+          "transfersMax": 3,
+          "note": "A three-seat slog (L, G, 7, then the Q70) for a trip of about six miles; with a flight bag a ~$35-55 car wins."
+        },
+        "greenpoint": {
+          "lines": [
+            "G",
+            "7",
+            "Q70"
+          ],
+          "ferry": false,
+          "timeMin": 50,
+          "timeMax": 75,
+          "transfersMin": 2,
+          "transfersMax": 3,
+          "note": "LGA is only ~5 miles away but transit is a G-to-7-to-Q70 chain; a ~$30-45 car is hard to resist."
+        },
+        "bushwick": {
+          "lines": [
+            "M",
+            "Q70",
+            "L"
+          ],
+          "ferry": false,
+          "timeMin": 70,
+          "timeMax": 95,
+          "transfersMin": 1,
+          "transfersMax": 3,
+          "note": "The one-seat M loops through Manhattan before reaching Roosevelt Av for the Q70 — about 80 minutes for a 7-mile trip; cars run ~$40-55."
+        },
+        "astoria": {
+          "lines": [
+            "M60",
+            "N",
+            "W"
+          ],
+          "ferry": false,
+          "timeMin": 25,
+          "timeMax": 45,
+          "transfersMin": 0,
+          "transfersMax": 1,
+          "note": "The easy one: the 24-hour M60 SBS runs down Astoria Blvd straight into the terminals — 25-40 minutes door to door, no reason for a cab."
+        },
+        "long-island-city": {
+          "lines": [
+            "7",
+            "Q70",
+            "E"
+          ],
+          "ferry": false,
+          "timeMin": 40,
+          "timeMax": 60,
+          "transfersMin": 1,
+          "transfersMax": 2,
+          "note": "7 (or E/M from Court Sq) to 74 St-Roosevelt Av for the free Q70; ~45 minutes, or a ~$30-40 car."
+        },
+        "hells-kitchen": {
+          "lines": [
+            "E",
+            "7",
+            "Q70",
+            "M"
+          ],
+          "ferry": false,
+          "timeMin": 45,
+          "timeMax": 65,
+          "transfersMin": 1,
+          "transfersMax": 2,
+          "note": "E or 7 out to 74 St-Roosevelt Av, then the free Q70; cabs from Midtown run $50-75 with tolls and can crawl in traffic."
+        },
+        "yorkville": {
+          "lines": [
+            "4",
+            "5",
+            "6",
+            "M60"
+          ],
+          "ferry": false,
+          "timeMin": 40,
+          "timeMax": 65,
+          "transfersMin": 1,
+          "transfersMax": 2,
+          "note": "4/5/6 one stop to 125 St, then the M60 SBS over the RFK Bridge; 125th St traffic can drag, and a car is ~$35-50."
+        }
+      }
+    },
+    {
+      "id": "central-park",
+      "label": "Central Park (the lawn)",
+      "short": "Central Park",
+      "lng": -73.9772,
+      "lat": 40.7722,
+      "commute": {
+        "east-village": {
+          "lines": [
+            "N",
+            "Q",
+            "R",
+            "W",
+            "6"
+          ],
+          "ferry": false,
+          "timeMin": 25,
+          "timeMax": 40,
+          "transfersMin": 0,
+          "transfersMax": 1,
+          "note": "N/Q/R/W from Union Sq or 8 St run to 57 St-7 Av, then you walk in at 59 St; the 6 to 68 St-Hunter College covers the Fifth Ave entrances."
+        },
+        "lower-east-side": {
+          "lines": [
+            "B",
+            "D",
+            "F"
+          ],
+          "ferry": false,
+          "timeMin": 30,
+          "timeMax": 45,
+          "transfersMin": 0,
+          "transfersMax": 1,
+          "note": "The weekday B from Grand St lands at the 72 St-Central Park West entrance, no transfer; the D gets you Columbus Circle, and from the Essex end the F to 57 St leaves a walk."
+        },
+        "williamsburg": {
+          "lines": [
+            "L",
+            "Q",
+            "M"
+          ],
+          "ferry": false,
+          "timeMin": 38,
+          "timeMax": 52,
+          "transfersMin": 1,
+          "transfersMax": 1,
+          "note": "No one-seat ride: L to Union Sq then a N/Q/R/W up Broadway, or M to 34 St then B/D up Central Park West — the park is a planned trip, not a stroll."
+        },
+        "east-williamsburg": {
+          "lines": [
+            "L",
+            "M"
+          ],
+          "ferry": false,
+          "timeMin": 45,
+          "timeMax": 60,
+          "transfersMin": 1,
+          "transfersMax": 2,
+          "note": "Same L-plus-Midtown-transfer as Williamsburg with ten more minutes on the front; for casual green space you'll use McCarren or Cooper Park instead."
+        },
+        "greenpoint": {
+          "lines": [
+            "G",
+            "E"
+          ],
+          "ferry": false,
+          "timeMin": 40,
+          "timeMax": 55,
+          "transfersMin": 1,
+          "transfersMax": 2,
+          "note": "G to Court Sq, E to 7 Av-53 St, then a walk up Seventh into the park — nothing about this trip is quick, so weekend visits take commitment."
+        },
+        "bushwick": {
+          "lines": [
+            "M",
+            "L"
+          ],
+          "ferry": false,
+          "timeMin": 50,
+          "timeMax": 65,
+          "transfersMin": 1,
+          "transfersMax": 2,
+          "note": "M up Sixth Ave then B/D to Central Park West, or L to Union Sq then a Broadway train — call it an hour to the lawn, the worst of the ten."
+        },
+        "astoria": {
+          "lines": [
+            "N",
+            "W"
+          ],
+          "ferry": false,
+          "timeMin": 30,
+          "timeMax": 42,
+          "transfersMin": 0,
+          "transfersMax": 0,
+          "note": "N/W run straight to 57 St-7 Av two blocks from the park's south edge — no transfer, then a ten-minute walk up to the lawn."
+        },
+        "long-island-city": {
+          "lines": [
+            "E",
+            "M",
+            "F",
+            "7"
+          ],
+          "ferry": false,
+          "timeMin": 28,
+          "timeMax": 40,
+          "transfersMin": 0,
+          "transfersMax": 1,
+          "note": "E or M from Court Sq to the 53 St stops then a walk up; the F from 21 St-Queensbridge reaches 57 St two blocks from the park. Short rides, walk-heavy endings."
+        },
+        "hells-kitchen": {
+          "lines": [
+            "1",
+            "A",
+            "C",
+            "B",
+            "D"
+          ],
+          "ferry": false,
+          "timeMin": 10,
+          "timeMax": 22,
+          "transfersMin": 0,
+          "transfersMax": 0,
+          "note": "From the upper 40s and 50s you can simply walk to Columbus Circle; otherwise the 1 to 66 St or any A/C/B/D to 59 St puts you at the park edge in minutes."
+        },
+        "yorkville": {
+          "lines": [
+            "Q",
+            "6"
+          ],
+          "ferry": false,
+          "timeMin": 12,
+          "timeMax": 25,
+          "transfersMin": 0,
+          "transfersMax": 0,
+          "note": "Q one stop to 72 St then a crosstown walk to the Fifth Ave entrance — or skip the train entirely, since much of Yorkville can walk into the park along Museum Mile."
+        }
+      }
+    },
+    {
+      "id": "penn",
+      "label": "Penn Station (Amtrak/LIRR/NJT escapes)",
+      "short": "Penn Station",
+      "lng": -73.9935,
+      "lat": 40.7506,
+      "commute": {
+        "east-village": {
+          "lines": [
+            "N",
+            "R",
+            "W",
+            "L"
+          ],
+          "ferry": false,
+          "timeMin": 18,
+          "timeMax": 28,
+          "transfersMin": 0,
+          "transfersMax": 1,
+          "note": "N/R/W to Herald Sq leaves a seven-minute walk with your bag; the L to 14 St with an A/C/E or 1/2/3 transfer drops you inside Penn instead."
+        },
+        "lower-east-side": {
+          "lines": [
+            "F",
+            "M"
+          ],
+          "ferry": false,
+          "timeMin": 22,
+          "timeMax": 32,
+          "transfersMin": 0,
+          "transfersMax": 1,
+          "note": "F or M direct to Herald Sq then a seven-minute walk; with luggage, F to W 4 St plus an A/C/E up to Penn keeps the whole trip underground."
+        },
+        "williamsburg": {
+          "lines": [
+            "M",
+            "L"
+          ],
+          "ferry": false,
+          "timeMin": 28,
+          "timeMax": 38,
+          "transfersMin": 0,
+          "transfersMax": 1,
+          "note": "M to Herald Sq plus a short walk is the default; from the Bedford end, the L to 14 St connects to the A/C/E, which lands inside the station."
+        },
+        "east-williamsburg": {
+          "lines": [
+            "L",
+            "M"
+          ],
+          "ferry": false,
+          "timeMin": 32,
+          "timeMax": 42,
+          "transfersMin": 0,
+          "transfersMax": 1,
+          "note": "L to 14 St then A/C/E or 1/2/3 into Penn; near the Flushing Av edge the M reaches Herald Sq direct with the walk left over."
+        },
+        "greenpoint": {
+          "lines": [
+            "G",
+            "E"
+          ],
+          "ferry": false,
+          "timeMin": 30,
+          "timeMax": 40,
+          "transfersMin": 1,
+          "transfersMax": 1,
+          "note": "G to Court Sq then the E runs straight into Penn — the transfer is unavoidable, but at least you surface inside the station."
+        },
+        "bushwick": {
+          "lines": [
+            "M",
+            "L",
+            "J"
+          ],
+          "ferry": false,
+          "timeMin": 38,
+          "timeMax": 48,
+          "transfersMin": 0,
+          "transfersMax": 1,
+          "note": "M to Herald Sq leaves a seven-minute walk; from the Wilson Av end budget closer to an hour, which stings when you're racing an Amtrak departure."
+        },
+        "astoria": {
+          "lines": [
+            "N",
+            "W"
+          ],
+          "ferry": false,
+          "timeMin": 22,
+          "timeMax": 32,
+          "transfersMin": 0,
+          "transfersMax": 0,
+          "note": "N/W direct to Herald Sq then a seven-minute walk to Penn — no transfer, just remember to pad the walk when you have a train to catch."
+        },
+        "long-island-city": {
+          "lines": [
+            "E",
+            "7"
+          ],
+          "ferry": false,
+          "timeMin": 12,
+          "timeMax": 20,
+          "transfersMin": 0,
+          "transfersMax": 0,
+          "note": "E from Court Sq surfaces inside Penn a few stops later — the easiest train-escape setup of the ten; the 7 to Times Sq is the backup."
+        },
+        "hells-kitchen": {
+          "lines": [
+            "A",
+            "C",
+            "E",
+            "1"
+          ],
+          "ferry": false,
+          "timeMin": 8,
+          "timeMax": 18,
+          "transfersMin": 0,
+          "transfersMax": 0,
+          "note": "Most of Hell's Kitchen walks to Penn in 10-15 minutes; with luggage it's one A/C/E stop from 42 St or the 1 from 50 St."
+        },
+        "yorkville": {
+          "lines": [
+            "Q"
+          ],
+          "ferry": false,
+          "timeMin": 25,
+          "timeMax": 35,
+          "transfersMin": 0,
+          "transfersMax": 1,
+          "note": "Q direct to Herald Sq then a seven-minute walk; transferring to the 1/2/3 at Times Sq lands you inside Penn, worth it with a suitcase."
+        }
+      }
+    }
+  ]
+}

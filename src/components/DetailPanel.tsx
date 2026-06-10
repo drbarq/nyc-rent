@@ -1,10 +1,14 @@
 import { basisLabel, money, rentDisplay, trendDisplay } from '../lib/format'
 import type { Scored } from '../lib/score'
 import type {
+  AmenityInfo,
+  AppSettings,
+  Brief,
   CommuteInfo,
   MotoInfo,
   Neighborhood,
   RentFigure,
+  SceneInfo,
   VibeInfo,
 } from '../lib/types'
 import { BulletStrip } from './BulletStrip'
@@ -16,15 +20,14 @@ interface Props {
   commute: CommuteInfo
   vibe: VibeInfo
   moto: MotoInfo
+  amenities: AmenityInfo
+  scene: SceneInfo
+  brief: Brief
   motoOn: boolean
   anchorShort: string
+  settings: AppSettings
   onClose: () => void
 }
-
-const SCALE_LO = 3000
-const SCALE_HI = 5600
-const pct = (n: number) =>
-  `${Math.min(100, Math.max(0, ((n - SCALE_LO) / (SCALE_HI - SCALE_LO)) * 100))}%`
 
 export function DetailPanel({
   hood,
@@ -33,12 +36,22 @@ export function DetailPanel({
   commute,
   vibe,
   moto,
+  amenities,
+  scene,
+  brief,
   motoOn,
   anchorShort,
+  settings,
   onClose,
 }: Props) {
   const trend = trendDisplay(rent.trendYoY)
-  const listingsUrl = `https://streeteasy.com/for-rent/${hood.streetEasyArea}/price:-4000%7Cbeds:1`
+  const listingsUrl = `https://streeteasy.com/for-rent/${hood.streetEasyArea}/price:-${settings.linkCap}%7Cbeds:1`
+
+  // Budget scale bounds track the configurable target (stretch zone = target → +$500).
+  const scaleLo = settings.budgetTarget - 1000
+  const scaleHi = settings.budgetTarget + 1600
+  const pct = (n: number) =>
+    `${Math.min(100, Math.max(0, ((n - scaleLo) / (scaleHi - scaleLo)) * 100))}%`
 
   return (
     <aside className="detail" role="region" aria-label={`${hood.name} details`}>
@@ -95,17 +108,28 @@ export function DetailPanel({
         <p className="fourk">
           <strong>What $4K gets you:</strong> {rent.whatFourKGets}
         </p>
-        <div className="budget-scale" aria-label="Where this rent sits against your $4,000 budget">
+        <div
+          className="budget-scale"
+          aria-label={`Where this rent sits against your ${money(settings.budgetTarget)} budget`}
+        >
           <div className="track">
-            <span className="stretch" style={{ left: pct(4000), width: `calc(${pct(4500)} - ${pct(4000)})` }} />
+            <span
+              className="stretch"
+              style={{
+                left: pct(settings.budgetTarget),
+                width: `calc(${pct(settings.budgetTarget + 500)} - ${pct(settings.budgetTarget)})`,
+              }}
+            />
             {scored.rentUsedForScore != null && (
               <span className="marker" style={{ left: pct(scored.rentUsedForScore) }} />
             )}
           </div>
           <div className="labels num">
-            <span>{money(SCALE_LO)}</span>
-            <span>$4K → $4.5K stretch zone</span>
-            <span>{money(SCALE_HI)}</span>
+            <span>{money(scaleLo)}</span>
+            <span>
+              {money(settings.budgetTarget)} → {money(settings.budgetTarget + 500)} stretch zone
+            </span>
+            <span>{money(scaleHi)}</span>
           </div>
         </div>
       </section>
@@ -144,6 +168,76 @@ export function DetailPanel({
         )}
       </section>
 
+      {scene.meal.casual > 0 && (
+        <section className="detail-section" aria-label="Going out">
+          <h3>Going out</h3>
+          <div className="fact-row">
+            <span className="k">Casual dinner</span>
+            <span className="v num">~${scene.meal.casual}/person</span>
+          </div>
+          <p className="note">{scene.meal.note}</p>
+          <div className="fact-row">
+            <span className="k">Singles scene</span>
+            <span className="v num">{scene.dating.score}/10</span>
+          </div>
+          <p className="note">{scene.dating.note}</p>
+          <div className="fact-row">
+            <span className="k">Things to do</span>
+            <span className="v num">{scene.thingsToDo.score}/10</span>
+          </div>
+          <p className="note">{scene.thingsToDo.note}</p>
+          {scene.sources.length > 0 && (
+            <p className="vibe-sources">Sources: {scene.sources.join(' · ')}</p>
+          )}
+        </section>
+      )}
+
+      {amenities.sources.length > 0 && (
+        <section className="detail-section" aria-label="Daily life">
+          <h3>Daily life</h3>
+          {(
+            [
+              ['Parks', amenities.parks],
+              ['Gyms', amenities.gyms],
+              ['Groceries', amenities.groceries],
+              ['Coffee / WFH', amenities.coffee],
+            ] as const
+          ).map(([label, fact]) => (
+            <div key={label}>
+              <div className="fact-row">
+                <span className="k">{label}</span>
+                <span className="v num">{fact.score}/10</span>
+              </div>
+              <p className="note">{fact.note}</p>
+            </div>
+          ))}
+          <div className="fact-row">
+            <span className="k">Washer/dryer</span>
+            <span className="v" />
+          </div>
+          <p className="note">{amenities.laundry.note}</p>
+          <p className="vibe-sources">Sources: {amenities.sources.join(' · ')}</p>
+        </section>
+      )}
+
+      {brief.summary && (
+        <section className="detail-section" aria-label="Newcomer brief">
+          <details className="brief">
+            <summary>The brief — if you know nothing about NYC</summary>
+            <p>{brief.summary}</p>
+            <p>
+              <strong>You'll complain about:</strong> {brief.complaints}
+            </p>
+            <p>
+              <strong>Bottom line for you:</strong> {brief.bottomLine}
+            </p>
+            {brief.sources.length > 0 && (
+              <p className="vibe-sources">Sources: {brief.sources.join(' · ')}</p>
+            )}
+          </details>
+        </section>
+      )}
+
       <section className="detail-section" aria-label="Practicalities">
         <h3>Practicalities</h3>
         <div className="fact-row">
@@ -177,7 +271,7 @@ export function DetailPanel({
           target="_blank"
           rel="noopener noreferrer"
         >
-          View live listings on StreetEasy — 1BR under $4,000 ↗
+          View live listings on StreetEasy — 1BR under {money(settings.linkCap)} ↗
         </a>
       </section>
 

@@ -27,12 +27,20 @@ export interface ChipSpec {
   top: number | null
 }
 
+export interface AnchorSpec {
+  label: string
+  lng: number
+  lat: number
+}
+
 interface Props {
   scores: Record<NeighborhoodId, Scored>
   /** Polygon fill per neighborhood — score or rent coloring, computed upstream. */
   colors: Record<NeighborhoodId, string>
   chips: Record<NeighborhoodId, ChipSpec>
   legend: LegendSpec
+  /** The active destination — the pin follows it. */
+  anchor: AnchorSpec
   selectedId: NeighborhoodId | null
   onSelect: (id: NeighborhoodId | null) => void
   /** Bumping `n` flies the map to neighborhood `id` (set by ranked-list clicks). */
@@ -130,6 +138,7 @@ export function MapView({
   colors,
   chips,
   legend,
+  anchor,
   selectedId,
   onSelect,
   focus,
@@ -139,6 +148,7 @@ export function MapView({
   const mapRef = useRef<MlMap | null>(null)
   const hoverIdRef = useRef<NeighborhoodId | null>(null)
   const chipsRef = useRef(new Map<NeighborhoodId, maplibregl.Marker>())
+  const anchorRef = useRef<maplibregl.Marker | null>(null)
   const [ready, setReady] = useState(false)
   const [tip, setTip] = useState<Tip | null>(null)
 
@@ -179,11 +189,11 @@ export function MapView({
       setReady(true)
     })
 
-    // Midtown anchor pin — always visible (PRD F1).
+    // Destination anchor pin — always visible (PRD F1); follows the active POI.
     const el = document.createElement('div')
     el.className = 'anchor-pin'
-    el.innerHTML = `<span class="dot"></span><span class="tag">${registry.anchor.label.replace('Office — ', 'OFFICE · ')}</span>`
-    new maplibregl.Marker({ element: el, anchor: 'top' })
+    el.innerHTML = '<span class="dot"></span><span class="tag"></span>'
+    anchorRef.current = new maplibregl.Marker({ element: el, anchor: 'top' })
       .setLngLat([registry.anchor.lng, registry.anchor.lat])
       .addTo(map)
 
@@ -229,11 +239,21 @@ export function MapView({
       map.remove()
       mapRef.current = null
       chipsRef.current.clear() // markers died with the map (StrictMode remounts)
+      anchorRef.current = null
       setReady(false)
     }
     // The map is created exactly once; registry is static data.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
+
+  // Keep the destination pin on the active POI.
+  useEffect(() => {
+    const marker = anchorRef.current
+    if (!marker) return
+    marker.setLngLat([anchor.lng, anchor.lat])
+    const tag = marker.getElement().querySelector('.tag')
+    if (tag) tag.textContent = anchor.label
+  }, [anchor, ready])
 
   // Recolor polygons whenever colors change — feature-state keeps this under 100ms (PRD F2).
   useEffect(() => {

@@ -1,12 +1,14 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, type KeyboardEvent } from 'react'
 import { rentDisplay } from '../lib/format'
 import type { Scored } from '../lib/score'
 import type {
+  AmenitiesFile,
   CommuteFile,
   MotoFile,
   NeighborhoodId,
   NeighborhoodsFile,
   RentFigure,
+  SceneFile,
   VibeFile,
 } from '../lib/types'
 import { BulletStrip } from './BulletStrip'
@@ -19,6 +21,8 @@ interface Props {
   commute: CommuteFile
   vibe: VibeFile
   moto: MotoFile
+  amenities: AmenitiesFile
+  scene: SceneFile
   motoOn: boolean
   onClose: () => void
   onUnpin: (id: NeighborhoodId) => void
@@ -32,6 +36,8 @@ export function CompareTable({
   commute,
   vibe,
   moto,
+  amenities,
+  scene,
   motoOn,
   onClose,
   onUnpin,
@@ -48,7 +54,7 @@ export function CompareTable({
     closeRef.current?.focus()
   }, [])
 
-  const trapTab = (e: React.KeyboardEvent) => {
+  const trapTab = (e: KeyboardEvent<HTMLDivElement>) => {
     if (e.key !== 'Tab' || !sheetRef.current) return
     const focusables = sheetRef.current.querySelectorAll<HTMLElement>(
       'button, a[href], [tabindex]:not([tabindex="-1"])',
@@ -152,6 +158,38 @@ export function CompareTable({
                 </td>
               ))}
             </tr>
+            {hoods.some((h) => scene[h.id].meal.casual > 0) && (
+              <>
+                <tr>
+                  <td>Casual dinner</td>
+                  {hoods.map((h) => (
+                    <td key={h.id} className="num">
+                      ~${scene[h.id].meal.casual}/person
+                    </td>
+                  ))}
+                </tr>
+                <tr>
+                  <td>Singles / things to do</td>
+                  {hoods.map((h) => (
+                    <td key={h.id} className="num">
+                      {scene[h.id].dating.score}/10 · {scene[h.id].thingsToDo.score}/10
+                    </td>
+                  ))}
+                </tr>
+              </>
+            )}
+            {hoods.some((h) => amenities[h.id].sources.length > 0) && (
+              <tr>
+                <td>Daily life</td>
+                {hoods.map((h) => (
+                  <td key={h.id} className="num">
+                    Parks {amenities[h.id].parks.score} · Gyms {amenities[h.id].gyms.score} ·
+                    Grocery {amenities[h.id].groceries.score} · Coffee{' '}
+                    {amenities[h.id].coffee.score}
+                  </td>
+                ))}
+              </tr>
+            )}
             {motoOn && (
               <tr>
                 <td>Motorcycle</td>

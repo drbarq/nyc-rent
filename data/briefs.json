@@ -1,0 +1,104 @@
+{
+  "east-village": {
+    "summary": "The East Village is the scruffy southeast corner of downtown Manhattan, running from 14th Street down to Houston Street and from the Bowery east to the river. It was the birthplace of American punk in the 1970s; today its tenement walk-ups hold about 65,000 people — young professionals, students, and long-timers — above one of the city's densest restaurant-and-bar scenes. Tompkins Square Park, ten acres with a famous dog run and a weekly farmers market, is the neighborhood's living room. The subway only touches the edges — the L at First Avenue, the 6 at Astor Place, the F at Second Avenue — so which of those corners you live near matters more than anything else here. A Saturday means brunch lines on Avenue A, vintage and record shopping, an afternoon in the park, and a bar night that runs well past 2 a.m.",
+    "complaints": "After three months you'll complain about noise and rats — the East Village ranks first in lower Manhattan for 311 garbage, noise, and rodent complaints, and the rats work the curbside trash bags and Tompkins Square Park itself. Most of the housing stock is prewar walk-up: no elevator, no laundry, thin walls.",
+    "bottomLine": "The 6 from Astor Place plus a crosstown walk gets you to 500 7th Ave in about 25-30 minutes, and this is the most alive neighborhood on your list, but you're trading Denver quiet for fifth-floor walk-ups and all-night street noise — pick it only if being where things happen beats sleeping well.",
+    "sources": [
+      "https://www.timeout.com/newyork/manhattan/east-village-manhattan-neighborhood-guide",
+      "https://evgrieve.com/2025/01/where-does-east-village-rate-in-list-of.html",
+      "https://theshapotteam.com/blog/what-its-like-to-live-in-the-east-village-today"
+    ]
+  },
+  "lower-east-side": {
+    "summary": "The Lower East Side sits just below Houston Street, between the Bowery and the East River. For a century it was New York's immigrant gateway — the Tenement Museum on Orchard Street tells that story — and the same tenement blocks now hold one of the city's highest densities of liquor licenses, centered on Ludlow, Rivington, and Orchard streets, a zone locals call Hell Square. Residents split by geography: twentysomethings near the bars, a scene-y crowd in Dimes Square at the Chinatown border, and a quieter, middle-class stretch south of Grand Street around Co-op Village and Seward Park. The practical anchor is the Delancey/Essex station (F, J, M, Z) at the foot of the Williamsburg Bridge, next to Essex Market, a public food hall, with a Trader Joe's and a Target in the same Essex Crossing complex. Saturdays mean Essex Market browsing, ping-pong and pickleball in Seward Park, and crowds building toward a loud night.",
+    "complaints": "The LES logs some of the highest 311 noise-complaint counts in the city, and weekend nights around Hell Square bring shouting crowds, honking from double-parked traffic, and overnight trash that feeds the rats — live near Ludlow or Orchard and you will hear all of it. South of Grand Street is genuinely quieter.",
+    "bottomLine": "The F from Delancey runs one-seat to 34th St-Herald Square (roughly 20 minutes plus a short walk to 500 7th Ave), and the neighborhood has real grit and energy, but for a possible one-year stint choose a block south of Grand or budget for earplugs.",
+    "sources": [
+      "https://www.osc.ny.gov/files/press/pdf/nyc-nightlife-noise-complaints-map.pdf",
+      "https://www.cityrealty.com/nyc/market-insight/rental-building-offers/lower-east-side/living-near-dimes-square-one-manhattan039s-last-cool-neighborhoods/63084",
+      "https://en.wikipedia.org/wiki/Delancey_Street/Essex_Street_station",
+      "https://www.thelodownny.com/leslog/2018/08/lower-east-side-target-is-now-open-at-145-clinton-st.html"
+    ]
+  },
+  "williamsburg": {
+    "summary": "Williamsburg is the Brooklyn neighborhood directly across the East River from the East Village, one subway stop from Manhattan. A 2000s development wave turned its industrial waterfront into glass condo towers, and the artists who made it famous have mostly been priced out; today it's affluent young professionals and one of the city's best food, coffee, and vintage-retail scenes. Bedford Avenue is the spine, and the Bedford Avenue L stop is the corner that matters — first stop in Brooklyn and the busiest station on the line, with roughly 27,000 weekday riders. McCarren Park (lawns, track, outdoor pool) anchors the north end, and Domino Park on the waterfront runs free Saturday-morning fitness classes with skyline views. A classic Saturday: coffee, Smorgasburg's 75-plus food vendors on the waterfront, Artists & Fleas market on North 7th, then the river esplanade at sunset.",
+    "complaints": "You'll complain about money — rent, cocktails, and groceries are all priced for the finance crowd that replaced the artists — and about Bedford Avenue on weekends, when tourist ridership keeps the L station nearly as busy as a weekday and the morning platform crush at Bedford and Lorimer is real. Weekend L service changes will strand you more than once.",
+    "bottomLine": "For a 37-year-old Denver transplant this is the closest match to your old life — McCarren and Domino parks, gyms, espresso bars you can work from — and the L-plus-one-transfer commute to 500 7th Ave runs about 30-35 minutes, so it's the lifestyle pick if the premium rent fits under $4,000.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bedford_Avenue_station",
+      "https://www.dominopark.com/events",
+      "https://www.newyorkertips.com/smorgasburg/",
+      "https://streeteasy.com/blog/williamsburg-residents-see-l-train-shutdown/"
+    ]
+  },
+  "east-williamsburg": {
+    "summary": "East Williamsburg is the industrial buffer between Williamsburg proper and Bushwick — a grid of warehouses, converted lofts, and artist studios threaded with rowhouse blocks. The L train runs through it at Grand Street, Montrose Avenue, and Morgan Avenue; Manhattan is about five stops from Grand Street. West of Morgan Avenue you get residential streets and the Graham Avenue shopping strip with its old Italian and Puerto Rican roots; east of Morgan is a zoned industrial park where music venues and studios hide inside warehouses. Cooper Park, with a well-used dog run, is the local green space, and 35-acre McCarren Park is under a mile west. A Saturday here is coffee near the Morgan stop, gallery or studio visits, groceries at City Fresh Market on Kingsland Avenue, and a show at a converted-warehouse spot like the new Green Room on Morgan Avenue.",
+    "complaints": "The blocks east of Morgan Avenue are truck routes that feel deserted after dark, and daily amenities are thin — a decent grocery run often means a ten-minute walk past loading docks. The L is quick but packed at rush hour.",
+    "bottomLine": "You would get more space for $4,000 and easy motorcycle parking on industrial blocks, but for parks, gyms, and cafe-working you would lean on neighboring Williamsburg and Greenpoint.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/East_Williamsburg,_Brooklyn",
+      "https://www.cityneighborhoods.nyc/east-williamsburg",
+      "https://www.bkmag.com/2025/11/11/green-room-golden-record-nyc-new-club-williamsburg-brooklyn/"
+    ]
+  },
+  "greenpoint": {
+    "summary": "Greenpoint is the northern tip of Brooklyn, a former shipbuilding district still known as Little Poland — Polish bakeries and delis on Manhattan Avenue, the main spine, now share blocks with wine bars and new waterfront towers at Greenpoint Landing. It feels quieter and more residential than Williamsburg next door. The only subway is the G (Greenpoint Avenue and Nassau Avenue stops), which never enters Manhattan; the NYC Ferry from the waterfront is the scenic backup. Green space is genuinely good: McCarren Park's track and fields on the southern edge, leafy McGolrick Park, and WNYC Transmitter Park on the East River with a straight-on skyline view. A Saturday is pastries on Manhattan Avenue, a run at McCarren, working from Sweetleaf or Odd Fox Coffee, a lift at the Crunch at 825 Manhattan Avenue, and a show at Warsaw, the Polish hall turned music venue.",
+    "complaints": "The G train is the whole story: it takes a transfer at Court Square or Metropolitan Avenue to reach Manhattan, and weekend shutdowns for Newtown Creek tunnel work have been near-constant, with ten full weekends suspended through 2026.",
+    "bottomLine": "The closest match to your Denver rhythm — parks, coffee, calm — but budget 45-plus minutes each way to 500 7th Ave and check G service before making weekend plans.",
+    "sources": [
+      "https://www.timeout.com/newyork/brooklyn/greenpoint-brooklyn-neighborhood-guide",
+      "https://en.wikipedia.org/wiki/Greenpoint,_Brooklyn",
+      "https://greenpointers.com/2026/03/30/an-open-letter-to-the-mta-greenpoint-deserves-better-communication/"
+    ]
+  },
+  "bushwick": {
+    "summary": "Bushwick sits southeast of Williamsburg along the L train — anchor on the Jefferson Street or DeKalb Avenue stops, about 20 minutes to Union Square. It is a working-class neighborhood with deep Puerto Rican, Dominican, Mexican, and Ecuadorian roots that became the city's loudest arts-and-nightlife district: block-long murals at the Bushwick Collective, warehouse parties, and venues like House of Yes and Elsewhere that run until sunrise. Housing is mostly rowhouses and converted lofts, and rents are the lowest of the north Brooklyn options — a one-bedroom averaged around $3,100 in fall 2025. Maria Hernandez Park, almost seven acres with dog runs, a farmers market, and weekend pickup soccer, is the center of daily life. A Saturday is coffee at Kave Espresso Bar or Variety on Wyckoff Avenue, tacos, the park, then whatever show your neighbors are going to.",
+    "complaints": "Trash, noise, and the occasional desolate warehouse block are part of the deal — NYPD data puts Bushwick in the lower third of Brooklyn neighborhoods for safety — and the L at rush hour is standing-room before it crosses the river.",
+    "bottomLine": "The most rent headroom under $4,000 and the biggest nightlife, but the scene skews mid-20s and the streetscape is the grittiest of the three — walk it at night before signing anything.",
+    "sources": [
+      "https://www.timeout.com/newyork/brooklyn/bushwick-brooklyn-neighborhood-guide",
+      "https://streeteasy.com/blog/bushwick-brooklyn-affordable-for-renters-buyers/",
+      "https://dwellcheck.io/nyc/brooklyn/bushwick"
+    ]
+  },
+  "astoria": {
+    "summary": "Astoria sits in northwest Queens, across the East River from Manhattan's Upper East Side, and it has long been a classic first stop for transplants. The Greek community that built its reputation is still visible — Taverna Kyclades for grilled octopus, Artopolis for pastries — but 30th Avenue now stacks Greek, Egyptian, Colombian, and Bengali food within a few blocks. Housing is mostly low-rise rowhouses and walk-ups on leafy side streets rather than towers. A Saturday means a run or tennis in Astoria Park under the Triborough Bridge — it holds the city's largest public pool — then an afternoon table at Bohemian Hall, a Czech beer garden pouring since 1910. The people are a genuine mix: longtime Greek and Egyptian families, newer immigrants, and thirty-something professionals who wanted more space than Manhattan or Brooklyn would give them.",
+    "complaints": "The commute is the tax: 40 to 55 minutes door-to-door to Midtown on the N/W, packed at rush hour, and any problem on the Broadway line lands directly on you. Friends in Brooklyn or downtown will treat a visit to Queens like a road trip.",
+    "bottomLine": "Astoria is the value play of these four — the most apartment, park life, and food for your $4,000 — if you can accept the longest train ride to 37th Street.",
+    "sources": [
+      "Time Out New York, Astoria Queens neighborhood guide — https://www.timeout.com/newyork/queens/astoria-queens-neighborhood-guide",
+      "New York Dearest, Helpful guide to Astoria, Queens — https://newyorkdearest.com/things-to-do-astoria-queens/",
+      "Dwellcheck, Living in Astoria — https://dwellcheck.io/guides/living-in-astoria"
+    ]
+  },
+  "long-island-city": {
+    "summary": "Long Island City is the newest-feeling neighborhood on this list: a former industrial waterfront in Queens, directly across the East River from Midtown, rebuilt over the last two decades into a wall of glass rental towers with gyms, roof decks, and doormen. Gantry Plaza State Park and Hunter's Point South Park run along the river — restored loading gantries, piers, and dog runs facing the Manhattan skyline. The 7, E, M, and G trains at Court Square put Midtown one or two stops away, and the NYC Ferry leaves from Hunters Point. A Saturday looks like a waterfront run, contemporary art at MoMA PS1 on Jackson Avenue, groceries at the Trader Joe's across the street from it, and dinner at the JACX&CO food hall. Residents skew young, professional, and transient — many are on their first NYC lease, like you would be.",
+    "complaints": "Away from the waterfront the streets between towers can still feel sterile, and residents themselves told a local survey the neighborhood most needs more grocery stores, pharmacies, and restaurants. It can read as a place people pass through rather than belong to.",
+    "bottomLine": "For a possibly one-year stint, LIC is the lowest-friction landing: a short commute, cat-friendly amenity buildings, and a waterfront to run on — the trade is that it feels new rather than lived-in.",
+    "sources": [
+      "NY State Parks, Gantry Plaza State Park — https://parks.ny.gov/visit/state-parks/gantry-plaza-state-park",
+      "LIC Post, LIC residents want more restaurants, pharmacies, and grocery stores, according to survey — https://licpost.com/lic-residents-want-more-restaurants-pharmacies-and-grocery-stores-according-to-survey",
+      "City Limits, Long Island City is on the verge of transformation, again — https://citylimits.org/long-island-city-is-on-the-verge-of-transformation-again/"
+    ]
+  },
+  "hells-kitchen": {
+    "summary": "Hell's Kitchen is the slice of Midtown Manhattan west of Eighth Avenue, running from 34th to 59th Street out to the Hudson River — which puts your office at 37th and 7th within a 10-to-20-minute walk. Housing is mostly five-story brick walk-ups with newer towers on the avenues, and residents skew toward young professionals plus Broadway performers and backstage crew, since the Theater District sits next door and Theatre Row's stages line West 42nd. Ninth Avenue is the spine: close to a hundred restaurants, from Thai standbys like Wondee Siam to Tulcingo Del Valle's decades-old chicken mole, plus Restaurant Row on 46th Street, which has fed theatergoers for over a century. Saturdays pull you west, away from the Times Square crush, to Hudson River Park's piers and the riverside greenway for a run or a bike ride along the water.",
+    "complaints": "Traffic on the avenues wraps the blocks in noise, sidewalks near Eighth Avenue jam with Broadway-bound tourists at theater hours, and the Times Square spillover keeps parts of it dirty and overpriced. Walk-up apartments here tend to be small and old for the rent.",
+    "bottomLine": "This is the only option where you can walk to your desk at 500 7th Ave and skip the subway entirely — a real win for a one-year stint, as long as you can live with the noise and the tourists.",
+    "sources": [
+      "Wikipedia, Hell's Kitchen, Manhattan — https://en.wikipedia.org/wiki/Hell's_Kitchen,_Manhattan",
+      "CityNeighborhoods.NYC, Hell's Kitchen (Clinton) — https://www.cityneighborhoods.nyc/hells-kitchen-clinton",
+      "StreetAdvisor, Clinton / Hells Kitchen guide — https://www.streetadvisor.com/clinton-hells-kitchen-manhattan-new-york-city-new-york"
+    ]
+  },
+  "yorkville": {
+    "summary": "Yorkville is the eastern, quieter end of Manhattan's Upper East Side, in the East 80s and low 90s between Third Avenue and the East River. It's a calm residential district of walk-ups, postwar towers, and mom-and-pop shops, with rents that count as relatively affordable by Manhattan standards; First and Second Avenues carry the restaurants and errands, and it goes sleepy toward East End Avenue. The anchor is Carl Schurz Park, fifteen riverfront acres around Gracie Mansion — the mayor's official residence — with a promenade, dog runs, and views across to Roosevelt Island. A Saturday looks like a run on the East River promenade, laps or a lift at Asphalt Green's 90th Street campus with its Olympic-size pool, and groceries at the Whole Foods on 87th and Third. The Q train at 86th and Second, opened in 2017, ended the neighborhood's old isolation.",
+    "complaints": "It is quiet to the point of dull if you want nightlife, and it sits far from everything west and downtown — friends in Brooklyn may see your apartment once or twice, and blocks near York and East End are still a long walk from any train.",
+    "bottomLine": "If your Denver routine was gym, park, coffee, and early nights, Yorkville delivers it with the most Manhattan space for $4,000 — but for a single 37-year-old's first NYC year, it can feel like sitting out the city's main event.",
+    "sources": [
+      "StreetEasy, Yorkville: what to know about this Upper East Side area — https://streeteasy.com/blog/yorkville-desirable-upper-east-side-neighborhood/",
+      "Brick Underground, What you need to know about living in Yorkville — https://www.brickunderground.com/blog/2014/04/what_you_need_to_know_about_living_in_yorkville",
+      "NYC Parks, Carl Schurz Park — https://www.nycgovparks.org/parks/carl-schurz-park"
+    ]
+  }
+}

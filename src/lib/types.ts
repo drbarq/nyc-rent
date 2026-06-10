@@ -91,6 +91,76 @@ export interface MotoInfo {
 
 export type MotoFile = Record<NeighborhoodId, MotoInfo>
 
+export interface AmenityFact {
+  /** 1–10, calibrated across the 10 neighborhoods. */
+  score: number
+  /** Named examples + honest one-liner ("McCarren Park; Transmitter for the waterfront"). */
+  note: string
+}
+
+export interface AmenityInfo {
+  parks: AmenityFact
+  gyms: AmenityFact
+  groceries: AmenityFact
+  /** WFH-able coffee shops. */
+  coffee: AmenityFact
+  /** No score — in-unit W/D is a building-stock fact, stated honestly. */
+  laundry: { note: string }
+  sources: string[]
+}
+
+export type AmenitiesFile = Record<NeighborhoodId, AmenityInfo>
+
+/** Plain-English orientation for someone who knows nothing about NYC. */
+export interface Brief {
+  /** ~100–150 words: what this place is, who lives there, what a Saturday looks like. */
+  summary: string
+  /** What you'll complain about after three months. */
+  complaints: string
+  /** One-liner tied to the user's profile. */
+  bottomLine: string
+  sources: string[]
+}
+
+export type BriefsFile = Record<NeighborhoodId, Brief>
+
+/** The going-out layer: meal costs, singles scene, things to do. */
+export interface SceneInfo {
+  /** Typical casual dinner per person in dollars, grounded in named restaurants. */
+  meal: { casual: number; note: string }
+  /** Singles/dating scene for a mid-30s professional, 1–10 + where people actually meet. */
+  dating: { score: number; note: string }
+  /** Time Out-style density of things to do, 1–10 + named anchors. */
+  thingsToDo: { score: number; note: string }
+  sources: string[]
+}
+
+export type SceneFile = Record<NeighborhoodId, SceneInfo>
+
+/** A destination you can score commutes against (office, airport, park…). */
+export interface Poi {
+  id: string
+  label: string
+  /** Short name for headings, e.g. "JFK". */
+  short: string
+  lng: number
+  lat: number
+  commute: CommuteFile
+}
+
+export interface PoisFile {
+  pois: Poi[]
+}
+
+export interface AppSettings {
+  /** Monthly budget the scoring curve anchors on. */
+  budgetTarget: number
+  /** Max price used in StreetEasy deep links. */
+  linkCap: number
+}
+
+export const DEFAULT_SETTINGS: AppSettings = { budgetTarget: 4000, linkCap: 4000 }
+
 export interface JudgePick {
   id: NeighborhoodId
   rank: 1 | 2 | 3

@@ -62,6 +62,28 @@ month. The key lives in `.env`, read only by `server/index.mjs` — it is never
 bundled client-side. Responses cache to `data/rents.cache.json`; refresh is
 on-demand only, never on page load.
 
+## Destinations, settings, and the lifestyle layers
+
+- **Commute to** (in the weights section) swaps the destination the whole app scores
+  against: Office, JFK, LaGuardia, Central Park, or Penn Station. The pin moves, the
+  ranked list re-sorts, and every commute card updates. Matrices live in
+  `data/pois.json` (the office matrix stays in `data/commute.json`).
+- **Settings** (top of the rail) sets your budget target — the scoring curve and
+  stretch zone re-anchor on it — and the price cap baked into StreetEasy deep links.
+  Persisted in localStorage.
+- **Going out** (`data/scene.json`): typical casual-dinner cost grounded in named
+  restaurants, the singles scene for a mid-30s professional, and a things-to-do
+  density score with named venues.
+- **Daily life** (`data/amenities.json`): parks, gyms, groceries, WFH coffee
+  (1–10 each, citywide-calibrated, real places named) plus the honest in-unit
+  washer/dryer outlook for that housing stock.
+- **The brief** (`data/briefs.json`): a 100–150-word orientation per neighborhood
+  written for someone who has never set foot in NYC, including what you'll complain
+  about after three months.
+
+All of these were curated by web-grounded AI agents with independent fact-check
+passes (June 2026); every entry carries sources. They're data files — edit freely.
+
 ## The AI judge panel
 
 `data/judges.json` is the output of a 4-judge LLM panel (budget hawk, scene

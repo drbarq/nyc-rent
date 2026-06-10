@@ -1,0 +1,262 @@
+{
+  "east-village": {
+    "parks": {
+      "score": 6,
+      "note": "Tompkins Square Park (with its famous dog run) is the everyday anchor, and big sections of the rebuilt East River Park waterfront reopened in May 2025 — though the northern stretch stays fenced until around 2027."
+    },
+    "gyms": {
+      "score": 7,
+      "note": "Blink Fitness on Avenue A sits a block from Tompkins Square and CrossFit East River is on 9th Street near Avenue C; VITAL's 24/7 Lower East Side climbing gym is a short walk south."
+    },
+    "groceries": {
+      "score": 9,
+      "note": "A Trader Joe's at 436 E 14th St with a Whole Foods Market Daily Shop directly across the street, plus the full Whole Foods at Bowery and Houston — about the easiest grocery setup of any of these neighborhoods, with bodegas filling every gap."
+    },
+    "coffee": {
+      "score": 9,
+      "note": "Ninth Street Espresso and Elsewhere Espresso are genuinely laptop-friendly with free wifi; Abraço pulls some of the best espresso in the city but is not built for a full workday."
+    },
+    "laundry": {
+      "note": "Mostly prewar tenement walkups where in-unit washer/dryers are rare; laundromats like Ave C Laundromat and Ten St Laundromat plus cheap wash-and-fold delivery (Liox, Rinse) are how the neighborhood actually does laundry."
+    },
+    "sources": [
+      "EV Grieve / 6sqft — Trader Joe's at 436 E 14th St and the new Whole Foods Market Daily Shop on 14th Street",
+      "NYC DDC press release — large new sections of the rebuilt East River Park opened May 2025; EV Grieve — northern section pushed to end of 2027",
+      "theworkingline.com — laptop-friendly East Village cafes including Ninth Street Espresso and Elsewhere Espresso"
+    ]
+  },
+  "lower-east-side": {
+    "parks": {
+      "score": 6,
+      "note": "Seward Park and the scruffier Sara D. Roosevelt Park cover daily green space, and the first rebuilt sections of East River Park at Corlears Hook — ballfields, lawns, tennis courts — opened in 2024-2025."
+    },
+    "gyms": {
+      "score": 7,
+      "note": "VITAL Climbing Gym's Lower East Side location offers 24/7 bouldering plus yoga and fitness classes right in the neighborhood — a real perk coming from Denver — with Blink Fitness on Avenue A a 10-15 minute walk north."
+    },
+    "groceries": {
+      "score": 8,
+      "note": "The Trader Joe's at 400 Grand St is the East Coast's largest at 30,000 sq ft, and Essex Market across Delancey covers butchers, fish, and produce stalls; a Target sits in the same Essex Crossing complex."
+    },
+    "coffee": {
+      "score": 7,
+      "note": "Ludlow Coffee Supply has plenty of seats and a back room that stays quiet for laptop work; Round K by Sol has hidden seating in back, though the neighborhood scene overall skews bar-adjacent hangout more than all-day office."
+    },
+    "laundry": {
+      "note": "Same tenement-walkup reality as the East Village — in-unit washer/dryers are rare outside the newer Essex Crossing buildings, so plan on the corner laundromat or the wash-and-fold pickup services that blanket the zip code."
+    },
+    "sources": [
+      "6sqft — Trader Joe's at 400 Grand St (Essex Crossing) is the East Coast's largest",
+      "vitalclimbinggym.com — Lower East Side location with 24/7 climbing plus unlimited yoga, fitness, and cycle classes",
+      "NYC Parks / NYC DDC — Seward Park and Sara D. Roosevelt Park details; rebuilt East River Park sections at Corlears Hook opened 2024-2025"
+    ]
+  },
+  "williamsburg": {
+    "parks": {
+      "score": 7,
+      "note": "Domino Park and Marsha P. Johnson State Park give you a real East River waterfront, and McCarren Park on the Greenpoint border adds a track, ballfields, and a big summer pool. Nothing is Prospect Park scale, but for daily use it is the best park setup in north Brooklyn."
+    },
+    "gyms": {
+      "score": 9,
+      "note": "Vital Climbing Gym (221 N 14th St) is a 45,000 sq ft, 24-hour bouldering gym with rooftop climbing and a sauna — an easy Denver-to-Brooklyn translation — and Equinox has clubs at 246 Bedford Ave and Domino. Boutique studios are everywhere."
+    },
+    "groceries": {
+      "score": 8,
+      "note": "Trader Joe's at 200 Kent Ave and a Whole Foods on Bedford Ave anchor the neighborhood, backed by deep bodega coverage. Expect long checkout lines on weekends."
+    },
+    "coffee": {
+      "score": 9,
+      "note": "Devocion (69 Grand St) is a plant-filled roaster flagship with fast wifi, outlets, and lots of seating, and Variety's original shop at 368 Graham Ave holds down the eastern edge. Laptop-friendly cafes are dense enough to rotate all week."
+    },
+    "laundry": {
+      "note": "Newer buildings like 175 Kent Ave include in-unit washer/dryers, but most prewar walkups in the $4,000 range will not have one. Central Wash Laundromat on Grand St covers self-service and wash-and-fold."
+    },
+    "sources": [
+      "NYS Parks — Marsha P. Johnson State Park is a 7-acre East River waterfront park in Williamsburg; McCarren Park sits between Williamsburg and Greenpoint",
+      "Vital Climbing Gym / Time Out New York — 24-hour, 45,000 sq ft bouldering gym at 221 N 14th St with rooftop climbing",
+      "Trader Joe's store locator — Williamsburg store at 200 Kent Ave; Equinox — Williamsburg club at 246 Bedford Ave plus Equinox Domino"
+    ]
+  },
+  "east-williamsburg": {
+    "parks": {
+      "score": 4,
+      "note": "Cooper Park is the local green space — pleasant but modest — and McCarren Park is a short walk or ride from most blocks. Much of the area is still industrial with little shade."
+    },
+    "gyms": {
+      "score": 6,
+      "note": "Absolute Power Fitness at 750 Grand St is a solid no-frills gym and Brooklyn Zoo NY on the Bushwick border does parkour and movement training. Vital and MetroRock climbing gyms are each a short ride away."
+    },
+    "groceries": {
+      "score": 5,
+      "note": "Graham Market and Bravo Supermarket handle basics along the Graham Ave corridor, and a small-format Whole Foods 'Daily Shop' is slated for 774 Grand St. A full Trader Joe's run means going to Williamsburg proper."
+    },
+    "coffee": {
+      "score": 7,
+      "note": "Sey Coffee (18 Grattan St) is one of the best roasters in the city and allows laptops with a two-hour limit; Variety at 368 Graham Ave is the dependable all-day work spot."
+    },
+    "laundry": {
+      "note": "Housing is mostly prewar walkups and loft conversions, so in-unit washer/dryers are rare at this budget. Central Wash Laundromat on Grand St does self-service plus pickup wash-and-fold."
+    },
+    "sources": [
+      "NYC Parks / Yelp — Cooper Park is East Williamsburg's low-key neighborhood park",
+      "Yelp — Absolute Power Fitness at 750 Grand St; Brooklyn Zoo NY listed among East Williamsburg gyms",
+      "Brooklyn Bridge Parents — Whole Foods 'Daily Shop' planned at 774 Grand St and a Lidl at 597 Grand St; Bushwick Daily and Food & Wine coverage of Sey Coffee"
+    ]
+  },
+  "greenpoint": {
+    "parks": {
+      "score": 7,
+      "note": "McCarren Park sits on the southern border, WNYC Transmitter Park puts a small lawn and pier right on the East River, and McGolrick Park is a quiet, tree-heavy square with a dog run. Good everyday coverage, just nothing big."
+    },
+    "gyms": {
+      "score": 6,
+      "note": "Greenpoint Athletics (188 Dupont St) covers CrossFit and Hyrox-style training and there is a Crunch in the neighborhood; for climbing, Vital in Williamsburg is about a 10-minute bike ride."
+    },
+    "groceries": {
+      "score": 6,
+      "note": "No Trader Joe's or Whole Foods in the neighborhood — Key Food at 224 McGuinness Blvd is the workhorse, supplemented by Polish meat markets and delis that are a genuine local perk."
+    },
+    "coffee": {
+      "score": 8,
+      "note": "Sweetleaf at 159 Freeman St has reliable wifi and room to spread out, Variety opened a Greenpoint outpost in June 2026, and Upright Coffee is a smaller fallback. One of the better WFH cafe scenes in the city for its size."
+    },
+    "laundry": {
+      "note": "The new Greenpoint Landing towers like Eagle + West come with in-unit Bosch washer/dryers, but the rowhouses and walkups that make up most of the neighborhood mostly do not — corner laundromats fill the gap."
+    },
+    "sources": [
+      "NYC Parks — WNYC Transmitter Park is a 1.6-acre waterfront park at the foot of Greenpoint Ave; McGolrick Park is Greenpoint's oldest park",
+      "Greenpoint Athletics / Yelp — CrossFit gym at 188 Dupont St; Crunch Fitness Greenpoint listed among local gyms",
+      "Brookfield Properties / CityRealty — Eagle + West at Greenpoint Landing includes in-unit Bosch washer/dryers; Greenpointers — Variety Coffee Greenpoint outpost opening June 2026"
+    ]
+  },
+  "bushwick": {
+    "parks": {
+      "score": 4,
+      "note": "Maria Hernandez Park (just under 7 acres, by the Jefferson St L stop) is the neighborhood's main green space and social hub; beyond it Bushwick is concrete-heavy, and a real park day means leaving the neighborhood."
+    },
+    "gyms": {
+      "score": 6,
+      "note": "MetroRock Bushwick (321 Starr St) is a full rope-and-bouldering climbing gym with some of the tallest walls in NYC — a real consolation prize for a Denver climber — and Absolute Power Fitness has a Wyckoff Ave location."
+    },
+    "groceries": {
+      "score": 5,
+      "note": "Mr. Lemon (410 Knickerbocker Ave) and City Fresh Market near Maria Hernandez Park are well-liked local supermarkets, with a Food Bazaar nearby; there is no Trader Joe's or Whole Foods in the neighborhood."
+    },
+    "coffee": {
+      "score": 7,
+      "note": "Sey Coffee on the East Williamsburg border is destination-level roasting, and Little Skips East and Lazy Suzy are the reliable laptop rooms. Plenty of choice, though spread out."
+    },
+    "laundry": {
+      "note": "Almost entirely prewar walkups and loft buildings, so in-unit washer/dryers are scarce; Knickerbocker Laundromat (192 Knickerbocker Ave) and Laundry Station (334 Knickerbocker Ave) are the standard fallback."
+    },
+    "sources": [
+      "NYC Parks — Maria Hernandez Park is Bushwick's largest community park at 6.87 acres, near the Jefferson St L station",
+      "MetroRock Bushwick / Bushwick Daily — rope and bouldering gym at 321 Starr St billed as having the tallest walls in NYC",
+      "Bushwick Daily — grocery comparison naming Mr. Lemon, City Fresh Market, Key Food on Wyckoff Ave, and Food Bazaar; laundromat roundup of full-service options"
+    ]
+  },
+  "astoria": {
+    "parks": {
+      "score": 7,
+      "note": "Astoria Park is 60 riverfront acres under the Hell Gate Bridge with NYC's largest pool, a quarter-mile track, tennis courts, and a skate park; Socrates Sculpture Park adds free waterfront art about 20 minutes south."
+    },
+    "gyms": {
+      "score": 6,
+      "note": "Budget-friendly basics like Blink Fitness (now PureGym) on Steinway Street, and Movement LIC — the former Cliffs, a 23,600 sq ft climbing gym with 45-foot rope walls — is a short subway or motorcycle hop south in Long Island City."
+    },
+    "groceries": {
+      "score": 7,
+      "note": "No Trader Joe's or Whole Foods, but Trade Fair on 30th Avenue runs 24/7 and Titan Foods — the country's largest Greek specialty grocery — reopened in the neighborhood; everyday food shopping is cheap and genuinely good."
+    },
+    "coffee": {
+      "score": 7,
+      "note": "Kinship Coffee's locations (the one near Astoria Park is the biggest and most laptop-friendly) are the WFH standby, with Astoria Coffee and Madame Sousou as backups — note a few spots cap wifi at an hour."
+    },
+    "laundry": {
+      "note": "Rowhouses and small walkups dominate, so in-unit washer/dryers are a premium find (rental sites show only about 50-60 such listings at a time); laundromats like Astoria Laundry & Cleaners are plentiful and cheap."
+    },
+    "sources": [
+      "NYC Parks / Wikipedia — Astoria Park's ~60 acres, largest city pool, quarter-mile track, and courts",
+      "QNS / Time Out — Titan Foods, the country's largest Greek specialty grocery, reopened in Astoria; Yelp/tradefairny.com — Trade Fair at 30-08 30th Ave open 24/7",
+      "theworkingline.com — laptop-friendly Astoria cafes Kinship Coffee, Astoria Coffee, and others, with wifi-limit caveats"
+    ]
+  },
+  "long-island-city": {
+    "parks": {
+      "score": 7,
+      "note": "Gantry Plaza State Park and Hunter's Point South Park run together as roughly 23 acres of East River waterfront with skyline views, piers, courts, and a dog run. Inland LIC turns to concrete fast."
+    },
+    "gyms": {
+      "score": 8,
+      "note": "Movement LIC (formerly The Cliffs, 11-11 44th Dr) is a 23,600 sq ft climbing gym with 45-foot rope walls steps from Court Square, and most of the new towers include serious in-building fitness centers."
+    },
+    "groceries": {
+      "score": 6,
+      "note": "Trader Joe's at 22-43 Jackson Ave plus the Food Cellar gourmet market cover most needs, but bodega density and overall food-shopping depth are thinner than in the older Brooklyn neighborhoods."
+    },
+    "coffee": {
+      "score": 6,
+      "note": "Sweetleaf's Jackson Ave shop has wifi and a vinyl-lined back room, Birch Coffee sits at Court Square, and Partners Coffee has a Queens cafe. Workable, but thinner than north Brooklyn."
+    },
+    "laundry": {
+      "note": "Best in-unit odds of any neighborhood on this list — TF Cornerstone's Center Blvd towers and Jackson Park include washer/dryers as standard. Laundromats barely factor in if you rent in a tower."
+    },
+    "sources": [
+      "Hunters Point Parks Conservancy — Gantry Plaza State Park (12 acres) and Hunter's Point South Park (11 acres) form a continuous waterfront",
+      "Movement LIC (formerly The Cliffs) — 23,600 sq ft climbing gym at 11-11 44th Dr near Court Square with 45-foot walls",
+      "Trader Joe's store locator / Yelp — LIC store at 22-43 Jackson Ave; CityRealty / TF Cornerstone — Jackson Park and Center Blvd towers list in-unit washer/dryers as standard"
+    ]
+  },
+  "hells-kitchen": {
+    "parks": {
+      "score": 6,
+      "note": "Hudson River Park is the draw — Pier 84 has a large dog run, a boathouse, and bike concessions, and the riverfront path is excellent for running — plus 5.8-acre DeWitt Clinton Park between 52nd and 54th; east of Tenth Avenue it is mostly concrete."
+    },
+    "gyms": {
+      "score": 8,
+      "note": "Manhattan Plaza Health Club on W 43rd St packs a 5,000 sq ft climbing gym, a 75-foot pool, and tennis courts into one building ($49/mo climbing-only), with Mercedes Club and TMPL covering the luxury end."
+    },
+    "groceries": {
+      "score": 6,
+      "note": "Full Whole Foods stores bracket the neighborhood at Hudson Yards and Columbus Circle, a Whole Foods Daily Shop opened at 301 W 50th St in June 2025, and Westerly Natural Market is the good local option; in between it is Food Emporium, Gristedes, and D'Agostino."
+    },
+    "coffee": {
+      "score": 7,
+      "note": "Rex Coffee (since 2013, bakes in-house) and Kahve are well-liked neighborhood regulars, and By & By is explicitly laptop-friendly; solid bench, though more grab-and-go commuter energy than downtown."
+    },
+    "laundry": {
+      "note": "Genuinely split stock: the big newer towers like Gotham West and Silver Towers come with in-unit washer/dryers, while the walkups closer to Ninth Avenue mostly do not and rely on laundromats."
+    },
+    "sources": [
+      "Time Out / indoorclimbinggym.com — Manhattan Plaza Health Club's climbing gym, 75-ft pool, and tennis at 482 W 43rd St",
+      "W42ST — Whole Foods Daily Shop opened at 301 W 50th St June 2025; full stores at Hudson Yards and Columbus Circle with Food Emporium/Gristedes/D'Agostino in between",
+      "hudsonriverpark.org — Pier 84 dog run and pier amenities in Hell's Kitchen"
+    ]
+  },
+  "yorkville": {
+    "parks": {
+      "score": 8,
+      "note": "Carl Schurz Park — East River promenade, dog runs, playgrounds — is the neighborhood park, and Central Park is roughly a 15-minute crosstown walk; between the two this is the best green-space access of any neighborhood on this list."
+    },
+    "gyms": {
+      "score": 7,
+      "note": "Asphalt Green's Upper East Side sports campus (serious pool, fields, fitness) anchors the east end, and VITAL Upper East — the former Steep Rock Bouldering at 1506 Lexington Ave — keeps climbing within reach."
+    },
+    "groceries": {
+      "score": 8,
+      "note": "A full-size Whole Foods at 1551 Third Ave (87th St) and the 86th Street Fairway sit a few blocks apart; the nearest Trader Joe's is down at the 59th Street Bridgemarket."
+    },
+    "coffee": {
+      "score": 5,
+      "note": "Thinner than downtown: 787 Coffee and Variety Coffee Roasters on Lexington welcome laptops and Perk Coffee has outlets and free wifi, but this is the weakest WFH-cafe bench of these ten neighborhoods."
+    },
+    "laundry": {
+      "note": "Yorkville has roughly 620 walkup rental buildings (per NYBits) where in-unit laundry is rare, but its many postwar and newer high-rises commonly have laundry rooms or in-unit machines — better odds than downtown tenement stock."
+    },
+    "sources": [
+      "NYC Parks / nyctourism.com — Carl Schurz Park's riverfront location, dog runs, and facilities in Yorkville",
+      "Whole Foods Market / Yelp — full-size Whole Foods at 1551 Third Ave (87th St) and Fairway at 240 E 86th St both operating",
+      "vitalclimbinggym.com / Yelp — VITAL Upper East (formerly Steep Rock Bouldering) at 1506 Lexington Ave"
+    ]
+  }
+}

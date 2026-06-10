@@ -1,0 +1,192 @@
+{
+  "east-village": {
+    "meal": {
+      "casual": 38,
+      "note": "Soothr's dry crab noodles run $27 and dumplings $14; pho at Hanoi House ~$19; Cafe Mogador tagines ~$25. Entree plus a drink plus tax/tip lands mid-$30s, and there's a cheap tier below it (San Marzano pastas ~$9-15, Sao Mai pho ~$10) when you don't feel like spending."
+    },
+    "dating": {
+      "score": 8,
+      "note": "The densest meeting ground downtown, with a real age split: St. Marks/Ave A on Fri-Sat skews NYU-to-mid-20s, while the Ave B/C tier — Madeline's, 11th Street Bar, Fools Gold's packed 7pm after-work crowd — runs late-20s to 40s. Local consensus (Yelp/Reddit threads on '30s bars') is to go out Sunday-Thursday, when the crowd matures and the bartenders talk to you. For a 37-year-old who actually likes bars, this is one of the easiest places in the city to meet people organically."
+    },
+    "thingsToDo": {
+      "score": 9,
+      "note": "Live music almost nightly at Otto's Shrunken Head and Nowhere, New York Comedy Club on E 4th plus UCB's reopened East Village theater, cabaret and comedy at Joe's Pub at the Public, Anthology Film Archives and Village East for film. You can fill any night of the week within a 10-minute walk without planning ahead."
+    },
+    "sources": [
+      "The Infatuation — The Best Places To Have Dinner For Around $30 In The East Village (2025)",
+      "The Infatuation — The 24 Best Bars In The East Village (2025)",
+      "Time Out New York — Best nightlife in East Village (2025)"
+    ]
+  },
+  "lower-east-side": {
+    "meal": {
+      "casual": 40,
+      "note": "Carnitas and guisados at Beto's keep a dinner under $25; Gazab is the Infatuation's pick for a casual weeknight Indian dinner; Souvlaki GR stays affordable; Wildair's natural-wine small plates push a night to $60+. Realistic entree-plus-drink-plus-tip is high $30s."
+    },
+    "dating": {
+      "score": 6,
+      "note": "The city's loudest going-out strip, but the age skew is real: Ludlow/Orchard on a weekend — Pianos, The Delancey, Hair of the Dog — is a 22-26 playground where 37 reads noticeably older. The grown-up layer is the cocktail rooms (Attaboy, The Back Room) and wine bars like Wildair, which Infatuation flags as a first-date natural. Great neighborhood to take dates to; harder one to feel age-matched meeting strangers in, unless you keep to weeknights and the reservation-bar tier."
+    },
+    "thingsToDo": {
+      "score": 9,
+      "note": "Best small-venue music cluster in Manhattan: Bowery Ballroom (Rolling Stone's pick for best club in America), Mercury Lounge, Arlene's Grocery, Pianos. Add Metrograph for film, the New Museum and the Orchard Street gallery crawl, and the Tenement Museum, and there's something on every night plus daytime culture."
+    },
+    "sources": [
+      "The Infatuation — The Best Restaurants On The Lower East Side (2025)",
+      "Time Out New York — Best nightlife on the Lower East Side (2025)",
+      "Time Out New York — 18 Best Lower East Side Bars (2025)"
+    ]
+  },
+  "williamsburg": {
+    "meal": {
+      "casual": 40,
+      "note": "Sichuan plates ~$20-28 at Birds of a Feather; $10 burritos and $3 Tecates at Taqueria Diana; Detroit-style medium pie ~$24 at Ace's. The Infatuation keeps a whole 'dinner around $30' list here — add a drink and tip and ~$40/head is the honest weekly number."
+    },
+    "dating": {
+      "score": 9,
+      "note": "StreetEasy/OkCupid data calls this Brooklyn's top dating neighborhood — the most single 30-somethings in the borough, over half identifying as single. People actually meet at Union Pool's backyard, Radegast Hall's communal beer tables, and 30s-skewing cocktail rooms like St. Mazie and Hotel Delmano; North Brooklyn Runners' McCarren Park track workouts are a known low-stakes way in. Caveat: Bedford Ave and N 6th on weekends flood with tourists and 24-year-olds — the mid-30s scene lives on Grand St and at the quieter bars."
+    },
+    "thingsToDo": {
+      "score": 9,
+      "note": "Densest non-Manhattan calendar in the city: Brooklyn Bowl (shows + bowling), Music Hall of Williamsburg (650-cap Bowery Presents room), National Sawdust (new/classical music), Nitehawk Cinema's dine-in movies, free shows in Union Pool's back room, Smorgasburg on Saturdays, and McCarren Park's year-round programming."
+    },
+    "sources": [
+      "The Infatuation — The Best Places To Have Dinner For Around $30 In Williamsburg (2025)",
+      "StreetEasy Blog — Best Neighborhoods for Dating in NYC (2023)",
+      "Time Out New York — 11 Best Places to See Live Music in Brooklyn (2024)"
+    ]
+  },
+  "east-williamsburg": {
+    "meal": {
+      "casual": 32,
+      "note": "Korean comfort plates under $20 at ChinGoo on Graham Ave; catfish sandwich and a beer ~$25 at Sweet Science; cash-only crepes with cheap French wine at Pates et Traditions. Eating weekly here costs noticeably less than prime Williamsburg ten minutes west."
+    },
+    "dating": {
+      "score": 6,
+      "note": "You borrow two scenes — Williamsburg's bars west and Bushwick's clubs east — but the local one is Grand St dives (Blinky's et al.), Pine Box Rock Shop's Tuesday karaoke, and Our Wicked Lady's rooftop, where the crowd skews late-20s creative. Avant Gardner pulls thousands on weekends, but ticketed festival crowds arrive in groups and leave in groups — it's not where you meet anyone. Fine for a 37-year-old who likes dives; thin on organized ways to meet people."
+    },
+    "thingsToDo": {
+      "score": 6,
+      "note": "Nightlife-shaped and big-format: the Avant Gardner complex (the Brooklyn Mirage was demolished in early 2026; Pacha opens on the site mid-June 2026), Polygon for after-hours, Our Wicked Lady's rooftop shows and free movie nights, Pine Box Rock Shop in a former coffin factory. Daytime culture is thin — galleries and coffee, then you walk west."
+    },
+    "sources": [
+      "The Infatuation — East Williamsburg neighborhood page (2025)",
+      "Time Out New York — Avant Gardner / Pine Box Rock Shop venue listings (2024)",
+      "NYC Tourism — The Brooklyn Mirage, East Williamsburg nightclub (2025)"
+    ]
+  },
+  "greenpoint": {
+    "meal": {
+      "casual": 38,
+      "note": "Walk-in tacos plus a $15 cocktail at Border Town; chicken parm ~$28 under red-checkered tablecloths at Bernie's; reasonable Malaysian at Kelang and Taiwanese (black pepper beef) at Wenwen. Solid weekly range of $30-45 a head depending how Polish-diner versus date-night you go."
+    },
+    "dating": {
+      "score": 6,
+      "note": "Median age early 30s and plenty of singles on paper — Brick Underground's read is 'Williamsburg hipsters who grew up' — but the neighborhood reads quieter and more coupled, with strollers thick around Java St. People meet at bars like Ramona (bi-level, social) and the Pencil Factory, and via North Brooklyn Runners which trains out of adjacent McCarren Park. Honest framing: this is a great second-date neighborhood (Achilles Heel at sunset) more than a place you'll cold-meet someone."
+    },
+    "thingsToDo": {
+      "score": 7,
+      "note": "Warsaw — the 1,000-cap 'punk meets pierogies' hall in the Polish National Home — is a genuine citywide anchor, plus Good Room for proper dance nights, Film Noir Cinema's repertory screenings, Transmitter Park sunsets on the East River, and some of the best vintage shopping in NYC along Manhattan Ave. Weeknights are sleepy by design."
+    },
+    "sources": [
+      "Time Out New York — Greenpoint, Brooklyn Neighborhood Guide (2024)",
+      "The Infatuation — The 20 Best Restaurants In Greenpoint, Brooklyn (2025)",
+      "Brick Underground — Greenpoint, Brooklyn: the insider's guide to living there (2023)"
+    ]
+  },
+  "bushwick": {
+    "meal": {
+      "casual": 30,
+      "note": "Bee Sting pie ~$23 plus a beer on the patio at Roberta's; under-$15 counter-service meals at Tortilleria Los Hermanos (a working tortilla factory); stuffed arepas ~$12 at Arepera Guacuco; Thai lunch specials from $13.95 at Klom Klorm. Cheapest weekly eating of the Brooklyn five."
+    },
+    "dating": {
+      "score": 5,
+      "note": "Massive singles density but the wrong decade: the scene orbits House of Yes, Bossa Nova Civic Club, and Elsewhere's queer-forward party calendar, and the median person on those floors is 24-28. Bloomberg documented Bushwick overtaking the East Village and Williamsburg as NYC's dance-club hub — true, and largely irrelevant to meeting another mid-30s professional. Your realistic lanes are Roberta's patio, wine bars on Wilson Ave, and being the interesting older person at a warehouse party. Dates here are fun; finding them here is harder at 37."
+    },
+    "thingsToDo": {
+      "score": 8,
+      "note": "NYC's dance-club capital per Bloomberg (2024): House of Yes's circus-meets-club productions, multi-floor Elsewhere, 140-cap techno den Bossa Nova Civic Club under the Myrtle Ave overpass, The Sultan Room behind Turk's Inn, plus the Bushwick Collective's open-air street-art blocks. Late-night density rivals anywhere in the city; theaters, cinemas, and daytime culture lag."
+    },
+    "sources": [
+      "Bloomberg — How Bushwick Became the Brooklyn Hub for Dance Clubs, Late-Night Parties (2024)",
+      "The Infatuation — The Best Restaurants In Bushwick (2025)",
+      "NYC Tourism — Bossa Nova Civic Club venue profile (2024)"
+    ]
+  },
+  "astoria": {
+    "meal": {
+      "casual": 32,
+      "note": "Greek taverna economics: Taverna Kyclades does family-style whole fish with apps around $12 and grilled octopus $20; Telly's Taverna and Gregory's Corner are home-cooked-grade; Elias Corner pairs grilled fish with $15 wine carafes on the patio. A real dinner with a drink and tip lands around $30 — the best food-per-dollar of any neighborhood on this list."
+    },
+    "dating": {
+      "score": 5,
+      "note": "Less a singles circuit than a regulars culture: Bohemian Hall's communal beer-garden tables (NYC's oldest, since 1910) are the big summer mixer, Bar Dalia's backyard and Focal Point brewery pull weekend meet-up crowds, and Q.E.D.'s comedy nights, trivia, and classes (swing dancing to podcasting) are where people actually talk to strangers. Crowd skews late-20s-to-late-30s and local, but a lot of it is settled couples who moved for space — you build a social life through repeat appearances, not a scene you drop into."
+    },
+    "thingsToDo": {
+      "score": 6,
+      "note": "Real anchors for an outer-borough neighborhood: Museum of the Moving Image, Socrates Sculpture Park with skyline views, Astoria Park under the Hell Gate Bridge, Bohemian Hall, Q.E.D. for nightly comedy and classes, and a no-cover old-fashioned jazz bar locals guard as a secret. Big-room live music and theater still mean a trip into Manhattan."
+    },
+    "sources": [
+      "The Infatuation — The 24 Best Restaurants In Astoria (2025)",
+      "Time Out New York — 12 Best Astoria Bars For The Ideal Night Out in Queens (2025)",
+      "Time Out New York — The best things to do in Astoria, Queens (2025)"
+    ]
+  },
+  "long-island-city": {
+    "meal": {
+      "casual": 38,
+      "note": "Casa Enrique is the anchor — a Michelin star but genuinely unfussy, crunchy fish tacos and mole with a margarita lands ~$45-50; Sichuan group-friendly plates at Hupo; Ecuadorian steak and salchipapas at Rincon Melania for well under $25. Tower-base restaurants otherwise trend corporate and $$$."
+    },
+    "dating": {
+      "score": 4,
+      "note": "The towers are full of young professionals, but a large share are couples, and single residents mostly date over the bridge in Manhattan — 10 minutes on the 7 is both the blessing and the tell. Local meeting points are real but few: Dutch Kills' cocktail bar (with live music upstairs at Debbie's), LIC Bar's backyard, Fifth Hammer and Rockaway brewery taprooms, and MoMA PS1's Warm Up parties in summer — the one event that imports a citywide 25-40 crowd. Weeknights the neighborhood goes quiet by 10."
+    },
+    "thingsToDo": {
+      "score": 5,
+      "note": "One world-class anchor — MoMA PS1 and its summer Warm Up Friday series — plus Culture Lab LIC's free outdoor stages, Gantry Plaza State Park's skyline waterfront, and a small brewery circuit (Fifth Hammer, Rockaway Brewing). No proper music venue, no comedy club, no cinema; for most nights out you're on the 7 or the G."
+    },
+    "sources": [
+      "The Infatuation — The 21 Best Restaurants In Long Island City (2025)",
+      "Time Out New York — Best bars in Long Island City (2024)",
+      "PropertyNest — Long Island City Neighborhood Review, Queens Moving Guide (2024)"
+    ]
+  },
+  "hells-kitchen": {
+    "meal": {
+      "casual": 36,
+      "note": "Ninth Avenue is a canteen row: Pure Thai Cookhouse handmade noodles ~$20-22, Kohoku-Ku ramen and yakitori, Lovely's Old Fashioned counter burgers ~$15. With a beer and tip most weeknight dinners land mid-$30s; Ardesia's wine-bar plates are the step up."
+    },
+    "dating": {
+      "score": 6,
+      "note": "Two very different answers. For gay men it's one of the best neighborhoods in America — a dozen-plus bars along Ninth/Tenth Ave and a built-in social circuit. For straight singles it's thinner: after-work wine crowds at Ardesia, the weekly Tuesday singles walk-and-talk run out of Back Pocket Bar (covered by W42ST), and a heavy population of performers and theater-industry people who keep odd hours. Crowd is genuinely 25-45 but transient — lots of tourists and people passing through rather than a stable scene."
+    },
+    "thingsToDo": {
+      "score": 7,
+      "note": "The Theater District is literally the eastern edge — every Broadway house within a 15-minute walk — plus Birdland for serious jazz ($20-35 covers, Afro-Cuban orchestra Sundays), Broadway Comedy Club and a new club near the old Caroline's space, and Hudson River Park's piers for runs and summer events. What it lacks is the indie/neighborhood culture layer: few galleries, no small rock rooms."
+    },
+    "sources": [
+      "The Infatuation — The 24 Best Restaurants In Hell's Kitchen (2025)",
+      "W42ST — Hell's Kitchen Bar Launches Walk-and-Talk Meetups for Singles (2024)",
+      "Time Out New York — Hell's Kitchen neighborhood guide (2025)"
+    ]
+  },
+  "yorkville": {
+    "meal": {
+      "casual": 40,
+      "note": "Ly Ly's '$25 UES Pho' comes with a slab of smoked short rib; Heidi's House By The Side Of The Road does a juicy burger and crispy mac for a casual catch-up; Mezzaluna's wood-fired pizzas run low $20s. With a glass of wine and tip you're around $40 — fewer cheap-eats benches than downtown."
+    },
+    "dating": {
+      "score": 5,
+      "note": "Smaller circuit, but what exists actually fits the demographic: The Penrose (2nd Ave & 82nd) fills after 6pm with late-20s-to-late-30s professionals at communal tables where joining strangers is normal — it's the neighborhood's proven meet-spot. Dorrian's Red Hand is the famous outlier in the other direction: preppy, post-grad, blazers-and-Nantucket-reds young. East of Second Avenue the neighborhood reads couples, strollers, and early nights; expect to do much of your actual dating downtown."
+    },
+    "thingsToDo": {
+      "score": 4,
+      "note": "Comic Strip Live (where Seinfeld and Chris Rock came up) runs stand-up seven nights, the 92nd Street Y books world-class lectures and performances, and Carl Schurz Park is a legitimately great river park with Gracie Mansion. Museum Mile — the Met, Guggenheim — is a 15-minute walk west. But there's no live-music or gallery scene to speak of and the neighborhood goes quiet by 11."
+    },
+    "sources": [
+      "The Infatuation — The Best Restaurants On The Upper East Side (2025)",
+      "Time Out New York — Best Hookup Bars in NYC to Meet People (2025)",
+      "NYC Tourism — Comic Strip Live Stand-up (2025)"
+    ]
+  }
+}

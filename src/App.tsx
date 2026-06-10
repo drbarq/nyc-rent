@@ -1,38 +1,57 @@
 import { useEffect, useMemo, useState } from 'react'
+import amenitiesJson from '../data/amenities.json'
+import briefsJson from '../data/briefs.json'
 import commuteJson from '../data/commute.json'
 import judgesJson from '../data/judges.json'
 import motoJson from '../data/moto.json'
 import registryJson from '../data/neighborhoods.json'
+import poisJson from '../data/pois.json'
+import sceneJson from '../data/scene.json'
 import vibeJson from '../data/vibe.json'
 import { CompareTable } from './components/CompareTable'
 import { DetailPanel } from './components/DetailPanel'
 import { JudgesPicks } from './components/JudgesPicks'
-import { MapView, type ChipSpec, type LegendSpec } from './components/MapView'
+import { MapView, type AnchorSpec, type ChipSpec, type LegendSpec } from './components/MapView'
 import { RankedList } from './components/RankedList'
+import { SettingsPanel } from './components/SettingsPanel'
 import { WeightSliders } from './components/WeightSliders'
 import { money, rentShort } from './lib/format'
 import { rentForScore, scoreAll, scoreColor } from './lib/score'
 import {
   ALL_IDS,
   DEFAULT_WEIGHTS,
+  type AmenitiesFile,
+  type BriefsFile,
   type CommuteFile,
   type JudgesFile,
   type MotoFile,
   type NeighborhoodId,
   type NeighborhoodsFile,
+  type PoisFile,
+  type SceneFile,
   type VibeFile,
   type Weights,
 } from './lib/types'
 import { useRents } from './lib/useRents'
+import { useSettings } from './lib/useSettings'
 
 const registry = registryJson as unknown as NeighborhoodsFile
 const commute = commuteJson as unknown as CommuteFile
 const vibe = vibeJson as unknown as VibeFile
 const moto = motoJson as unknown as MotoFile
 const judges = judgesJson as unknown as JudgesFile
+const amenities = amenitiesJson as unknown as AmenitiesFile
+const briefs = briefsJson as unknown as BriefsFile
+const scene = sceneJson as unknown as SceneFile
+const pois = (poisJson as unknown as PoisFile).pois
 
 /** "Office — Cyera HQ · 500 7th Ave at 37th" → "Cyera HQ" */
-const anchorShort = registry.anchor.label.replace(/^Office — /, '').split('·')[0].trim()
+const officeShort = registry.anchor.label.replace(/^Office — /, '').split('·')[0].trim()
+
+const poiOptions = [
+  { id: 'office', label: `Office — ${officeShort}` },
+  ...pois.map((p) => ({ id: p.id, label: p.label })),
+]
 
 export default function App() {
   const [weights, setWeights] = useState<Weights>(DEFAULT_WEIGHTS)
@@ -40,13 +59,38 @@ export default function App() {
   const [selectedId, setSelectedId] = useState<NeighborhoodId | null>(null)
   const [pinned, setPinned] = useState<NeighborhoodId[]>([])
   const [compareOpen, setCompareOpen] = useState(false)
+  const [settingsOpen, setSettingsOpen] = useState(false)
   const [focus, setFocus] = useState<{ id: NeighborhoodId; n: number } | null>(null)
   const [mapMode, setMapMode] = useState<'score' | 'rent'>('score')
+  const [poiId, setPoiId] = useState('office')
+  const [settings, updateSettings] = useSettings()
   const rents = useRents()
 
+  // The active destination drives the commute matrix, the pin, and the scoring.
+  const activePoi = poiId === 'office' ? null : pois.find((p) => p.id === poiId) ?? null
+  const activeCommute = activePoi?.commute ?? commute
+  const anchorShort = activePoi?.short ?? officeShort
+  const anchor: AnchorSpec = activePoi
+    ? { label: activePoi.label.toUpperCase(), lng: activePoi.lng, lat: activePoi.lat }
+    : {
+        label: registry.anchor.label.replace('Office — ', 'OFFICE · '),
+        lng: registry.anchor.lng,
+        lat: registry.anchor.lat,
+      }
+
   const scores = useMemo(
-    () => scoreAll(ALL_IDS, rents.figures, commute, vibe, moto, weights, motoOn),
-    [rents.figures, weights, motoOn],
+    () =>
+      scoreAll(
+        ALL_IDS,
+        rents.figures,
+        activeCommute,
+        vibe,
+        moto,
+        weights,
+        motoOn,
+        settings.budgetTarget,
+      ),
+    [rents.figures, activeCommute, weights, motoOn, settings.budgetTarget],
   )
 
   // Map fill colors + legend for the active mode (score fit vs raw rent).
@@ -109,12 +153,13 @@ export default function App() {
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.key !== 'Escape') return
-      if (compareOpen) setCompareOpen(false)
+      if (settingsOpen) setSettingsOpen(false)
+      else if (compareOpen) setCompareOpen(false)
       else if (selectedId) setSelectedId(null)
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
-  }, [compareOpen, selectedId])
+  }, [settingsOpen, compareOpen, selectedId])
 
   const selectedHood = selectedId
     ? registry.neighborhoods.find((n) => n.id === selectedId)
@@ -124,6 +169,14 @@ export default function App() {
     <div className="app">
       <div className="rail">
         <header className="advisory">
+          <button
+            type="button"
+            className="settings-btn"
+            onClick={() => setSettingsOpen(true)}
+            aria-label="Open settings"
+          >
+            Settings
+          </button>
           <h1>NYC Move Explorer</h1>
           <div className="sub">
             Neighborhood decision map · anchor: {registry.anchor.label.replace('Office — ', '')}
@@ -162,13 +215,16 @@ export default function App() {
           onChange={setWeights}
           motoOn={motoOn}
           onMotoToggle={setMotoOn}
+          poiOptions={poiOptions}
+          activePoiId={poiId}
+          onPoiChange={setPoiId}
         />
 
         <RankedList
           registry={registry}
           scores={scores}
           rents={rents.figures}
-          commute={commute}
+          commute={activeCommute}
           selectedId={selectedId}
           pinned={pinned}
           onSelect={selectHood}
@@ -182,6 +238,7 @@ export default function App() {
           colors={mapColors}
           chips={chips}
           legend={legend}
+          anchor={anchor}
           selectedId={selectedId}
           onSelect={(id) => setSelectedId(id)}
           focus={focus}
@@ -237,11 +294,15 @@ export default function App() {
             hood={selectedHood}
             scored={scores[selectedId]}
             rent={rents.figures[selectedId]}
-            commute={commute[selectedId]}
+            commute={activeCommute[selectedId]}
             vibe={vibe[selectedId]}
             moto={moto[selectedId]}
+            amenities={amenities[selectedId]}
+            scene={scene[selectedId]}
+            brief={briefs[selectedId]}
             motoOn={motoOn}
             anchorShort={anchorShort}
+            settings={settings}
             onClose={() => setSelectedId(null)}
           />
         )}
@@ -252,15 +313,25 @@ export default function App() {
             registry={registry}
             scores={scores}
             rents={rents.figures}
-            commute={commute}
+            commute={activeCommute}
             vibe={vibe}
             moto={moto}
+            amenities={amenities}
+            scene={scene}
             motoOn={motoOn}
             onClose={() => setCompareOpen(false)}
             onUnpin={(id) => {
               togglePin(id)
               if (pinned.length <= 2) setCompareOpen(false)
             }}
+          />
+        )}
+
+        {settingsOpen && (
+          <SettingsPanel
+            settings={settings}
+            onChange={updateSettings}
+            onClose={() => setSettingsOpen(false)}
           />
         )}
       </main>
