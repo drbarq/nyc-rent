@@ -1,39 +1,39 @@
 {
   "east-village": {
-    "lines": ["6", "L", "N", "R", "W"],
+    "lines": ["N", "R", "W", "L", "6"],
     "ferry": false,
     "timeMin": 15,
     "timeMax": 25,
     "transfersMin": 0,
     "transfersMax": 1,
-    "note": "Union Sq is the hub — 6, L, or N/R/W get you to Midtown direct or with one easy transfer."
+    "note": "N/R/W from Union Sq or 8 St run direct to Herald Sq; the 6 now leaves a crosstown walk from Park Ave, so the L + 14 St transfer covers the Ave A end."
   },
   "lower-east-side": {
-    "lines": ["F", "J", "M", "Z"],
+    "lines": ["F", "M", "J", "Z"],
     "ferry": false,
     "timeMin": 20,
     "timeMax": 30,
     "transfersMin": 0,
     "transfersMax": 1,
-    "note": "F or J/M/Z run direct, but stations sit at the neighborhood's edges — count the walk."
+    "note": "F from 2 Av and M from Essex run direct to Herald Sq; J/Z need a transfer — and the stations still sit at the neighborhood's edges, so count the walk."
   },
   "williamsburg": {
-    "lines": ["L", "J", "M"],
+    "lines": ["M", "L", "J"],
     "ferry": true,
     "timeMin": 25,
     "timeMax": 35,
-    "transfersMin": 1,
+    "transfersMin": 0,
     "transfersMax": 1,
-    "note": "L + transfer; L is reliable but packed. Ferry is the scenic backup, not the fast one."
+    "note": "M direct to Herald Sq from the Marcy/Hewes side; L + 14 St transfer from Bedford. Ferry is still the scenic backup, not the fast one."
   },
   "east-williamsburg": {
-    "lines": ["L"],
+    "lines": ["L", "M"],
     "ferry": false,
     "timeMin": 30,
     "timeMax": 40,
-    "transfersMin": 1,
+    "transfersMin": 0,
     "transfersMax": 1,
-    "note": "L only — one transfer to Midtown, and the train is already full by the time it reaches you."
+    "note": "L + 14 St transfer is the default on a train already full when it reaches you; near the Flushing Av edge the M runs direct to Herald Sq and skips the transfer."
   },
   "greenpoint": {
     "lines": ["G"],
@@ -42,16 +42,16 @@
     "timeMax": 40,
     "transfersMin": 1,
     "transfersMax": 1,
-    "note": "G train only — transfer to the E/M or 7 required, plan +10 min."
+    "note": "G to Court Sq, then E to Penn or 7 to Times Sq — the transfer is unavoidable, plan +10 min."
   },
   "bushwick": {
-    "lines": ["L", "J", "M", "Z"],
+    "lines": ["M", "L", "J", "Z"],
     "ferry": false,
     "timeMin": 35,
     "timeMax": 45,
-    "transfersMin": 1,
+    "transfersMin": 0,
     "transfersMax": 1,
-    "note": "L or J/M/Z plus a transfer; the deeper into Bushwick you live, the longer the ride."
+    "note": "M now runs direct to Herald Sq — the headline win; L or J/Z still mean a transfer, and the deeper into Bushwick you live, the longer the ride."
   },
   "astoria": {
     "lines": ["N", "W"],
@@ -60,33 +60,33 @@
     "timeMax": 30,
     "transfersMin": 0,
     "transfersMax": 0,
-    "note": "N/W direct into Midtown — no transfer, just a steady elevated ride over the bridge."
+    "note": "N/W direct to Herald Sq or Times Sq — same no-transfer elevated ride, then a short walk to 37th."
   },
   "long-island-city": {
-    "lines": ["7", "E", "M", "G"],
+    "lines": ["E", "7", "M", "G"],
+    "ferry": false,
+    "timeMin": 12,
+    "timeMax": 22,
+    "transfersMin": 0,
+    "transfersMax": 0,
+    "note": "E drops you at Penn two blocks from the door; 7 to Times Sq and M to Herald Sq also run direct. The G covers your Brooklyn trips."
+  },
+  "hells-kitchen": {
+    "lines": ["A", "C", "E", "1"],
     "ferry": false,
     "timeMin": 10,
     "timeMax": 20,
     "transfersMin": 0,
     "transfersMax": 0,
-    "note": "7 or E/M direct — Midtown is one stop away; the G covers your Brooklyn trips."
-  },
-  "hells-kitchen": {
-    "lines": ["A", "C", "E", "1"],
-    "ferry": false,
-    "timeMin": 5,
-    "timeMax": 15,
-    "transfersMin": 0,
-    "transfersMax": 0,
-    "note": "Walkable to the office — A/C/E or 1 only matter on rainy days."
+    "note": "Now a 15-20 min walk from the upper 40s and 50s, or a one-stop A/C/E or 1 hop to Penn on rainy days."
   },
   "yorkville": {
-    "lines": ["Q", "4", "5", "6"],
+    "lines": ["Q", "6", "4", "5"],
     "ferry": false,
-    "timeMin": 15,
-    "timeMax": 25,
+    "timeMin": 20,
+    "timeMax": 30,
     "transfersMin": 0,
-    "transfersMax": 0,
-    "note": "Q direct or 4/5/6 down Lexington — no transfer, but Lex trains run crushed at rush."
+    "transfersMax": 1,
+    "note": "Q direct to Times Sq and Herald Sq is the play; the Lex 4/5/6 now mean the 42 St shuttle or a long crosstown walk."
   }
 }

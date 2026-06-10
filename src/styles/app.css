@@ -461,6 +461,10 @@ input[type='range']::-moz-range-thumb {
   background: linear-gradient(to right, var(--score-low), var(--score-mid), var(--score-high));
 }
 
+.legend .bar.flip {
+  background: linear-gradient(to right, var(--score-high), var(--score-mid), var(--score-low));
+}
+
 .legend .ends {
   display: flex;
   justify-content: space-between;
@@ -471,6 +475,163 @@ input[type='range']::-moz-range-thumb {
   font-weight: 700;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+}
+
+/* rent chips on the map */
+.map-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: var(--paper);
+  border: 1px solid var(--ink);
+  padding: 1px 7px;
+  font-family: var(--font-sans);
+  font-size: var(--fs-micro);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.map-chip:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.map-chip.top {
+  background: var(--mta-nqrw); /* advisory yellow for the current top 3 */
+}
+
+.map-chip.top:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.map-chip b {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 10px;
+}
+
+/* score/rent map-coloring toggle */
+.map-toggle {
+  position: absolute;
+  top: var(--s3);
+  left: var(--s3);
+  z-index: 2;
+  display: flex;
+  border: 1px solid var(--ink);
+  background: var(--paper);
+}
+
+.map-toggle button {
+  appearance: none;
+  border: none;
+  background: var(--paper);
+  padding: 4px 12px;
+  font-size: var(--fs-small);
+  cursor: pointer;
+}
+
+.map-toggle button.on {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+/* AI judge panel */
+.judges {
+  background: var(--paper-dim);
+}
+
+.judges-tag {
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: var(--ink-55);
+  margin-left: var(--s1);
+}
+
+.judge-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.judge-pick {
+  display: flex;
+  gap: var(--s2);
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: var(--s1) 0;
+  cursor: pointer;
+  font-size: var(--fs-small);
+  align-items: flex-start;
+}
+
+.judge-pick:hover strong {
+  text-decoration: underline;
+}
+
+.judge-rank {
+  flex: none;
+  width: 18px;
+  height: 18px;
+  margin-top: 1px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.judge-body {
+  display: block;
+}
+
+.judge-rationale {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color: var(--ink-70);
+  margin-top: 1px;
+}
+
+.judge-detail {
+  margin-top: var(--s2);
+  font-size: var(--fs-micro);
+}
+
+.judge-detail summary {
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink-55);
+}
+
+.judge-voice {
+  margin: var(--s2) 0 0;
+  color: var(--ink-70);
+}
+
+.judge-top3 {
+  color: var(--ink-55);
+}
+
+.judge-method {
+  margin: var(--s2) 0 0;
+  color: var(--ink-55);
+  font-style: italic;
 }
 
 /* compare bar (pinned tray) */

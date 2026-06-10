@@ -17,6 +17,7 @@ interface Props {
   vibe: VibeInfo
   moto: MotoInfo
   motoOn: boolean
+  anchorShort: string
   onClose: () => void
 }
 
@@ -25,7 +26,17 @@ const SCALE_HI = 5600
 const pct = (n: number) =>
   `${Math.min(100, Math.max(0, ((n - SCALE_LO) / (SCALE_HI - SCALE_LO)) * 100))}%`
 
-export function DetailPanel({ hood, scored, rent, commute, vibe, moto, motoOn, onClose }: Props) {
+export function DetailPanel({
+  hood,
+  scored,
+  rent,
+  commute,
+  vibe,
+  moto,
+  motoOn,
+  anchorShort,
+  onClose,
+}: Props) {
   const trend = trendDisplay(rent.trendYoY)
   const listingsUrl = `https://streeteasy.com/for-rent/${hood.streetEasyArea}/price:-4000%7Cbeds:1`
 
@@ -93,7 +104,7 @@ export function DetailPanel({ hood, scored, rent, commute, vibe, moto, motoOn, o
       </section>
 
       <section className="detail-section" aria-label="Commute">
-        <h3>Commute to {hood.id === 'hells-kitchen' ? 'the office' : 'Bryant Park'}</h3>
+        <h3>Commute to {anchorShort}</h3>
         <div className="commute-line">
           <BulletStrip lines={commute.lines} ferry={commute.ferry} />
           <span className="commute-stat num">

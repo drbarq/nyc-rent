@@ -29,7 +29,7 @@ export interface Neighborhood {
 }
 
 export interface NeighborhoodsFile {
-  /** Midtown anchor (configurable): defaults to Bryant Park / 42nd St. */
+  /** Office anchor (configurable): defaults to Cyera HQ, 500 7th Ave at 37th St. */
   anchor: { label: string; lng: number; lat: number }
   neighborhoods: Neighborhood[]
 }
@@ -90,6 +90,29 @@ export interface MotoInfo {
 }
 
 export type MotoFile = Record<NeighborhoodId, MotoInfo>
+
+export interface JudgePick {
+  id: NeighborhoodId
+  rank: 1 | 2 | 3
+  headline: string
+  rationale: string
+}
+
+export interface JudgeVoice {
+  lens: string
+  label: string
+  top3: NeighborhoodId[]
+  oneLiner: string
+}
+
+/** Output of the AI judge panel — advisory, clearly labeled, regenerable. */
+export interface JudgesFile {
+  generatedAt: string
+  method: string
+  picks: JudgePick[]
+  judges: JudgeVoice[]
+  dissent: string
+}
 
 export interface Weights {
   vibe: number

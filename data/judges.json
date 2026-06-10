@@ -1,0 +1,51 @@
+{
+  "generatedAt": "June 2026",
+  "method": "Four AI judges with distinct lenses (budget, scene, commute, one-year optimization) each ranked a top 3 from the app's own rent, commute, vibe, and moto data; the consensus is a Borda count (3/2/1 points) with first-place votes breaking ties.",
+  "picks": [
+    {
+      "id": "east-village",
+      "rank": 1,
+      "headline": "Best scene within 25 minutes of work",
+      "rationale": "Two of four judges ranked it first and a third had it second: a 15-25 minute, often zero-transfer N/R/W ride to Herald Sq, the densest going-out neighborhood in Manhattan with a genuine 30s crowd east of Avenue A, and a moto-only garage (Rising Wolf, E 9th) that solves the bike. The tradeoff is real — $4,000 against a $4,295 median buys a walkup, and the Budget Hawk left it off entirely for exactly that reason. For a one-year chapter, the panel judged stories-per-month worth more than square footage."
+    },
+    {
+      "id": "williamsburg",
+      "rank": 2,
+      "headline": "Strongest scene fit, priciest and farther",
+      "rationale": "The only vibe-9 on the board and the scene that has aged up with the user — the Scene Maximalist's first pick and the One-Year Optimizer's second, plus the cheapest real moto community ($100-175/mo at MotorGrrl). It costs the ranking: $4,000 sits $850 under the $4,850 median (+12% YoY), and the Commute Pragmatist cut it because the direct M only works from the Marcy/Hewes side, pushing Bedford-area renters into a 30+ minute L transfer."
+    },
+    {
+      "id": "bushwick",
+      "rank": 3,
+      "headline": "Only pick where $4K beats the market",
+      "rationale": "The Budget Hawk's runaway winner: at a $3,195 median, $4,000 buys the best apartment on the block instead of the worst, the M now runs direct to Herald Sq, and moto parking is the easiest of the Brooklyn set. The other three judges passed on the same two costs — a 35-45 minute commute that taxes every plan made after 6pm, and an afters crowd that skews art-school mid-20s rather than 37."
+    }
+  ],
+  "judges": [
+    {
+      "lens": "budget-hawk",
+      "label": "The Budget Hawk",
+      "top3": ["bushwick", "astoria", "yorkville"],
+      "oneLiner": "In a city where the median 1BR just crossed $4K, Bushwick and Astoria are the only places your budget buys the best apartment on the block instead of the darkest walkup in the listing pile."
+    },
+    {
+      "lens": "scene-maximalist",
+      "label": "The Scene Maximalist",
+      "top3": ["williamsburg", "east-village", "greenpoint"],
+      "oneLiner": "For a one-year NYC chapter at 37, pay the Williamsburg premium and live inside the only scene on this list that already aged up with you — everything else is either a commute to the party or a party full of 22-year-olds."
+    },
+    {
+      "lens": "commute-pragmatist",
+      "label": "The Commute Pragmatist",
+      "top3": ["east-village", "long-island-city", "hells-kitchen"],
+      "oneLiner": "Take the East Village: roughly 18 direct minutes on the N/R/W to your desk, and zero additional train rides to the life you actually moved here for."
+    },
+    {
+      "lens": "one-year-optimizer",
+      "label": "The One-Year Optimizer",
+      "top3": ["east-village", "williamsburg", "lower-east-side"],
+      "oneLiner": "Twelve months is a sprint — live in the East Village blast radius where the commute is 15 minutes, every Thursday night writes itself, and the bike sleeps at Rising Wolf."
+    }
+  ],
+  "dissent": "The sharpest split is the Budget Hawk versus everyone else: its entire top 3 (Bushwick, Astoria, Yorkville) overlaps with no other judge, because it treats the ~$1,100/mo East Village premium as the dark-walkup trap while the other three treat it as the price of experience density. If the user decides a walkup at $4K is unacceptable — or Bushwick's M-direct commute proves faster in practice than its 35-45 minute billing — Bushwick jumps to first and the Manhattan picks fall."
+}

@@ -24,6 +24,17 @@ export function basisLabel(f: RentFigure): string {
   return f.basis === 'average' ? 'average 1BR' : 'median 1BR'
 }
 
+const k = (n: number) => (n / 1000).toFixed(1).replace(/\.0$/, '')
+
+/** Compact figure for map chips: "$4.3K", "$4.1–4.4K", or "—". */
+export function rentShort(f: RentFigure): string {
+  if (f.basis === 'range' && f.rangeLow != null && f.rangeHigh != null) {
+    return `$${k(f.rangeLow)}–${k(f.rangeHigh)}K`
+  }
+  if (f.median1br != null) return `$${k(f.median1br)}K`
+  return '—'
+}
+
 export function trendDisplay(trendYoY: number | null): { arrow: string; text: string } | null {
   if (trendYoY == null) return null
   if (trendYoY === 0) return { arrow: '→', text: 'flat YoY' }

@@ -13,8 +13,26 @@ const reducedMotion = () =>
 
 const isPhone = () => window.matchMedia('(max-width: 860px)').matches
 
+export interface LegendSpec {
+  title: string
+  left: string
+  right: string
+  /** true = reverse the gradient (rent mode: green is cheap, red is expensive). */
+  flip: boolean
+}
+
+export interface ChipSpec {
+  label: string
+  /** 1–3 when this neighborhood is a current top pick, else null. */
+  top: number | null
+}
+
 interface Props {
   scores: Record<NeighborhoodId, Scored>
+  /** Polygon fill per neighborhood — score or rent coloring, computed upstream. */
+  colors: Record<NeighborhoodId, string>
+  chips: Record<NeighborhoodId, ChipSpec>
+  legend: LegendSpec
   selectedId: NeighborhoodId | null
   onSelect: (id: NeighborhoodId | null) => void
   /** Bumping `n` flies the map to neighborhood `id` (set by ranked-list clicks). */
@@ -106,10 +124,20 @@ const STYLE: StyleSpecification = {
   ],
 }
 
-export function MapView({ scores, selectedId, onSelect, focus, registry }: Props) {
+export function MapView({
+  scores,
+  colors,
+  chips,
+  legend,
+  selectedId,
+  onSelect,
+  focus,
+  registry,
+}: Props) {
   const containerRef = useRef<HTMLDivElement>(null)
   const mapRef = useRef<MlMap | null>(null)
   const hoverIdRef = useRef<NeighborhoodId | null>(null)
+  const chipsRef = useRef(new Map<NeighborhoodId, maplibregl.Marker>())
   const [ready, setReady] = useState(false)
   const [tip, setTip] = useState<Tip | null>(null)
 
@@ -199,19 +227,49 @@ export function MapView({ scores, selectedId, onSelect, focus, registry }: Props
     return () => {
       map.remove()
       mapRef.current = null
+      chipsRef.current.clear() // markers died with the map (StrictMode remounts)
+      setReady(false)
     }
     // The map is created exactly once; registry is static data.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  // Recolor polygons whenever scores change — feature-state keeps this under 100ms (PRD F2).
+  // Recolor polygons whenever colors change — feature-state keeps this under 100ms (PRD F2).
   useEffect(() => {
     const map = mapRef.current
     if (!map || !ready) return
-    for (const [id, s] of Object.entries(scores)) {
-      map.setFeatureState({ source: 'hoods', id }, { color: s.color })
+    for (const [id, color] of Object.entries(colors)) {
+      map.setFeatureState({ source: 'hoods', id }, { color })
     }
-  }, [scores, ready])
+  }, [colors, ready])
+
+  // Rent chips + top-pick badges as DOM markers (no glyph server needed).
+  useEffect(() => {
+    const map = mapRef.current
+    if (!map || !ready) return
+    for (const hood of registry.neighborhoods) {
+      let marker = chipsRef.current.get(hood.id)
+      if (!marker) {
+        const el = document.createElement('button')
+        el.type = 'button'
+        el.className = 'map-chip'
+        el.addEventListener('click', (e) => {
+          e.stopPropagation()
+          onSelectRef.current(hood.id)
+        })
+        marker = new maplibregl.Marker({ element: el, anchor: 'center' })
+          .setLngLat(hood.center)
+          .addTo(map)
+        chipsRef.current.set(hood.id, marker)
+      }
+      const chip = chips[hood.id]
+      const el = marker.getElement()
+      el.classList.toggle('top', chip.top != null)
+      el.innerHTML = chip.top != null ? `<b>${chip.top}</b>${chip.label}` : chip.label
+      el.setAttribute('aria-label', `${hood.name}: ${chip.label}${chip.top ? `, current pick #${chip.top}` : ''}`)
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [chips, ready])
 
   // Selection outline.
   useEffect(() => {
@@ -252,11 +310,11 @@ export function MapView({ scores, selectedId, onSelect, focus, registry }: Props
         </div>
       )}
       <div className="legend" aria-hidden="true">
-        <div className="title">Fit</div>
-        <div className="bar" />
+        <div className="title">{legend.title}</div>
+        <div className={legend.flip ? 'bar flip' : 'bar'} />
         <div className="ends">
-          <span>weakest</span>
-          <span>best</span>
+          <span>{legend.left}</span>
+          <span>{legend.right}</span>
         </div>
       </div>
     </>
