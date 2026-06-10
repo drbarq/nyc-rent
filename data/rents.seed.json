@@ -1,0 +1,116 @@
+{
+  "citywideContext": "NYC median 1BR crossed $4,000 for the first time in 2026; Manhattan median 1BR is roughly $4,400–4,700 and climbing, and inventory is at a ~4-year low — move fast on good listings.",
+  "seededAsOf": "June 2026",
+  "figures": {
+    "east-village": {
+      "median1br": 4295,
+      "basis": "median",
+      "rangeLow": null,
+      "rangeHigh": null,
+      "trendYoY": null,
+      "source": "RentHop",
+      "asOf": "May 2026",
+      "note": "Walkups dominate at $4K; large-building averages run ~$5.6K (Zumper).",
+      "whatFourKGets": "A walkup — elevator/doorman buildings run ~$5.6K."
+    },
+    "lower-east-side": {
+      "median1br": 5400,
+      "basis": "average",
+      "rangeLow": null,
+      "rangeHigh": null,
+      "trendYoY": null,
+      "source": "ExtraSpace/market roundup",
+      "asOf": "Jan 2026",
+      "note": "Tenement walkups list in the high-$3Ks; new towers skew the average.",
+      "whatFourKGets": "A tenement walkup in the high-$3Ks — the $5.4K average is skewed by new towers."
+    },
+    "williamsburg": {
+      "median1br": 4850,
+      "basis": "median",
+      "rangeLow": null,
+      "rangeHigh": null,
+      "trendYoY": 12,
+      "source": "RentHop",
+      "asOf": "May 2026",
+      "note": "Big buildings average ~$5,286; the +12% YoY figure applies to large buildings (RentCafe, Apr 2026).",
+      "whatFourKGets": "Under the $4,850 median — older or smaller units, not the big new buildings."
+    },
+    "east-williamsburg": {
+      "median1br": 4350,
+      "basis": "median",
+      "rangeLow": null,
+      "rangeHigh": null,
+      "trendYoY": 18,
+      "source": "RentHop",
+      "asOf": "June 2026",
+      "note": "+18% YoY — rising fast.",
+      "whatFourKGets": "Just under the $4,350 median, but rents are rising fast at +18% a year."
+    },
+    "greenpoint": {
+      "median1br": 4675,
+      "basis": "median",
+      "rangeLow": null,
+      "rangeHigh": null,
+      "trendYoY": 0,
+      "source": "RentHop",
+      "asOf": "May 2026",
+      "note": "Flat YoY.",
+      "whatFourKGets": "Under the $4,675 median — smaller 1BRs, though rents have held flat."
+    },
+    "bushwick": {
+      "median1br": 3195,
+      "basis": "median",
+      "rangeLow": null,
+      "rangeHigh": null,
+      "trendYoY": null,
+      "source": "RentHop",
+      "asOf": "May 2026",
+      "note": "$4K rents above the median here.",
+      "whatFourKGets": "$4K rents above the median here — pick of the litter."
+    },
+    "astoria": {
+      "median1br": 3400,
+      "basis": "median",
+      "rangeLow": null,
+      "rangeHigh": null,
+      "trendYoY": null,
+      "source": "RentHop",
+      "asOf": "June 2026",
+      "note": "Zumper shows ~$2,955 average.",
+      "whatFourKGets": "$4K is well above the $3,400 median — top-of-market space and choice."
+    },
+    "long-island-city": {
+      "median1br": null,
+      "basis": "range",
+      "rangeLow": 4100,
+      "rangeHigh": 4400,
+      "trendYoY": null,
+      "source": "PRD estimate — verify via RentCast",
+      "asOf": "June 2026",
+      "note": "Luxury-heavy inventory; verify via RentCast at build time.",
+      "whatFourKGets": "The bottom of a luxury-heavy market — most inventory is new towers at $4.1K and up."
+    },
+    "hells-kitchen": {
+      "median1br": 4900,
+      "basis": "average",
+      "rangeLow": null,
+      "rangeHigh": null,
+      "trendYoY": null,
+      "source": "Rent.com",
+      "asOf": "June 2026",
+      "note": "Walk-to-work premium.",
+      "whatFourKGets": "Under the $4,900 average — you trade square footage for the walk to work."
+    },
+    "yorkville": {
+      "median1br": null,
+      "basis": "range",
+      "rangeLow": 4000,
+      "rangeHigh": 4300,
+      "trendYoY": null,
+      "source": "Zumper",
+      "asOf": "Mar 2026",
+      "note": "UES median $4,725 all unit types; value pocket of Manhattan.",
+      "whatFourKGets": "A real shot at a 1BR — the range starts right at $4,000 in this Manhattan value pocket."
+    }
+  }
+}

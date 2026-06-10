@@ -1,0 +1,95 @@
+{
+  "anchor": { "label": "Office — Bryant Park / 42nd St", "lng": -73.9832, "lat": 40.7536 },
+  "neighborhoods": [
+    {
+      "id": "east-village",
+      "name": "East Village",
+      "borough": "Manhattan",
+      "zips": ["10009", "10003"],
+      "ntaCodes": ["MN0303"],
+      "streetEasyArea": "east-village",
+      "center": [-73.9838, 40.727]
+    },
+    {
+      "id": "lower-east-side",
+      "name": "Lower East Side",
+      "borough": "Manhattan",
+      "zips": ["10002"],
+      "ntaCodes": ["MN0302"],
+      "streetEasyArea": "les",
+      "center": [-73.984, 40.7167]
+    },
+    {
+      "id": "williamsburg",
+      "name": "Williamsburg",
+      "borough": "Brooklyn",
+      "zips": ["11211", "11249"],
+      "ntaCodes": ["BK0102"],
+      "streetEasyArea": "williamsburg",
+      "center": [-73.956, 40.7128]
+    },
+    {
+      "id": "east-williamsburg",
+      "name": "East Williamsburg",
+      "borough": "Brooklyn",
+      "zips": ["11206"],
+      "ntaCodes": ["BK0104"],
+      "streetEasyArea": "east-williamsburg",
+      "center": [-73.936, 40.7145]
+    },
+    {
+      "id": "greenpoint",
+      "name": "Greenpoint",
+      "borough": "Brooklyn",
+      "zips": ["11222"],
+      "ntaCodes": ["BK0101"],
+      "streetEasyArea": "greenpoint",
+      "center": [-73.95, 40.729]
+    },
+    {
+      "id": "bushwick",
+      "name": "Bushwick",
+      "borough": "Brooklyn",
+      "zips": ["11221", "11237"],
+      "ntaCodes": ["BK0401", "BK0402"],
+      "streetEasyArea": "bushwick",
+      "center": [-73.924, 40.698]
+    },
+    {
+      "id": "astoria",
+      "name": "Astoria",
+      "borough": "Queens",
+      "zips": ["11102", "11103", "11105", "11106"],
+      "ntaCodes": ["QN0103", "QN0101"],
+      "streetEasyArea": "astoria",
+      "center": [-73.921, 40.769]
+    },
+    {
+      "id": "long-island-city",
+      "name": "Long Island City",
+      "borough": "Queens",
+      "zips": ["11101", "11109"],
+      "ntaCodes": ["QN0201"],
+      "streetEasyArea": "long-island-city",
+      "center": [-73.9425, 40.745]
+    },
+    {
+      "id": "hells-kitchen",
+      "name": "Hell's Kitchen",
+      "borough": "Manhattan",
+      "zips": ["10019", "10036"],
+      "ntaCodes": ["MN0402"],
+      "streetEasyArea": "hells-kitchen",
+      "center": [-73.992, 40.763]
+    },
+    {
+      "id": "yorkville",
+      "name": "Upper East Side (Yorkville)",
+      "borough": "Manhattan",
+      "zips": ["10028", "10075", "10128"],
+      "ntaCodes": ["MN0803"],
+      "streetEasyArea": "yorkville",
+      "center": [-73.949, 40.776]
+    }
+  ]
+}

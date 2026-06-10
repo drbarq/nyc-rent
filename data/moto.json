@@ -1,0 +1,62 @@
+{
+  "east-village": {
+    "parkingViability": 3,
+    "garageLow": 200,
+    "garageHigh": 275,
+    "note": "Street parking is a knockdown/theft gamble with brutal alternate-side churn, but Rising Wolf (E 9th St) is a moto-only garage with 24h keyed access; Manhattan moto rates run $150-275/mo (MAD Transpo NYC guide + risingwolfgarage.com, Jun 2026)."
+  },
+  "lower-east-side": {
+    "parkingViability": 3,
+    "garageLow": 175,
+    "garageHigh": 250,
+    "note": "Narrow nightlife-heavy streets mean tip-overs and theft risk overnight; no dedicated moto garage found so figure the Manhattan $150-275/mo band (MAD Transpo NYC guide, Jun 2026) - upside is the Williamsburg Bridge on your doorstep for BQE/Rockaways escapes."
+  },
+  "williamsburg": {
+    "parkingViability": 6,
+    "garageLow": 100,
+    "garageHigh": 175,
+    "note": "Real moto community: MotorGrrl on Metropolitan runs $100-175/mo and Works Engineering on N 12th ~$125/mo (NYMSTF/forum listings, Jun 2026); side-street parking is workable but nightlife blocks carry vandalism risk."
+  },
+  "east-williamsburg": {
+    "parkingViability": 8,
+    "garageLow": 100,
+    "garageHigh": 175,
+    "note": "Industrial blocks = low alternate-side competition and easy daytime street parking, with MotorGrrl/Brooklyn Moto nearby in the Brooklyn $100-200/mo band (MAD Transpo NYC guide, Jun 2026); desolate blocks raise overnight theft risk, so garage it anyway."
+  },
+  "greenpoint": {
+    "parkingViability": 7,
+    "garageLow": 125,
+    "garageHigh": 200,
+    "note": "Quieter residential streets are kinder to a parked bike than anywhere in Manhattan; Brooklyn garages run $100-200/mo (MAD Transpo NYC guide, Jun 2026), and McGuinness Blvd puts you on the Pulaski/BQE toward the RFK and Palisades fast."
+  },
+  "bushwick": {
+    "parkingViability": 7,
+    "garageLow": 100,
+    "garageHigh": 175,
+    "note": "Industrial stretches make street parking easy, but theft/vandalism signal is the highest of the Brooklyn set - budget the low end of the Brooklyn $100-200/mo garage band for secure storage (MAD Transpo NYC guide, Jun 2026)."
+  },
+  "astoria": {
+    "parkingViability": 8,
+    "garageLow": 95,
+    "garageHigh": 175,
+    "note": "Driveways and semi-detached blocks mean genuinely viable street parking; outdoor moto lots from $95/mo and Queens garages $100-175/mo (Yelp/MAD Transpo NYC, Jun 2026), and the RFK Bridge gives the best weekend launch toward Bear Mountain via the Palisades."
+  },
+  "long-island-city": {
+    "parkingViability": 6,
+    "garageLow": 125,
+    "garageHigh": 200,
+    "note": "Tower-district street parking is competitive but many luxury buildings have garages that take bikes; Queens moto rates run $100-175/mo, building garages trend higher (MAD Transpo NYC guide, Jun 2026) - Queensboro and RFK bridges are minutes away."
+  },
+  "hells-kitchen": {
+    "parkingViability": 2,
+    "garageLow": 150,
+    "garageHigh": 250,
+    "note": "Worst street parking of the ten - commercial curbs, theft risk, relentless alternate-side - but 555 W 57th has a dedicated moto floor and Midtown moto rates run ~$170-200/mo (Yelp/NYMSTF, Jun 2026); Lincoln Tunnel to the Palisades Pkwy is the fastest Bear Mountain run in the city."
+  },
+  "yorkville": {
+    "parkingViability": 4,
+    "garageLow": 150,
+    "garageHigh": 250,
+    "note": "Heavy alternate-side competition but calmer than Midtown and the UES is garage-rich; a 59th St garage lists moto parking at $170/mo, Manhattan band $150-275/mo (Yelp/MAD Transpo NYC, Jun 2026), with the FDR-to-RFK ramp making northbound weekend escapes easy."
+  }
+}

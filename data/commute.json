@@ -1,0 +1,92 @@
+{
+  "east-village": {
+    "lines": ["6", "L", "N", "R", "W"],
+    "ferry": false,
+    "timeMin": 15,
+    "timeMax": 25,
+    "transfersMin": 0,
+    "transfersMax": 1,
+    "note": "Union Sq is the hub — 6, L, or N/R/W get you to Midtown direct or with one easy transfer."
+  },
+  "lower-east-side": {
+    "lines": ["F", "J", "M", "Z"],
+    "ferry": false,
+    "timeMin": 20,
+    "timeMax": 30,
+    "transfersMin": 0,
+    "transfersMax": 1,
+    "note": "F or J/M/Z run direct, but stations sit at the neighborhood's edges — count the walk."
+  },
+  "williamsburg": {
+    "lines": ["L", "J", "M"],
+    "ferry": true,
+    "timeMin": 25,
+    "timeMax": 35,
+    "transfersMin": 1,
+    "transfersMax": 1,
+    "note": "L + transfer; L is reliable but packed. Ferry is the scenic backup, not the fast one."
+  },
+  "east-williamsburg": {
+    "lines": ["L"],
+    "ferry": false,
+    "timeMin": 30,
+    "timeMax": 40,
+    "transfersMin": 1,
+    "transfersMax": 1,
+    "note": "L only — one transfer to Midtown, and the train is already full by the time it reaches you."
+  },
+  "greenpoint": {
+    "lines": ["G"],
+    "ferry": false,
+    "timeMin": 30,
+    "timeMax": 40,
+    "transfersMin": 1,
+    "transfersMax": 1,
+    "note": "G train only — transfer to the E/M or 7 required, plan +10 min."
+  },
+  "bushwick": {
+    "lines": ["L", "J", "M", "Z"],
+    "ferry": false,
+    "timeMin": 35,
+    "timeMax": 45,
+    "transfersMin": 1,
+    "transfersMax": 1,
+    "note": "L or J/M/Z plus a transfer; the deeper into Bushwick you live, the longer the ride."
+  },
+  "astoria": {
+    "lines": ["N", "W"],
+    "ferry": false,
+    "timeMin": 20,
+    "timeMax": 30,
+    "transfersMin": 0,
+    "transfersMax": 0,
+    "note": "N/W direct into Midtown — no transfer, just a steady elevated ride over the bridge."
+  },
+  "long-island-city": {
+    "lines": ["7", "E", "M", "G"],
+    "ferry": false,
+    "timeMin": 10,
+    "timeMax": 20,
+    "transfersMin": 0,
+    "transfersMax": 0,
+    "note": "7 or E/M direct — Midtown is one stop away; the G covers your Brooklyn trips."
+  },
+  "hells-kitchen": {
+    "lines": ["A", "C", "E", "1"],
+    "ferry": false,
+    "timeMin": 5,
+    "timeMax": 15,
+    "transfersMin": 0,
+    "transfersMax": 0,
+    "note": "Walkable to the office — A/C/E or 1 only matter on rainy days."
+  },
+  "yorkville": {
+    "lines": ["Q", "4", "5", "6"],
+    "ferry": false,
+    "timeMin": 15,
+    "timeMax": 25,
+    "transfersMin": 0,
+    "transfersMax": 0,
+    "note": "Q direct or 4/5/6 down Lexington — no transfer, but Lex trains run crushed at rush."
+  }
+}

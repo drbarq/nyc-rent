@@ -1,0 +1,102 @@
+{
+  "east-village": {
+    "score": 8,
+    "blurb": "Still the densest going-out neighborhood in Manhattan — walk from Tompkins Square down Avenue A or St. Marks and you pass dozens of dives, cocktail dens, and rooms like Joe's Pub and Webster Hall without crossing town. The St. Marks corridor and the NYU-adjacent western blocks skew loudly early-20s, but the Avenue A–B cocktail bars and the better restaurants hold a real 30s crowd. If you want to never need a plan on a Thursday night, this is the strongest case in the city.",
+    "tags": ["nightlife", "live-music", "dive-bars", "cocktail-bars", "late-night"],
+    "sources": [
+      "Time Out New York — East Village NYC Neighborhood Guide (2025)",
+      "The Infatuation — The 24 Best Bars In The East Village (accessed June 2026)",
+      "Time Out New York — Best nightlife in East Village: The hottest clubs and music venues (accessed June 2026)"
+    ]
+  },
+  "lower-east-side": {
+    "score": 7,
+    "blurb": "Clubby late-night blocks, some of the city's best dive bars, and the Dimes Square wine-bar pocket south of Delancey that draws young artists and creatives. The weekend crush around Orchard and Ludlow skews early-to-mid-20s and gets sloppy after midnight; at 37 you will gravitate to the cocktail rooms like Bar Goto and Tigre and the quieter southern corners. Endless to visit — living in the middle of it is a louder proposition than next-door East Village.",
+    "tags": ["nightlife", "dive-bars", "late-night", "gallery-scene", "old-new-york"],
+    "sources": [
+      "The Infatuation — The 17 Best Lower East Side Bars (2025)",
+      "Time Out New York — 18 Best Lower East Side Bars You Can't Miss When Going Out (accessed June 2026)",
+      "The Infatuation — The Best Restaurants In Dimes Square (accessed June 2026)"
+    ]
+  },
+  "williamsburg": {
+    "score": 9,
+    "blurb": "The most complete package on this list for a single 30s professional: destination restaurants, venues like Baby's All Right, bars running from beer dives to Westlight's rooftop, vintage shopping, and the waterfront. The crowd has aged up with the rents — nights out here read late-20s-to-40s rather than collegiate, and there is a deep bench of date-grade cocktail bars. Dense, walkable, and self-sufficient; you may stop leaving the neighborhood on weekends.",
+    "tags": ["nightlife", "live-music", "food", "cocktail-bars", "waterfront"],
+    "sources": [
+      "Time Out New York — Williamsburg, Brooklyn neighborhood guide (accessed June 2026)",
+      "Time Out New York — The 21 best bars in Williamsburg, Brooklyn (accessed June 2026)",
+      "The Infatuation — The 22 Best Bars In Williamsburg (accessed June 2026)"
+    ]
+  },
+  "east-williamsburg": {
+    "score": 7,
+    "blurb": "Industrial blocks around Morgan and Bogart with warehouse venues, rooftop bars like Our Wicked Lady, and a genuine garage-and-moto culture — community motorcycle garages and shops cluster here and just over the Bushwick and Greenpoint lines. The going-out crowd skews mid-20s artist-and-warehouse, but it is an unpretentious skew, not a collegiate one. You live here for space and a ten-minute walk to both the Williamsburg and Bushwick scenes, not for tree-lined charm.",
+    "tags": ["nightlife", "live-music", "moto-culture", "dive-bars"],
+    "sources": [
+      "Fodor's Travel — Bushwick and East Williamsburg: Nightlife (accessed June 2026)",
+      "REV'IT! — Motorcycle Cities in Brooklyn, Part 1 (accessed June 2026)",
+      "The Infatuation — The 22 Best Bars In Williamsburg (accessed June 2026)"
+    ]
+  },
+  "greenpoint": {
+    "score": 8,
+    "blurb": "Quiet cool: the grown-up corner of north Brooklyn, with one of the city's best food scenes (Chez Ma Tante, Taqueria Ramirez, Wenwen), bars built for conversation, Polish bakeries, and waterfront parks facing the skyline. The crowd skews solidly 30s+ — this is where Williamsburg regulars land when they stop wanting weekend mayhem, with Warsaw as the local big-room exception. The trade-offs are the G train and evenings that wind down earlier than points south.",
+    "tags": ["food", "cocktail-bars", "waterfront", "quiet-evenings", "live-music"],
+    "sources": [
+      "Time Out New York — Greenpoint, Brooklyn Neighborhood Guide (accessed June 2026)",
+      "The Infatuation — The 20 Best Restaurants In Greenpoint, Brooklyn (accessed June 2026)",
+      "The Infatuation — The Best Bars In Greenpoint (accessed June 2026)"
+    ]
+  },
+  "bushwick": {
+    "score": 8,
+    "blurb": "The city's center of gravity for warehouse parties and serious dance floors — Elsewhere, House of Yes, Lot 45 — plus an underrated layer of jazz (Ornithology) and dive bars, street-art blocks, and a real moto scene anchored by community garages like Roll Up Brooklyn. The core nightlife crowd skews early-to-mid-20s and art-school; at 37 you will feel fine on the dance floor and possibly old at the afters. Highest experience density per rent dollar on this list if nightlife is the priority.",
+    "tags": ["nightlife", "late-night", "live-music", "moto-culture", "gallery-scene"],
+    "sources": [
+      "Time Out New York — Bushwick, Brooklyn Guide To Restaurants, Bars and More (accessed June 2026)",
+      "The Infatuation — The Best Bars In Bushwick (accessed June 2026)",
+      "Bushwick Daily — Roll Up Brooklyn, New Motorcycle Garage Is Opening in Bushwick (accessed June 2026)"
+    ]
+  },
+  "astoria": {
+    "score": 6,
+    "blurb": "A relaxed, deeply good eating neighborhood — Greek seafood at Taverna Kyclades, Middle Eastern, a century-old beer garden — at prices noticeably below Manhattan. Nightlife means neighborhood bars and beer halls rather than a scene, and the crowd is an all-ages mix of long-time locals and 20s-30s transplants, so a 37-year-old blends right in. Expect a comfortable life with serious food; you will ride the N/W into Manhattan or Brooklyn for big nights out.",
+    "tags": ["food", "walkable", "quiet-evenings", "old-new-york"],
+    "sources": [
+      "Time Out New York — Astoria Queens Neighborhood Guide (accessed June 2026)",
+      "The Infatuation — The 24 Best Restaurants In Astoria (accessed June 2026)",
+      "Resy — Resy's Essential Guide to Astoria (2024)"
+    ]
+  },
+  "long-island-city": {
+    "score": 4,
+    "blurb": "High-rise waterfront living with skyline views from Gantry Plaza, a fast-improving restaurant scene, and an art anchor in MoMA PS1 — but nightlife is thin and the tower blocks go quiet by 11. The crowd is late-20s-to-40s professionals and young families rather than a scene, and quieter pockets away from the 7 feel almost suburban. Best understood as a commute-and-comfort play; the nights out you actually want are a short ride away in Greenpoint or Manhattan.",
+    "tags": ["waterfront", "quiet-evenings", "food", "gallery-scene"],
+    "sources": [
+      "The Infatuation — The 21 Best Restaurants In Long Island City (accessed June 2026)",
+      "NYC Tourism — Long Island City, Queens: NYC Neighborhood Guide (accessed June 2026)",
+      "Propertynest — Long Island City Neighborhood Review (2024)"
+    ]
+  },
+  "hells-kitchen": {
+    "score": 6,
+    "blurb": "Walk-to-work convenience with restaurant rows running up Ninth and Tenth Avenues and the undisputed center of the city's gay nightlife between 42nd and 57th. The after-work and weekend crowd skews 30s-40s professional plus theater traffic near Eighth Avenue, so you will not feel old here — but the straight-singles bar scene is more generic happy-hour than downtown or Brooklyn. Extremely walkable and never dead; just short on edge and on quiet.",
+    "tags": ["nightlife", "food", "walkable", "late-night"],
+    "sources": [
+      "Time Out New York — Hell's Kitchen, NYC Guide to Restaurants, Bars and Hotels (accessed June 2026)",
+      "Time Out New York — Best gay bars in Hell's Kitchen, New York neighborhood (accessed June 2026)",
+      "NYC Tourism — Hell's Kitchen LGBTQ+ Nightlife and Dining (accessed June 2026)"
+    ]
+  },
+  "yorkville": {
+    "score": 3,
+    "blurb": "A quiet residential value pocket: tree-lined blocks, sports bars and 24-hour diners shared by recent grads and families, and nights that mostly end before midnight. There is no scene to speak of — for a 37-year-old optimizing a one-year NYC chapter, your social life would be a Q-train ride downtown. Pick it for the rent delta, Carl Schurz Park, and the East River esplanade, not the vibe.",
+    "tags": ["quiet-evenings", "walkable", "waterfront", "food"],
+    "sources": [
+      "StreetEasy — Yorkville: What To Know About This Upper East Side Area (accessed June 2026)",
+      "Nabewise — Yorkville Neighborhood Guide, NYC (2023)",
+      "Nest Seekers — Neighborhood Guide for Yorkville, Manhattan (accessed June 2026)"
+    ]
+  }
+}

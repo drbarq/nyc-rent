@@ -1,0 +1,34 @@
+{
+  "east-village": [
+    "MN0303"
+  ],
+  "lower-east-side": [
+    "MN0302"
+  ],
+  "williamsburg": [
+    "BK0102"
+  ],
+  "east-williamsburg": [
+    "BK0104"
+  ],
+  "greenpoint": [
+    "BK0101"
+  ],
+  "bushwick": [
+    "BK0401",
+    "BK0402"
+  ],
+  "astoria": [
+    "QN0103",
+    "QN0101"
+  ],
+  "long-island-city": [
+    "QN0201"
+  ],
+  "hells-kitchen": [
+    "MN0402"
+  ],
+  "yorkville": [
+    "MN0803"
+  ]
+}
