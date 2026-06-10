@@ -13,6 +13,10 @@ import type {
 } from '../lib/types'
 import { BulletStrip } from './BulletStrip'
 
+export type PanelVerdict =
+  | { kind: 'pick'; rank: number; headline: string; rationale: string }
+  | { kind: 'pass'; whyNot: string; wouldFlipIf: string }
+
 interface Props {
   hood: Neighborhood
   scored: Scored
@@ -26,6 +30,7 @@ interface Props {
   motoOn: boolean
   anchorShort: string
   settings: AppSettings
+  panelVerdict: PanelVerdict | null
   onClose: () => void
 }
 
@@ -42,6 +47,7 @@ export function DetailPanel({
   motoOn,
   anchorShort,
   settings,
+  panelVerdict,
   onClose,
 }: Props) {
   const trend = trendDisplay(rent.trendYoY)
@@ -76,6 +82,27 @@ export function DetailPanel({
           </span>
         </div>
       </header>
+
+      {panelVerdict && (
+        <section className="detail-section" aria-label="AI panel verdict">
+          <h3>AI panel verdict</h3>
+          {panelVerdict.kind === 'pick' ? (
+            <>
+              <p style={{ margin: 0 }}>
+                <strong className="num">Pick #{panelVerdict.rank}</strong> — {panelVerdict.headline}
+              </p>
+              <p className="note">{panelVerdict.rationale}</p>
+            </>
+          ) : (
+            <>
+              <p style={{ margin: 0 }}>
+                <strong>Passed.</strong> {panelVerdict.whyNot}
+              </p>
+              <p className="note">Would flip if: {panelVerdict.wouldFlipIf}</p>
+            </>
+          )}
+        </section>
+      )}
 
       <section className="detail-section" aria-label="Rent">
         <h3>Rent — 1BR only, no roommates</h3>

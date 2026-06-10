@@ -3,10 +3,12 @@ import maplibregl, { Map as MlMap, MapMouseEvent, StyleSpecification } from 'map
 import 'maplibre-gl/dist/maplibre-gl.css'
 import { useEffect, useRef, useState } from 'react'
 import hoodsRaw from '../../data/neighborhoods.geojson?raw'
+import ruledRaw from '../../data/ruledout.geojson?raw'
 import type { Scored } from '../lib/score'
 import type { Neighborhood, NeighborhoodId, NeighborhoodsFile } from '../lib/types'
 
 const hoods = JSON.parse(hoodsRaw) as FeatureCollection
+const ruled = JSON.parse(ruledRaw) as FeatureCollection
 
 const reducedMotion = () =>
   window.matchMedia('(prefers-reduced-motion: reduce)').matches
@@ -43,6 +45,8 @@ interface Props {
   anchor: AnchorSpec
   selectedId: NeighborhoodId | null
   onSelect: (id: NeighborhoodId | null) => void
+  /** A considered-but-excluded area was clicked. */
+  onSelectRuledOut: (id: string | null) => void
   /** Bumping `n` flies the map to neighborhood `id` (set by ranked-list clicks). */
   focus: { id: NeighborhoodId; n: number } | null
   registry: NeighborhoodsFile
@@ -52,7 +56,8 @@ interface Tip {
   x: number
   y: number
   name: string
-  rank: number
+  /** null = a ruled-out area (no rank/score). */
+  rank: number | null
   composite: number
 }
 
@@ -90,6 +95,7 @@ const STYLE: StyleSpecification = {
       },
     },
     hoods: { type: 'geojson', data: hoods, promoteId: 'id' },
+    ruled: { type: 'geojson', data: ruled, promoteId: 'id' },
   },
   layers: [
     { id: 'basemap', type: 'raster', source: 'carto' },
@@ -98,6 +104,24 @@ const STYLE: StyleSpecification = {
       type: 'fill',
       source: 'dimmer',
       paint: { 'fill-color': '#fafaf7', 'fill-opacity': 0.45 },
+    },
+    // Considered-but-excluded areas: faint ink wash + dashed border.
+    {
+      id: 'ruled-fill',
+      type: 'fill',
+      source: 'ruled',
+      paint: { 'fill-color': '#0f0f0f', 'fill-opacity': 0.05 },
+    },
+    {
+      id: 'ruled-line',
+      type: 'line',
+      source: 'ruled',
+      paint: {
+        'line-color': '#0f0f0f',
+        'line-width': 1,
+        'line-opacity': 0.55,
+        'line-dasharray': [2, 2],
+      },
     },
     {
       id: 'hood-fill',
@@ -141,6 +165,7 @@ export function MapView({
   anchor,
   selectedId,
   onSelect,
+  onSelectRuledOut,
   focus,
   registry,
 }: Props) {
@@ -157,6 +182,8 @@ export function MapView({
   scoresRef.current = scores
   const onSelectRef = useRef(onSelect)
   onSelectRef.current = onSelect
+  const onSelectRuledRef = useRef(onSelectRuledOut)
+  onSelectRuledRef.current = onSelectRuledOut
 
   useEffect(() => {
     if (!containerRef.current) return
@@ -178,13 +205,13 @@ export function MapView({
     }
 
     map.on('load', () => {
-      // Frame all candidates + the Midtown anchor.
+      // Frame all candidates (Harlem to Crown Heights) + the office anchor.
       map.fitBounds(
         [
-          [-74.03, 40.66],
-          [-73.85, 40.805],
+          [-74.04, 40.645],
+          [-73.85, 40.845],
         ],
-        { padding: 28, duration: 0 },
+        { padding: 24, duration: 0 },
       )
       setReady(true)
     })
@@ -230,9 +257,41 @@ export function MapView({
       setTip(null)
     })
 
+    // Ruled-out areas: hover names them, click explains them.
+    map.on('mousemove', 'ruled-fill', (e: MapMouseEvent) => {
+      if (map.queryRenderedFeatures(e.point, { layers: ['hood-fill'] })[0]) return
+      const feature = map.queryRenderedFeatures(e.point, { layers: ['ruled-fill'] })[0]
+      if (!feature) return
+      map.getCanvas().style.cursor = 'pointer'
+      setTip({
+        x: e.point.x,
+        y: e.point.y,
+        name: String(feature.properties?.name ?? ''),
+        rank: null,
+        composite: 0,
+      })
+    })
+
+    map.on('mouseleave', 'ruled-fill', () => {
+      map.getCanvas().style.cursor = ''
+      setTip(null)
+    })
+
     map.on('click', (e: MapMouseEvent) => {
-      const feature = map.queryRenderedFeatures(e.point, { layers: ['hood-fill'] })[0]
-      onSelectRef.current(feature ? (feature.properties?.id as NeighborhoodId) : null)
+      const hood = map.queryRenderedFeatures(e.point, { layers: ['hood-fill'] })[0]
+      if (hood) {
+        onSelectRuledRef.current(null)
+        onSelectRef.current(hood.properties?.id as NeighborhoodId)
+        return
+      }
+      const out = map.queryRenderedFeatures(e.point, { layers: ['ruled-fill'] })[0]
+      if (out) {
+        onSelectRef.current(null)
+        onSelectRuledRef.current(String(out.properties?.id))
+        return
+      }
+      onSelectRef.current(null)
+      onSelectRuledRef.current(null)
     })
 
     return () => {
@@ -325,9 +384,13 @@ export function MapView({
       {tip && (
         <div className="map-tip" style={{ left: tip.x, top: tip.y }} aria-hidden="true">
           {tip.name}{' '}
-          <span className="tip-score num">
-            #{tip.rank} · {Math.round(tip.composite * 100)}
-          </span>
+          {tip.rank != null ? (
+            <span className="tip-score num">
+              #{tip.rank} · {Math.round(tip.composite * 100)}
+            </span>
+          ) : (
+            <span className="tip-score">passed — click for why</span>
+          )}
         </div>
       )}
       <div className="legend" aria-hidden="true">

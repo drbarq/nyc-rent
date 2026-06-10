@@ -111,6 +111,94 @@
       "asOf": "Mar 2026",
       "note": "UES median $4,725 all unit types; value pocket of Manhattan.",
       "whatFourKGets": "A real shot at a 1BR — the range starts right at $4,000 in this Manhattan value pocket."
+    },
+    "harlem": {
+      "median1br": 2998,
+      "basis": "median",
+      "rangeLow": null,
+      "rangeHigh": null,
+      "trendYoY": 0.35,
+      "source": "RentHop (Central Harlem)",
+      "asOf": "June 2026",
+      "note": "Essentially flat YoY (+0.35%) — one of the few real Manhattan value pockets, with a median near $3K.",
+      "whatFourKGets": "$4K is a full $1K above the $2,998 median — top-of-market space and choice."
+    },
+    "ridgewood": {
+      "median1br": 2838,
+      "basis": "median",
+      "rangeLow": null,
+      "rangeHigh": null,
+      "trendYoY": -4.88,
+      "source": "RentHop",
+      "asOf": "April 2026",
+      "note": "Down ~5% YoY; HotPads/Zillow shows a ~$2,658 1BR average. Thin listing volume — mostly small-landlord walkup and railroad stock.",
+      "whatFourKGets": "$4K is far above the $2,838 median — pick of the market."
+    },
+    "crown-heights": {
+      "median1br": 3650,
+      "basis": "median",
+      "rangeLow": null,
+      "rangeHigh": null,
+      "trendYoY": 10.34,
+      "source": "RentHop",
+      "asOf": "May 2026",
+      "note": "+10.3% YoY — rising fast; median of all active listings is $3,795.",
+      "whatFourKGets": "Comfortably above the $3,650 median today, but +10% a year is closing that gap."
+    },
+    "prospect-heights": {
+      "median1br": null,
+      "basis": "range",
+      "rangeLow": 3500,
+      "rangeHigh": 4819,
+      "trendYoY": null,
+      "source": "RentHop (Jan 2026) / RentCafe (Apr 2026) — sources conflict",
+      "asOf": "Jan–Apr 2026",
+      "note": "Small neighborhood, thin inventory, figures swing: RentHop's median ($3,500, Jan) and RentCafe's large-building average ($4,819, Apr) are far apart; ApartmentAdvisor lands at ~$4,185.",
+      "whatFourKGets": "Workable in the older walkup stock; the new buildings average closer to $4.8K."
+    },
+    "fort-greene": {
+      "median1br": 4261,
+      "basis": "median",
+      "rangeLow": null,
+      "rangeHigh": null,
+      "trendYoY": -1.43,
+      "source": "RentHop",
+      "asOf": "May 2026",
+      "note": "Slightly down YoY; RentCafe's large-building average is $4,740. The Clinton Hill side of this area medians $4,000 (RentHop, May 2026).",
+      "whatFourKGets": "Right at the edge — $4K matches the Clinton Hill median but sits under Fort Greene proper's $4,261."
+    },
+    "bed-stuy": {
+      "median1br": 3200,
+      "basis": "median",
+      "rangeLow": null,
+      "rangeHigh": null,
+      "trendYoY": 4.41,
+      "source": "RentHop",
+      "asOf": "June 2026",
+      "note": "+4.4% YoY; mostly brownstone and small-building stock rather than new towers.",
+      "whatFourKGets": "$4K is $800 above the median — a real brownstone floor-through, not a chopped-up share."
+    },
+    "chelsea": {
+      "median1br": 5995,
+      "basis": "median",
+      "rangeLow": null,
+      "rangeHigh": null,
+      "trendYoY": 3.19,
+      "source": "RentHop",
+      "asOf": "June 2026",
+      "note": "One of Manhattan's priciest 1BR markets; RentCafe's average runs even higher (~$6,157).",
+      "whatFourKGets": "$4K is two-thirds of the $5,995 median — a small, dated walkup unit if anything."
+    },
+    "west-village": {
+      "median1br": 5499,
+      "basis": "median",
+      "rangeLow": null,
+      "rangeHigh": null,
+      "trendYoY": 1.9,
+      "source": "RentHop",
+      "asOf": "June 2026",
+      "note": "Prewar walkups dominate — you pay for the address, not the square footage.",
+      "whatFourKGets": "Long odds — $4K is $1.5K under the median; tiny prewar walkups only."
     }
   }
 }

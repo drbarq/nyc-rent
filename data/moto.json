@@ -58,5 +58,53 @@
     "garageLow": 150,
     "garageHigh": 250,
     "note": "Heavy alternate-side competition but calmer than Midtown and the UES is garage-rich; a 59th St garage lists moto parking at $170/mo, Manhattan band $150-275/mo (Yelp/MAD Transpo NYC, Jun 2026), with the FDR-to-RFK ramp making northbound weekend escapes easy."
+  },
+  "harlem": {
+    "parkingViability": 6,
+    "garageLow": 150,
+    "garageHigh": 250,
+    "note": "Residential brownstone blocks beat Midtown for street parking, though alternate-side still bites and 125th St garages charge car rates (a W 125th listing runs $415/mo; moto, figure the Manhattan $150-275 band - SpotAngels/MAD Transpo NYC, Jun 2026); the killer feature is Harlem River Drive to the GWB in ~12 min - the fastest Palisades Pkwy/Bear Mountain launch on this list."
+  },
+  "ridgewood": {
+    "parkingViability": 8,
+    "garageLow": 100,
+    "garageHigh": 175,
+    "note": "Attached-garage and driveway blocks make street parking Astoria-tier easy, with private garage/driveway listings around $120/mo on Spacer and Queens moto spots from ~$150 (Spacer/Craigslist, Jun 2026); the Jackie Robinson Pkwy at Highland Park gets you to the Belt and the Rockaways, but Bear Mountain runs mean crossing the whole city first."
+  },
+  "crown-heights": {
+    "parkingViability": 5,
+    "garageLow": 125,
+    "garageHigh": 200,
+    "note": "Brownstone blocks with classic alternate-side churn - workable but you will circle; the Sportsmen Speed Club on the Bed-Stuy line is a $325/mo moto clubhouse with lifts and tools, while plain Brooklyn garage spots run $100-200/mo (Craigslist/MAD Transpo NYC, Jun 2026) - Eastern Pkwy feeds the Jackie Robinson for ride-outs east."
+  },
+  "prospect-heights": {
+    "parkingViability": 5,
+    "garageLow": 150,
+    "garageHigh": 225,
+    "note": "Tightest curbs of the brownstone-Brooklyn set - small footprint plus Barclays Center event nights and museum traffic; the Atlantic Yards-era towers have garages trending above the Brooklyn $100-200/mo band (MAD Transpo NYC guide, Jun 2026), and Flatbush Ave runs you onto the Manhattan Bridge north or clear down to the Marine Pkwy Bridge and the Rockaways south."
+  },
+  "fort-greene": {
+    "parkingViability": 5,
+    "garageLow": 125,
+    "garageHigh": 200,
+    "note": "Brownstone alternate-side like its neighbors, but the BQE on-ramp at Park Ave sits right on the neighborhood edge - quickest highway access in brownstone Brooklyn; no moto-only garage in Fort Greene/Clinton Hill itself, so figure the Brooklyn $100-200/mo band or Brooklyn Motor Works in Red Hook at ~$120/mo a short ride away (MotoNYC/MAD Transpo NYC, Jun 2026)."
+  },
+  "bed-stuy": {
+    "parkingViability": 6,
+    "garageLow": 100,
+    "garageHigh": 175,
+    "note": "Easiest street parking of the brownstone set - wider blocks, less curb competition - though theft risk argues for the Sportsmen Speed Club ($325/mo club garage on the Crown Heights line) or a plain Brooklyn $100-200/mo spot (Craigslist/MAD Transpo NYC, Jun 2026); Broadway to the Williamsburg Bridge or Atlantic Ave east to the Jackie Robinson for weekend ride-outs."
+  },
+  "chelsea": {
+    "parkingViability": 2,
+    "garageLow": 190,
+    "garageHigh": 315,
+    "note": "Hell's Kitchen-grade street parking misery - commercial curbs, gallery-district truck traffic, theft - and the priciest garage band here: Spacer lists Chelsea moto storage at $187.50-312.50/mo (Spacer, Jun 2026); the saving grace is the Lincoln Tunnel a short ride north for the Palisades Pkwy Bear Mountain run."
+  },
+  "west-village": {
+    "parkingViability": 2,
+    "garageLow": 200,
+    "garageHigh": 325,
+    "note": "Narrow crooked streets, zero spare curb, and relentless alternate-side tie it with Chelsea for worst street parking on the list; no moto garage in-neighborhood - Rising Wolf (East Village) and Ryders Alley (downtown) run ~$200/mo while local car garages start north of $300 (NYMSTF/MotoNYC/SpotAngels, Jun 2026) - and the West Side Hwy straight up to the GWB is your ride-out."
   }
 }

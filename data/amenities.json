@@ -258,5 +258,181 @@
       "Whole Foods Market / Yelp — full-size Whole Foods at 1551 Third Ave (87th St) and Fairway at 240 E 86th St both operating",
       "vitalclimbinggym.com / Yelp — VITAL Upper East (formerly Steep Rock Bouldering) at 1506 Lexington Ave"
     ]
+  },
+  "harlem": {
+    "parks": {
+      "score": 5,
+      "note": "—"
+    },
+    "gyms": {
+      "score": 5,
+      "note": "—"
+    },
+    "groceries": {
+      "score": 5,
+      "note": "—"
+    },
+    "coffee": {
+      "score": 5,
+      "note": "—"
+    },
+    "laundry": {
+      "note": "—"
+    },
+    "sources": []
+  },
+  "ridgewood": {
+    "parks": {
+      "score": 5,
+      "note": "—"
+    },
+    "gyms": {
+      "score": 5,
+      "note": "—"
+    },
+    "groceries": {
+      "score": 5,
+      "note": "—"
+    },
+    "coffee": {
+      "score": 5,
+      "note": "—"
+    },
+    "laundry": {
+      "note": "—"
+    },
+    "sources": []
+  },
+  "crown-heights": {
+    "parks": {
+      "score": 5,
+      "note": "—"
+    },
+    "gyms": {
+      "score": 5,
+      "note": "—"
+    },
+    "groceries": {
+      "score": 5,
+      "note": "—"
+    },
+    "coffee": {
+      "score": 5,
+      "note": "—"
+    },
+    "laundry": {
+      "note": "—"
+    },
+    "sources": []
+  },
+  "prospect-heights": {
+    "parks": {
+      "score": 5,
+      "note": "—"
+    },
+    "gyms": {
+      "score": 5,
+      "note": "—"
+    },
+    "groceries": {
+      "score": 5,
+      "note": "—"
+    },
+    "coffee": {
+      "score": 5,
+      "note": "—"
+    },
+    "laundry": {
+      "note": "—"
+    },
+    "sources": []
+  },
+  "fort-greene": {
+    "parks": {
+      "score": 5,
+      "note": "—"
+    },
+    "gyms": {
+      "score": 5,
+      "note": "—"
+    },
+    "groceries": {
+      "score": 5,
+      "note": "—"
+    },
+    "coffee": {
+      "score": 5,
+      "note": "—"
+    },
+    "laundry": {
+      "note": "—"
+    },
+    "sources": []
+  },
+  "bed-stuy": {
+    "parks": {
+      "score": 5,
+      "note": "—"
+    },
+    "gyms": {
+      "score": 5,
+      "note": "—"
+    },
+    "groceries": {
+      "score": 5,
+      "note": "—"
+    },
+    "coffee": {
+      "score": 5,
+      "note": "—"
+    },
+    "laundry": {
+      "note": "—"
+    },
+    "sources": []
+  },
+  "chelsea": {
+    "parks": {
+      "score": 5,
+      "note": "—"
+    },
+    "gyms": {
+      "score": 5,
+      "note": "—"
+    },
+    "groceries": {
+      "score": 5,
+      "note": "—"
+    },
+    "coffee": {
+      "score": 5,
+      "note": "—"
+    },
+    "laundry": {
+      "note": "—"
+    },
+    "sources": []
+  },
+  "west-village": {
+    "parks": {
+      "score": 5,
+      "note": "—"
+    },
+    "gyms": {
+      "score": 5,
+      "note": "—"
+    },
+    "groceries": {
+      "score": 5,
+      "note": "—"
+    },
+    "coffee": {
+      "score": 5,
+      "note": "—"
+    },
+    "laundry": {
+      "note": "—"
+    },
+    "sources": []
   }
 }

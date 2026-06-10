@@ -1,5 +1,9 @@
 {
-  "anchor": { "label": "Office — Cyera HQ · 500 7th Ave at 37th", "lng": -73.9887, "lat": 40.7528 },
+  "anchor": {
+    "label": "Office — Cyera HQ · 500 7th Ave at 37th",
+    "lng": -73.9887,
+    "lat": 40.7528
+  },
   "neighborhoods": [
     {
       "id": "east-village",
@@ -90,6 +94,78 @@
       "ntaCodes": ["MN0803"],
       "streetEasyArea": "yorkville",
       "center": [-73.949, 40.776]
+    },
+    {
+      "id": "harlem",
+      "name": "Central Harlem",
+      "borough": "Manhattan",
+      "zips": ["10027", "10026", "10030"],
+      "ntaCodes": ["MN1001", "MN1002"],
+      "streetEasyArea": "central-harlem",
+      "center": [-73.9425, 40.8115]
+    },
+    {
+      "id": "ridgewood",
+      "name": "Ridgewood",
+      "borough": "Queens",
+      "zips": ["11385"],
+      "ntaCodes": ["QN0502"],
+      "streetEasyArea": "ridgewood",
+      "center": [-73.9059, 40.7043]
+    },
+    {
+      "id": "crown-heights",
+      "name": "Crown Heights",
+      "borough": "Brooklyn",
+      "zips": ["11213", "11225", "11216"],
+      "ntaCodes": ["BK0802", "BK0901"],
+      "streetEasyArea": "crown-heights",
+      "center": [-73.9422, 40.67]
+    },
+    {
+      "id": "prospect-heights",
+      "name": "Prospect Heights",
+      "borough": "Brooklyn",
+      "zips": ["11238"],
+      "ntaCodes": ["BK0801"],
+      "streetEasyArea": "prospect-heights",
+      "center": [-73.969, 40.6774]
+    },
+    {
+      "id": "fort-greene",
+      "name": "Fort Greene & Clinton Hill",
+      "borough": "Brooklyn",
+      "zips": ["11205", "11217"],
+      "ntaCodes": ["BK0203", "BK0204"],
+      "streetEasyArea": "fort-greene",
+      "center": [-73.968, 40.69]
+    },
+    {
+      "id": "bed-stuy",
+      "name": "Bedford-Stuyvesant",
+      "borough": "Brooklyn",
+      "zips": ["11216", "11221", "11233"],
+      "ntaCodes": ["BK0301", "BK0302"],
+      "streetEasyArea": "bedford-stuyvesant",
+      "center": [-73.9418, 40.6872]
+    },
+    {
+      "id": "chelsea",
+      "name": "Chelsea",
+      "borough": "Manhattan",
+      "zips": ["10011", "10001"],
+      "ntaCodes": ["MN0401"],
+      "streetEasyArea": "chelsea",
+      "center": [-74, 40.744]
+    },
+    {
+      "id": "west-village",
+      "name": "West Village",
+      "borough": "Manhattan",
+      "zips": ["10014"],
+      "ntaCodes": ["MN0203"],
+      "streetEasyArea": "west-village",
+      "center": [-74.0036, 40.7358]
     }
   ]
 }

@@ -1,0 +1,52 @@
+{
+  "areas": [
+    {
+      "id": "park-slope",
+      "name": "Park Slope",
+      "reason": "Brooklyn's stroller capital — gorgeous brownstones, great food-co-op energy, and a social scene built around couples and school calendars. At 37 and single you'd love the farmers market and feel out of place at the bar by 10pm.",
+      "ntaCodes": ["BK0602"]
+    },
+    {
+      "id": "murray-hill",
+      "name": "Murray Hill & Kips Bay",
+      "reason": "Walkable to the office and full of post-college energy — the bar scene runs five to ten years younger than you. Decent value for Manhattan, wrong decade.",
+      "ntaCodes": ["MN0603"]
+    },
+    {
+      "id": "fidi",
+      "name": "Financial District",
+      "reason": "Doorman-building value and a quick train to 34th St, but the neighborhood empties out after 7pm and on weekends. For a one-year NYC chapter, living where the city goes quiet defeats the point.",
+      "ntaCodes": ["MN0101"]
+    },
+    {
+      "id": "washington-heights",
+      "name": "Washington Heights",
+      "reason": "Real rent relief and the A express is no joke, but it's a 35–50 minute door-to-door and the nightlife is local-neighborhood, not destination. The savings buy you distance from everything you moved for.",
+      "ntaCodes": ["MN1201", "MN1202"]
+    },
+    {
+      "id": "sunnyside",
+      "name": "Sunnyside",
+      "reason": "Lovely, leafy 7-train value with great Irish pubs and Romanian bakeries — and quiet by 10. You'd be commuting to your social life every weekend.",
+      "ntaCodes": ["QN0202"]
+    },
+    {
+      "id": "upper-west-side",
+      "name": "Upper West Side",
+      "reason": "Handsome, park-flanked, and convenient — and settled. The UWS is where people move after they've made their NYC memories, not to make them.",
+      "ntaCodes": ["MN0701", "MN0702", "MN0703"]
+    },
+    {
+      "id": "soho-nolita",
+      "name": "SoHo & Nolita",
+      "reason": "The scene, the looks, the restaurants — and 1BR asking rents that blow past $5.5K before you've seen a lease. The stretch zone doesn't stretch this far.",
+      "ntaCodes": ["MN0201"]
+    },
+    {
+      "id": "dumbo",
+      "name": "DUMBO & Downtown Brooklyn",
+      "reason": "Postcard bridge views and new-tower amenities, but tiny 1BR inventory at premium prices and corporate-quiet evenings. You'd live in a photograph, not a neighborhood.",
+      "ntaCodes": ["BK0202"]
+    }
+  ]
+}

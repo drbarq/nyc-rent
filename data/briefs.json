@@ -100,5 +100,69 @@
       "Brick Underground, What you need to know about living in Yorkville — https://www.brickunderground.com/blog/2014/04/what_you_need_to_know_about_living_in_yorkville",
       "NYC Parks, Carl Schurz Park — https://www.nycgovparks.org/parks/carl-schurz-park"
     ]
+  },
+  "fort-greene": {
+    "summary": "Fort Greene is brownstone Brooklyn at its most composed — tree-lined blocks of mid-1800s rowhouses just east of Flatbush Avenue, folded together here with quieter, equally handsome Clinton Hill next door. It has been a center of Black artistic life for decades — Spike Lee's 40 Acres offices, the Brooklyn Moon cafe on Fulton Street that launched spoken-word careers — and today it mixes longtime Black homeowners with writers, film people, and well-paid thirty- and forty-something professionals. Life runs on two strips: DeKalb Avenue for cafes and restaurants, Fulton Street for bars and the older institutions. Thirty-acre hilltop Fort Greene Park is the living room, and its Saturday ritual is real — a year-round Greenmarket at the park's edge, an artisans bazaar stretching down DeKalb, an afternoon in the grass, then a film or show at BAM, the Brooklyn Academy of Music, on Lafayette Avenue.",
+    "complaints": "The Atlantic Terminal/Barclays Center corner is a charmless arena-and-mall zone you'll learn to route around, the restaurant count is thin for the rent, and the neighborhood goes quiet early. The brownstone stock is gorgeous but old: walk-ups, basement laundry if any, and few true one-bedrooms under $4,000.",
+    "bottomLine": "Nine subway lines meet at Atlantic Av-Barclays — the 2/3 reaches 34th St-Penn, four blocks from your desk, in about 20 minutes — and this is the rare Brooklyn scene that's cool at 37 rather than 24, if you can find the apartment.",
+    "sources": [
+      "https://www.timeout.com/newyork/things-to-do/fort-greene",
+      "https://www.grownyc.org/greenmarket/brooklyn/fort-greene",
+      "https://urbanomnibus.net/2013/04/naturally-occurring-cultural-districts-fort-greene-brooklyn/"
+    ]
+  },
+  "bed-stuy": {
+    "summary": "Bedford-Stuyvesant is a huge swath of central Brooklyn holding one of the country's largest collections of Victorian brownstones, and it has been the heart of Black New York for nearly a century. Longtime homeowners and church congregations now share the stoops with a fast-growing wave of younger creative transplants, and that tension is part of the place. Newcomer life concentrates on two corridors: Bedford Avenue on the western edge near the Bedford-Nostrand G stop, and Tompkins Avenue, a strip of Black-owned businesses — Bed-Vyne wine, Peace & Riot, Sincerely, Tommy — with cafes filling the blocks between. Saturdays feel small-town in the best way: stoop conversations, coffee on Tompkins, an afternoon in Herbert Von King Park, Caribbean or soul food near Fulton Street, and a late set at Bar Lunàtico on Halsey Street.",
+    "complaints": "It's big and uneven — full-size grocery stores are scarce, the A/C on Fulton Street is a long walk from the northern blocks, and some stretches around the neighborhood's 21 public-housing developments still warrant attention at night. Long-timers are openly weary of transplants, and you will feel it.",
+    "bottomLine": "The A express from Nostrand Avenue hits 34th St-Penn in roughly 25 minutes and $4,000 rents more brownstone here than anywhere else on your list, but you'd be a newcomer in a community-paced neighborhood whose scene is residential, not built around going out.",
+    "sources": [
+      "https://www.timeout.com/newyork/things-to-do/bedford-stuyvesant-neighborhood-guide",
+      "https://www.nyctourism.com/articles/what-to-do-in-bedford-stuyvesant-brooklyn/",
+      "https://www.niche.com/places-to-live/n/bedford-stuyvesant-new-york-city-ny/reviews/"
+    ]
+  },
+  "chelsea": {
+    "summary": "Chelsea is the west-side grid from 14th to around 30th Street west of Sixth Avenue, which puts most of it within a 15-to-20-minute walk of your office at 37th and 7th. It is the city's contemporary-art capital: 200-plus galleries cluster between Tenth and Eleventh Avenues from roughly 20th to 29th Streets — Gagosian, David Zwirner, Dia Chelsea — and all of them are free to wander. The High Line, a planted freight viaduct, runs the length of the gallery district, and Chelsea Market fills the old Nabisco factory at Ninth Avenue and 15th. Residents skew established and affluent: the gay community that has anchored the neighborhood since the 1990s, art-world people, and professionals in doorman towers and brick walk-ups. A Saturday is gallery-hopping, Chelsea Market takeout carried to a Hudson River Park pier, and dinner on Eighth or Ninth Avenue.",
+    "complaints": "The High Line pulls about eight million visitors a year — studies found four-fifths are tourists — and Chelsea Market six million more, so weekend sidewalks west of Ninth Avenue below 23rd are a slow-moving crush; residents have called the park a tourist-clogged catwalk. The rent buys less space than almost anywhere in the city.",
+    "bottomLine": "Walking to your desk plus the best free Saturday culture in Manhattan makes Chelsea the polished, grown-up play, but at $4,000 you're in an aging walk-up on a loud avenue, and the vibe is more gallery-opening than hip.",
+    "sources": [
+      "https://www.timeout.com/newyork/manhattan/chelsea-manhattan-neighborhood-guide",
+      "https://en.wikipedia.org/wiki/High_Line",
+      "https://www.chelseamarket.com/our-story"
+    ]
+  },
+  "west-village": {
+    "summary": "The West Village is the wedge between Sixth Avenue and the Hudson River, from Houston up to 14th Street, where Manhattan's grid dissolves into pre-1811 lanes that bend and collide — West 4th Street actually crosses West 10th — past Federal rowhouses and leaning townhouses. It is the most uniformly beautiful neighborhood in the city and priced accordingly: today's residents are finance and media money, Hollywood names, and families who paid for the postcard, alongside rent-stabilized holdouts from its bohemian century. Bleecker and Hudson Streets carry the shops and restaurants; the quiet named streets — Perry, Charles, Bank — are the charm itself. Hudson River Park lines the western edge with piers, lawns, and the new sandy beach at Gansevoort Peninsula. A Saturday is a coffee line, aimless walking that is the actual point, a pier at sunset, and a dinner reservation made weeks ago.",
+    "complaints": "You're paying the city's steepest premium to live inside everyone else's postcard: weekend Bleecker Street is a slow parade of tourists and photo lines, and the owners of the 'Sex and the City' stoop on Perry Street roped it off to stop them. The gorgeous old buildings are mostly bare-bones walk-ups — no elevator, no laundry — with median one-bedrooms in the mid-$5,000s.",
+    "bottomLine": "The 1 from Christopher Street puts you four blocks from your desk in about 20 minutes door-to-door, but a typical one-bedroom blows well past $4,000 — this is the splurge you take only if a rare deal surfaces and you want your possibly-one NYC year to look like the movies.",
+    "sources": [
+      "https://www.cityneighborhoods.nyc/west-village",
+      "https://www.streetadvisor.com/west-village-manhattan-new-york-city-new-york",
+      "https://yoreevo.com/nyc-neighborhood-guides/west-village"
+    ]
+  },
+  "harlem": {
+    "summary": "",
+    "complaints": "",
+    "bottomLine": "",
+    "sources": []
+  },
+  "ridgewood": {
+    "summary": "",
+    "complaints": "",
+    "bottomLine": "",
+    "sources": []
+  },
+  "crown-heights": {
+    "summary": "",
+    "complaints": "",
+    "bottomLine": "",
+    "sources": []
+  },
+  "prospect-heights": {
+    "summary": "",
+    "complaints": "",
+    "bottomLine": "",
+    "sources": []
   }
 }

@@ -32,6 +32,17 @@ export function JudgesPicks({ judges, registry, onSelect }: Props) {
           </li>
         ))}
       </ol>
+      {(judges.passes ?? []).length > 0 && (
+        <details className="judge-detail">
+          <summary>Why the other {judges.passes.length} missed</summary>
+          {judges.passes.map((p) => (
+            <p key={p.id} className="judge-voice">
+              <strong>{name(p.id)}:</strong> {p.whyNot}{' '}
+              <span className="judge-top3">Would flip if: {p.wouldFlipIf}</span>
+            </p>
+          ))}
+        </details>
+      )}
       <details className="judge-detail">
         <summary>How the panel voted</summary>
         {judges.judges.map((j) => (

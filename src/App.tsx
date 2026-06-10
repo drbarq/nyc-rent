@@ -6,6 +6,7 @@ import judgesJson from '../data/judges.json'
 import motoJson from '../data/moto.json'
 import registryJson from '../data/neighborhoods.json'
 import poisJson from '../data/pois.json'
+import ruledOutJson from '../data/ruledout.json'
 import sceneJson from '../data/scene.json'
 import vibeJson from '../data/vibe.json'
 import { CompareTable } from './components/CompareTable'
@@ -13,6 +14,7 @@ import { DetailPanel } from './components/DetailPanel'
 import { JudgesPicks } from './components/JudgesPicks'
 import { MapView, type AnchorSpec, type ChipSpec, type LegendSpec } from './components/MapView'
 import { RankedList } from './components/RankedList'
+import { RuledOutPanel } from './components/RuledOutPanel'
 import { SettingsPanel } from './components/SettingsPanel'
 import { WeightSliders } from './components/WeightSliders'
 import { money, rentShort } from './lib/format'
@@ -28,6 +30,7 @@ import {
   type NeighborhoodId,
   type NeighborhoodsFile,
   type PoisFile,
+  type RuledOutFile,
   type SceneFile,
   type VibeFile,
   type Weights,
@@ -44,6 +47,7 @@ const amenities = amenitiesJson as unknown as AmenitiesFile
 const briefs = briefsJson as unknown as BriefsFile
 const scene = sceneJson as unknown as SceneFile
 const pois = (poisJson as unknown as PoisFile).pois
+const ruledOut = (ruledOutJson as unknown as RuledOutFile).areas
 
 /** "Office — Cyera HQ · 500 7th Ave at 37th" → "Cyera HQ" */
 const officeShort = registry.anchor.label.replace(/^Office — /, '').split('·')[0].trim()
@@ -57,6 +61,7 @@ export default function App() {
   const [weights, setWeights] = useState<Weights>(DEFAULT_WEIGHTS)
   const [motoOn, setMotoOn] = useState(false)
   const [selectedId, setSelectedId] = useState<NeighborhoodId | null>(null)
+  const [ruledOutId, setRuledOutId] = useState<string | null>(null)
   const [pinned, setPinned] = useState<NeighborhoodId[]>([])
   const [compareOpen, setCompareOpen] = useState(false)
   const [settingsOpen, setSettingsOpen] = useState(false)
@@ -138,6 +143,7 @@ export default function App() {
   )
 
   const selectHood = (id: NeighborhoodId) => {
+    setRuledOutId(null)
     setSelectedId(id)
     setFocus((f) => ({ id, n: (f?.n ?? 0) + 1 }))
   }
@@ -155,15 +161,30 @@ export default function App() {
       if (e.key !== 'Escape') return
       if (settingsOpen) setSettingsOpen(false)
       else if (compareOpen) setCompareOpen(false)
+      else if (ruledOutId) setRuledOutId(null)
       else if (selectedId) setSelectedId(null)
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
-  }, [settingsOpen, compareOpen, selectedId])
+  }, [settingsOpen, compareOpen, ruledOutId, selectedId])
 
   const selectedHood = selectedId
     ? registry.neighborhoods.find((n) => n.id === selectedId)
     : null
+
+  // The judge panel's verdict on the selected neighborhood — pick rationale or the case against.
+  const panelVerdict = useMemo(() => {
+    if (!selectedId) return null
+    const pick = judges.picks.find((p) => p.id === selectedId)
+    if (pick) {
+      return { kind: 'pick' as const, rank: pick.rank, headline: pick.headline, rationale: pick.rationale }
+    }
+    const pass = (judges.passes ?? []).find((p) => p.id === selectedId)
+    if (pass) {
+      return { kind: 'pass' as const, whyNot: pass.whyNot, wouldFlipIf: pass.wouldFlipIf }
+    }
+    return null
+  }, [selectedId])
 
   return (
     <div className="app">
@@ -240,7 +261,11 @@ export default function App() {
           legend={legend}
           anchor={anchor}
           selectedId={selectedId}
-          onSelect={(id) => setSelectedId(id)}
+          onSelect={(id) => {
+            setSelectedId(id)
+            if (id) setRuledOutId(null)
+          }}
+          onSelectRuledOut={setRuledOutId}
           focus={focus}
           registry={registry}
         />
@@ -303,6 +328,7 @@ export default function App() {
             motoOn={motoOn}
             anchorShort={anchorShort}
             settings={settings}
+            panelVerdict={panelVerdict}
             onClose={() => setSelectedId(null)}
           />
         )}
@@ -326,6 +352,11 @@ export default function App() {
             }}
           />
         )}
+
+        {ruledOutId && !selectedId && (() => {
+          const area = ruledOut.find((a) => a.id === ruledOutId)
+          return area ? <RuledOutPanel area={area} onClose={() => setRuledOutId(null)} /> : null
+        })()}
 
         {settingsOpen && (
           <SettingsPanel

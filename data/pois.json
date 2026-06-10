@@ -141,6 +141,112 @@
           "transfersMin": 2,
           "transfersMax": 3,
           "note": "4/5/6 to Grand Central, LIRR to Jamaica in ~20 minutes, then AirTrain — long but smooth; a cab runs $90-120 either direction."
+        },
+        "harlem": {
+          "lines": [
+            "A",
+            "AIRTRAIN"
+          ],
+          "ferry": false,
+          "timeMin": 70,
+          "timeMax": 90,
+          "transfersMin": 1,
+          "transfersMax": 2,
+          "note": "A genuine one-seat ride: the A from 125 St runs all the way to Howard Beach (~60 minutes on the train), then the $8.75 AirTrain — long but simple; a cab is $90-120 with the flat fare and tolls."
+        },
+        "ridgewood": {
+          "lines": [
+            "M",
+            "J",
+            "Z",
+            "L",
+            "A",
+            "AIRTRAIN"
+          ],
+          "ferry": false,
+          "timeMin": 65,
+          "timeMax": 90,
+          "transfersMin": 1,
+          "transfersMax": 3,
+          "note": "M to Myrtle Av then the J/Z to Sutphin Blvd for the AirTrain, or L from Halsey to Broadway Junction and the A to Howard Beach; clunky but workable — a car runs ~$50-65."
+        },
+        "crown-heights": {
+          "lines": [
+            "A",
+            "C",
+            "AIRTRAIN"
+          ],
+          "ferry": false,
+          "timeMin": 50,
+          "timeMax": 70,
+          "transfersMin": 1,
+          "transfersMax": 2,
+          "note": "One of the best JFK setups in the city: the A from Nostrand or Utica runs express to Howard Beach in ~25 minutes, then the AirTrain; from the Eastern Parkway side add a walk or bus up to Fulton St. Cars run ~$45-60."
+        },
+        "prospect-heights": {
+          "lines": [
+            "LIRR",
+            "AIRTRAIN"
+          ],
+          "ferry": false,
+          "timeMin": 50,
+          "timeMax": 70,
+          "transfersMin": 1,
+          "transfersMax": 2,
+          "note": "Walk to Atlantic Terminal at Barclays, LIRR to Jamaica in ~20 minutes, then the AirTrain — rivals Midtown for the fastest JFK trip; a car runs ~$50-65."
+        },
+        "fort-greene": {
+          "lines": [
+            "LIRR",
+            "C",
+            "AIRTRAIN"
+          ],
+          "ferry": false,
+          "timeMin": 50,
+          "timeMax": 70,
+          "transfersMin": 1,
+          "transfersMax": 2,
+          "note": "Atlantic Terminal is a short walk: LIRR to Jamaica in ~20 minutes plus the $8.75 AirTrain; from Clinton Hill the C to Euclid Av with an A transfer also works — a car is ~$50-65."
+        },
+        "bed-stuy": {
+          "lines": [
+            "A",
+            "J",
+            "Z",
+            "AIRTRAIN"
+          ],
+          "ferry": false,
+          "timeMin": 50,
+          "timeMax": 75,
+          "transfersMin": 1,
+          "transfersMax": 2,
+          "note": "Quietly excellent: the A from Nostrand or Utica runs express to Howard Beach for the AirTrain, and the J/Z from the Broadway side goes straight to Sutphin Blvd; a car is ~$45-60."
+        },
+        "chelsea": {
+          "lines": [
+            "E",
+            "A",
+            "AIRTRAIN"
+          ],
+          "ferry": false,
+          "timeMin": 60,
+          "timeMax": 80,
+          "transfersMin": 1,
+          "transfersMax": 2,
+          "note": "One-seat E from 23 St-8th Av to Sutphin Blvd-Archer Av then the AirTrain, or the A from 14 St to Howard Beach; a cab is $90-120 with the $70 flat fare, tolls, and fees."
+        },
+        "west-village": {
+          "lines": [
+            "A",
+            "E",
+            "AIRTRAIN"
+          ],
+          "ferry": false,
+          "timeMin": 60,
+          "timeMax": 80,
+          "transfersMin": 1,
+          "transfersMax": 2,
+          "note": "Better than most of Manhattan: the A from W 4 St runs express to Howard Beach in ~42 minutes, then the AirTrain; the one-seat E to Sutphin is the backup, and cabs run $90-120."
         }
       }
     },
@@ -282,6 +388,108 @@
           "transfersMin": 1,
           "transfersMax": 2,
           "note": "4/5/6 one stop to 125 St, then the M60 SBS over the RFK Bridge; 125th St traffic can drag, and a car is ~$35-50."
+        },
+        "harlem": {
+          "lines": [
+            "M60"
+          ],
+          "ferry": false,
+          "timeMin": 25,
+          "timeMax": 40,
+          "transfersMin": 0,
+          "transfersMax": 1,
+          "note": "Harlem's ace: the 24-hour M60 SBS picks up along 125th St and runs over the RFK Bridge straight into the terminals — 25-40 minutes, no reason for a cab."
+        },
+        "ridgewood": {
+          "lines": [
+            "M",
+            "Q70"
+          ],
+          "ferry": false,
+          "timeMin": 75,
+          "timeMax": 100,
+          "transfersMin": 1,
+          "transfersMax": 3,
+          "note": "Brutal for a ~6-mile trip: the one-seat M from Fresh Pond or Forest Av loops through Manhattan before reaching Roosevelt Av for the free Q70 — call it 90 minutes; a ~$35-50 car is the real answer."
+        },
+        "crown-heights": {
+          "lines": [
+            "4",
+            "5",
+            "M60"
+          ],
+          "ferry": false,
+          "timeMin": 65,
+          "timeMax": 90,
+          "transfersMin": 1,
+          "transfersMax": 2,
+          "note": "No good rail link: the least-bad route is the 4/5 express from Franklin Av to 125 St, then the M60 SBS over the RFK — most people just book a ~$40-60 car."
+        },
+        "prospect-heights": {
+          "lines": [
+            "2",
+            "3",
+            "7",
+            "Q70"
+          ],
+          "ferry": false,
+          "timeMin": 65,
+          "timeMax": 90,
+          "transfersMin": 2,
+          "transfersMax": 3,
+          "note": "Nothing direct — 2/3 from Grand Army Plaza or Barclays into Manhattan, the 7 out to 74 St-Roosevelt Av, then the free Q70; with luggage a ~$40-55 car wins."
+        },
+        "fort-greene": {
+          "lines": [
+            "G",
+            "7",
+            "Q70"
+          ],
+          "ferry": false,
+          "timeMin": 60,
+          "timeMax": 85,
+          "transfersMin": 2,
+          "transfersMax": 3,
+          "note": "G from Clinton-Washington or Fulton St up to Court Sq, the 7 to 74 St-Roosevelt Av, then the free Q70 — a three-seat chain most people skip for a ~$40-55 car."
+        },
+        "bed-stuy": {
+          "lines": [
+            "G",
+            "M",
+            "Q70"
+          ],
+          "ferry": false,
+          "timeMin": 70,
+          "timeMax": 95,
+          "transfersMin": 1,
+          "transfersMax": 3,
+          "note": "Rough: the G from Bedford-Nostrand to Court Sq then the 7 and Q70, or the one-seat M from Myrtle Av that loops through Manhattan first — ~80 minutes for ~7 miles, so budget a ~$40-55 car."
+        },
+        "chelsea": {
+          "lines": [
+            "E",
+            "7",
+            "Q70"
+          ],
+          "ferry": false,
+          "timeMin": 50,
+          "timeMax": 70,
+          "transfersMin": 1,
+          "transfersMax": 2,
+          "note": "E from 23 St-8th Av (or the 7 from Hudson Yards) out to 74 St-Roosevelt Av, then the free Q70; cabs run $45-65 with tolls and can crawl on the BQE approach."
+        },
+        "west-village": {
+          "lines": [
+            "E",
+            "M",
+            "Q70"
+          ],
+          "ferry": false,
+          "timeMin": 55,
+          "timeMax": 75,
+          "transfersMin": 1,
+          "transfersMax": 2,
+          "note": "E or M from W 4 St straight out to Roosevelt Av for the free Q70 — tedious but a single transfer; a car is ~$45-65 depending on Midtown traffic."
         }
       }
     },
@@ -421,6 +629,115 @@
           "transfersMin": 0,
           "transfersMax": 0,
           "note": "Q one stop to 72 St then a crosstown walk to the Fifth Ave entrance — or skip the train entirely, since much of Yorkville can walk into the park along Museum Mile."
+        },
+        "harlem": {
+          "lines": [
+            "2",
+            "3"
+          ],
+          "ferry": false,
+          "timeMin": 5,
+          "timeMax": 15,
+          "transfersMin": 0,
+          "transfersMax": 0,
+          "note": "The park is effectively your backyard: Central Park North sits at 110th St, a 10-15 minute walk from much of Central Harlem, or two quick 2/3 stops from 125 St-Lenox to the corner entrance."
+        },
+        "ridgewood": {
+          "lines": [
+            "M",
+            "L"
+          ],
+          "ferry": false,
+          "timeMin": 50,
+          "timeMax": 68,
+          "transfersMin": 1,
+          "transfersMax": 2,
+          "note": "The worst park trip of the eighteen: M from Fresh Pond or Forest Av to 47-50 Sts-Rockefeller, then a B/D hop or ten-minute walk to the 59 St corner — locals lean on Forest Park and Highland Park instead."
+        },
+        "crown-heights": {
+          "lines": [
+            "2",
+            "3",
+            "C"
+          ],
+          "ferry": false,
+          "timeMin": 40,
+          "timeMax": 55,
+          "transfersMin": 0,
+          "transfersMax": 1,
+          "note": "One-seat but long: the 3 from Nostrand or Kingston runs to 72 St-Broadway with a two-avenue walk left over — though with Prospect Park and the Botanic Garden at your door, Central Park becomes a museum-day add-on."
+        },
+        "prospect-heights": {
+          "lines": [
+            "B",
+            "Q",
+            "2",
+            "3"
+          ],
+          "ferry": false,
+          "timeMin": 30,
+          "timeMax": 45,
+          "transfersMin": 0,
+          "transfersMax": 0,
+          "note": "The weekday B from Seventh Av runs straight up Central Park West to the 72 St and 81 St entrances; the Q to 57 St-7 Av covers nights and weekends — but Prospect Park two blocks away answers most green-space needs first."
+        },
+        "fort-greene": {
+          "lines": [
+            "B",
+            "D",
+            "Q",
+            "2",
+            "3"
+          ],
+          "ferry": false,
+          "timeMin": 28,
+          "timeMax": 42,
+          "transfersMin": 0,
+          "transfersMax": 1,
+          "note": "Atlantic Av-Barclays is the cheat code: B/D run one-seat up Central Park West and the Q reaches 57 St-7 Av; from Clinton Hill's C/G stops, add a transfer and about ten more minutes."
+        },
+        "bed-stuy": {
+          "lines": [
+            "A",
+            "C"
+          ],
+          "ferry": false,
+          "timeMin": 40,
+          "timeMax": 60,
+          "transfersMin": 0,
+          "transfersMax": 1,
+          "note": "The A express from Nostrand or Utica runs one-seat to 59 St-Columbus Circle at the park's southwest corner in ~35-40 minutes; from the G-train side of the neighborhood it's a transfer and closer to an hour."
+        },
+        "chelsea": {
+          "lines": [
+            "C",
+            "E",
+            "1",
+            "2",
+            "3"
+          ],
+          "ferry": false,
+          "timeMin": 14,
+          "timeMax": 25,
+          "transfersMin": 0,
+          "transfersMax": 0,
+          "note": "C/E from 23 St run direct to 59 St-Columbus Circle at the park's southwest corner, and the 1 does the same up Seventh; the 2/3 express from 14 St reaches 72 St-Broadway with a crosstown walk."
+        },
+        "west-village": {
+          "lines": [
+            "A",
+            "C",
+            "E",
+            "1",
+            "2",
+            "3"
+          ],
+          "ferry": false,
+          "timeMin": 15,
+          "timeMax": 25,
+          "transfersMin": 0,
+          "transfersMax": 0,
+          "note": "The A express from W 4 St hits 59 St-Columbus Circle in three stops — call it 15 minutes to the park's corner; the local C/E or the 1 from Christopher St run closer to 25."
         }
       }
     },
@@ -554,6 +871,116 @@
           "transfersMin": 0,
           "transfersMax": 1,
           "note": "Q direct to Herald Sq then a seven-minute walk; transferring to the 1/2/3 at Times Sq lands you inside Penn, worth it with a suitcase."
+        },
+        "harlem": {
+          "lines": [
+            "2",
+            "3",
+            "A"
+          ],
+          "ferry": false,
+          "timeMin": 15,
+          "timeMax": 25,
+          "transfersMin": 0,
+          "transfersMax": 0,
+          "note": "2/3 express from 125 St-Lenox lands inside Penn in about 15 minutes — one of the best train-escape setups in the city; the A from 125 St-St Nicholas does the same down the west side."
+        },
+        "ridgewood": {
+          "lines": [
+            "M",
+            "L"
+          ],
+          "ferry": false,
+          "timeMin": 40,
+          "timeMax": 52,
+          "transfersMin": 0,
+          "transfersMax": 1,
+          "note": "M from Fresh Pond or Seneca runs direct to Herald Sq, leaving the seven-minute walk with your bag; from the Myrtle-Wyckoff end the L + 14 St transfer to the A/C/E lands inside the station instead."
+        },
+        "crown-heights": {
+          "lines": [
+            "2",
+            "3"
+          ],
+          "ferry": false,
+          "timeMin": 28,
+          "timeMax": 40,
+          "transfersMin": 0,
+          "transfersMax": 0,
+          "note": "The 2/3 from Nostrand or Kingston run one-seat into Penn in roughly 30 minutes — no transfer, no street walk; the 4/5 across the platform are the faster play when it's Metro-North from Grand Central instead."
+        },
+        "prospect-heights": {
+          "lines": [
+            "2",
+            "3",
+            "B",
+            "Q"
+          ],
+          "ferry": false,
+          "timeMin": 22,
+          "timeMax": 32,
+          "transfersMin": 0,
+          "transfersMax": 1,
+          "note": "2/3 from Grand Army Plaza or Bergen St run one-seat into Penn in about 25 minutes; the B/Q from Seventh Av reach Herald Sq with the seven-minute walk left over."
+        },
+        "fort-greene": {
+          "lines": [
+            "2",
+            "3",
+            "N",
+            "R",
+            "C"
+          ],
+          "ferry": false,
+          "timeMin": 18,
+          "timeMax": 32,
+          "transfersMin": 0,
+          "transfersMax": 1,
+          "note": "From Atlantic Av-Barclays the 2/3 run one-seat into Penn in about 20 minutes, with N/R to Herald Sq as backup; from Clinton Hill the C from Lafayette Av also lands inside the station, just slower."
+        },
+        "bed-stuy": {
+          "lines": [
+            "A",
+            "C"
+          ],
+          "ferry": false,
+          "timeMin": 28,
+          "timeMax": 45,
+          "transfersMin": 0,
+          "transfersMax": 1,
+          "note": "The A express from Nostrand or Utica lands inside Penn in under 30 minutes, the local C closer to 40; from the G-corridor blocks budget extra for the walk to Fulton St or a transfer at Hoyt-Schermerhorn."
+        },
+        "chelsea": {
+          "lines": [
+            "1",
+            "2",
+            "3",
+            "A",
+            "C",
+            "E"
+          ],
+          "ferry": false,
+          "timeMin": 5,
+          "timeMax": 15,
+          "transfersMin": 0,
+          "transfersMax": 0,
+          "note": "From most of Chelsea you just walk — Penn is 10-15 minutes up Seventh or Eighth; with luggage it's one stop on the 1/2/3 or A/C/E from 23 St straight into the station."
+        },
+        "west-village": {
+          "lines": [
+            "1",
+            "2",
+            "3",
+            "A",
+            "C",
+            "E"
+          ],
+          "ferry": false,
+          "timeMin": 8,
+          "timeMax": 18,
+          "transfersMin": 0,
+          "transfersMax": 0,
+          "note": "The 2/3 express from 14 St reaches Penn in one stop and the A/C/E from W 4 St in two; even from Christopher St with a suitcase the whole trip stays under 20 minutes."
         }
       }
     }

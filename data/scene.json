@@ -188,5 +188,125 @@
       "Time Out New York — Best Hookup Bars in NYC to Meet People (2025)",
       "NYC Tourism — Comic Strip Live Stand-up (2025)"
     ]
+  },
+  "harlem": {
+    "meal": {
+      "casual": 0,
+      "note": "—"
+    },
+    "dating": {
+      "score": 5,
+      "note": "—"
+    },
+    "thingsToDo": {
+      "score": 5,
+      "note": "—"
+    },
+    "sources": []
+  },
+  "ridgewood": {
+    "meal": {
+      "casual": 0,
+      "note": "—"
+    },
+    "dating": {
+      "score": 5,
+      "note": "—"
+    },
+    "thingsToDo": {
+      "score": 5,
+      "note": "—"
+    },
+    "sources": []
+  },
+  "crown-heights": {
+    "meal": {
+      "casual": 0,
+      "note": "—"
+    },
+    "dating": {
+      "score": 5,
+      "note": "—"
+    },
+    "thingsToDo": {
+      "score": 5,
+      "note": "—"
+    },
+    "sources": []
+  },
+  "prospect-heights": {
+    "meal": {
+      "casual": 0,
+      "note": "—"
+    },
+    "dating": {
+      "score": 5,
+      "note": "—"
+    },
+    "thingsToDo": {
+      "score": 5,
+      "note": "—"
+    },
+    "sources": []
+  },
+  "fort-greene": {
+    "meal": {
+      "casual": 0,
+      "note": "—"
+    },
+    "dating": {
+      "score": 5,
+      "note": "—"
+    },
+    "thingsToDo": {
+      "score": 5,
+      "note": "—"
+    },
+    "sources": []
+  },
+  "bed-stuy": {
+    "meal": {
+      "casual": 0,
+      "note": "—"
+    },
+    "dating": {
+      "score": 5,
+      "note": "—"
+    },
+    "thingsToDo": {
+      "score": 5,
+      "note": "—"
+    },
+    "sources": []
+  },
+  "chelsea": {
+    "meal": {
+      "casual": 0,
+      "note": "—"
+    },
+    "dating": {
+      "score": 5,
+      "note": "—"
+    },
+    "thingsToDo": {
+      "score": 5,
+      "note": "—"
+    },
+    "sources": []
+  },
+  "west-village": {
+    "meal": {
+      "casual": 0,
+      "note": "—"
+    },
+    "dating": {
+      "score": 5,
+      "note": "—"
+    },
+    "thingsToDo": {
+      "score": 5,
+      "note": "—"
+    },
+    "sources": []
   }
 }

@@ -21,6 +21,43 @@
       "rationale": "The Budget Hawk's runaway winner: at a $3,195 median, $4,000 buys the best apartment on the block instead of the worst, the M now runs direct to Herald Sq, and moto parking is the easiest of the Brooklyn set. The other three judges passed on the same two costs — a 35-45 minute commute that taxes every plan made after 6pm, and an afters crowd that skews art-school mid-20s rather than 37."
     }
   ],
+  "passes": [
+    {
+      "id": "astoria",
+      "whyNot": "The Budget Hawk's #2 — $4,000 against a $3,400 median, a zero-transfer 20-30 minute N/W ride, and the best moto setup of the ten (parking viability 8, outdoor lots from $95/mo, the RFK launch toward Bear Mountain) — but the other three judges read the 6 vibe, 5 dating, and 6 things-to-do scores as a regulars culture you build through repeat appearances, not a scene you drop into. On a possible 12-month clock at 37, the panel judged big nights would still mean riding the N/W somewhere else.",
+      "wouldFlipIf": "You decide a zero-transfer N/W ride and $600/mo of headroom under the median beat scene density."
+    },
+    {
+      "id": "long-island-city",
+      "whyNot": "The Commute Pragmatist's #2 on the strength of a 12-22 minute, zero-transfer ride with the E dropping you two blocks from the office, but the weakest scene numbers near the top of the board sank it: vibe 4, dating 4, things to do 5, towers quiet by 11, and $4,000 sits at the very bottom of a luxury-heavy market that starts around $4,100. Three judges concluded you would save ten commute minutes and spend them on the 7 train to your actual social life.",
+      "wouldFlipIf": "A 12-minute door-to-desk E ride and in-unit laundry as standard matter more to you than having any nightlife within walking distance."
+    },
+    {
+      "id": "greenpoint",
+      "whyNot": "The Scene Maximalist's #3 for the most age-matched crowd on the list — vibe 8, solidly 30s+, one of the city's best food benches — but the G train killed it everywhere else: 30-40 minutes with an unavoidable Court Sq transfer the data says to pad by 10 minutes, against a $4,675 median that leaves $4,000 buying a smaller 1BR. The rest of the panel also flagged dating at 6 and a 'second-date neighborhood more than a cold-meet one' — quiet cool that fits this user better at 45 than at 37 with one year.",
+      "wouldFlipIf": "You'd trade the worst commute on the shortlist for the most 30s-plus scene — or your office moves somewhere the G actually goes."
+    },
+    {
+      "id": "lower-east-side",
+      "whyNot": "The One-Year Optimizer's #3 — a 9 for things to do (Bowery Ballroom, Mercury Lounge, Metrograph) and a direct 20-30 minute F/M ride — but it lost head-to-head to next-door East Village on every lens that mattered: dating 6 versus 8 because Ludlow/Orchard weekends run 22-26 where 37 reads noticeably older, moto viability 3 with no dedicated garage versus Rising Wolf, and a tower-skewed $5,400 average. The panel saw a louder, younger copy of the winner one neighborhood over.",
+      "wouldFlipIf": "You land one of the high-$3K tenement walkups and want Manhattan's best small-venue music cluster outside your door more than an age-matched bar crowd."
+    },
+    {
+      "id": "hells-kitchen",
+      "whyNot": "The Commute Pragmatist's #3 because the commute is a 15-20 minute walk (10-20 by train), but every other lens went against it: $4,000 under a $4,900 average trades square footage for proximity, the straight-singles scene reads generic happy-hour (dating 6) in a 30s-40s crowd that is heavily transient, and street moto parking is the worst of the ten at a 2. The panel's read: you would live next to your desk and commute to your life.",
+      "wouldFlipIf": "Walking to Cyera every day — plus the Lincoln Tunnel's fastest Bear Mountain run and 555 W 57th's dedicated moto floor — is worth more to you than the scene you'd keep leaving the neighborhood for."
+    },
+    {
+      "id": "yorkville",
+      "whyNot": "The Budget Hawk's #3 because the $4,000-4,300 range gives a real shot at a proper Manhattan 1BR and the Q runs direct to Herald Sq in 20-30 minutes — but the vibe score of 3 is the lowest on the board, things to do is a 4, and the neighborhood goes quiet by 11. For a single 37-year-old on a possible one-year chapter, three judges read it as renting a nice apartment in the wrong city: every night out starts with a Q ride downtown.",
+      "wouldFlipIf": "Apartment quality, the best park access of the ten (Carl Schurz plus Central Park), and an in-budget Manhattan 1BR matter more to your year than a scene outside the door."
+    },
+    {
+      "id": "east-williamsburg",
+      "whyNot": "The only neighborhood no judge ranked: it splits the difference between Williamsburg's scene and Bushwick's prices and loses both trades — a $4,350 median that runs $1,155 over Bushwick and is rising at +18% YoY, the fastest on the board, with a 30-40 minute L-plus-transfer default commute and a going-out life largely borrowed from the neighbors (dating 6, things to do 6). Its genuine edge — the best Brooklyn moto setup at parking viability 8 with $100-175/mo garages — wasn't enough to carry a lens on its own.",
+      "wouldFlipIf": "The motorcycle stops being a maybe — a loft near Morgan Ave with garage culture on the block and both the Williamsburg and Bushwick scenes a ten-minute walk away becomes the play."
+    }
+  ],
   "judges": [
     {
       "lens": "budget-hawk",

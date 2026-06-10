@@ -13,6 +13,14 @@ export type NeighborhoodId =
   | 'long-island-city'
   | 'hells-kitchen'
   | 'yorkville'
+  | 'harlem'
+  | 'ridgewood'
+  | 'crown-heights'
+  | 'prospect-heights'
+  | 'fort-greene'
+  | 'bed-stuy'
+  | 'chelsea'
+  | 'west-village'
 
 export interface Neighborhood {
   id: NeighborhoodId
@@ -175,11 +183,22 @@ export interface JudgeVoice {
   oneLiner: string
 }
 
+/** The case against a neighborhood that didn't make the panel's top 3. */
+export interface JudgePass {
+  id: NeighborhoodId
+  /** 1–2 sentences: what kept every judge from ranking it. */
+  whyNot: string
+  /** One sentence: what would change the verdict. */
+  wouldFlipIf: string
+}
+
 /** Output of the AI judge panel — advisory, clearly labeled, regenerable. */
 export interface JudgesFile {
   generatedAt: string
   method: string
   picks: JudgePick[]
+  /** Every non-pick neighborhood, with the explicit case against it. */
+  passes: JudgePass[]
   judges: JudgeVoice[]
   dissent: string
 }
@@ -207,4 +226,25 @@ export const ALL_IDS: NeighborhoodId[] = [
   'long-island-city',
   'hells-kitchen',
   'yorkville',
+  'harlem',
+  'ridgewood',
+  'crown-heights',
+  'prospect-heights',
+  'fort-greene',
+  'bed-stuy',
+  'chelsea',
+  'west-village',
 ]
+
+/** A neighborhood that was considered and excluded — drawn on the map with its reason. */
+export interface RuledOut {
+  id: string
+  name: string
+  /** 1–2 honest sentences on why it's not a candidate for THIS user. */
+  reason: string
+  ntaCodes: string[]
+}
+
+export interface RuledOutFile {
+  areas: RuledOut[]
+}

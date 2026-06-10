@@ -1,6 +1,12 @@
 {
   "east-village": {
-    "lines": ["N", "R", "W", "L", "6"],
+    "lines": [
+      "N",
+      "R",
+      "W",
+      "L",
+      "6"
+    ],
     "ferry": false,
     "timeMin": 15,
     "timeMax": 25,
@@ -9,7 +15,12 @@
     "note": "N/R/W from Union Sq or 8 St run direct to Herald Sq; the 6 now leaves a crosstown walk from Park Ave, so the L + 14 St transfer covers the Ave A end."
   },
   "lower-east-side": {
-    "lines": ["F", "M", "J", "Z"],
+    "lines": [
+      "F",
+      "M",
+      "J",
+      "Z"
+    ],
     "ferry": false,
     "timeMin": 20,
     "timeMax": 30,
@@ -18,7 +29,11 @@
     "note": "F from 2 Av and M from Essex run direct to Herald Sq; J/Z need a transfer — and the stations still sit at the neighborhood's edges, so count the walk."
   },
   "williamsburg": {
-    "lines": ["M", "L", "J"],
+    "lines": [
+      "M",
+      "L",
+      "J"
+    ],
     "ferry": true,
     "timeMin": 25,
     "timeMax": 35,
@@ -27,7 +42,10 @@
     "note": "M direct to Herald Sq from the Marcy/Hewes side; L + 14 St transfer from Bedford. Ferry is still the scenic backup, not the fast one."
   },
   "east-williamsburg": {
-    "lines": ["L", "M"],
+    "lines": [
+      "L",
+      "M"
+    ],
     "ferry": false,
     "timeMin": 30,
     "timeMax": 40,
@@ -36,7 +54,9 @@
     "note": "L + 14 St transfer is the default on a train already full when it reaches you; near the Flushing Av edge the M runs direct to Herald Sq and skips the transfer."
   },
   "greenpoint": {
-    "lines": ["G"],
+    "lines": [
+      "G"
+    ],
     "ferry": false,
     "timeMin": 30,
     "timeMax": 40,
@@ -45,7 +65,12 @@
     "note": "G to Court Sq, then E to Penn or 7 to Times Sq — the transfer is unavoidable, plan +10 min."
   },
   "bushwick": {
-    "lines": ["M", "L", "J", "Z"],
+    "lines": [
+      "M",
+      "L",
+      "J",
+      "Z"
+    ],
     "ferry": false,
     "timeMin": 35,
     "timeMax": 45,
@@ -54,7 +79,10 @@
     "note": "M now runs direct to Herald Sq — the headline win; L or J/Z still mean a transfer, and the deeper into Bushwick you live, the longer the ride."
   },
   "astoria": {
-    "lines": ["N", "W"],
+    "lines": [
+      "N",
+      "W"
+    ],
     "ferry": false,
     "timeMin": 20,
     "timeMax": 30,
@@ -63,7 +91,12 @@
     "note": "N/W direct to Herald Sq or Times Sq — same no-transfer elevated ride, then a short walk to 37th."
   },
   "long-island-city": {
-    "lines": ["E", "7", "M", "G"],
+    "lines": [
+      "E",
+      "7",
+      "M",
+      "G"
+    ],
     "ferry": false,
     "timeMin": 12,
     "timeMax": 22,
@@ -72,7 +105,12 @@
     "note": "E drops you at Penn two blocks from the door; 7 to Times Sq and M to Herald Sq also run direct. The G covers your Brooklyn trips."
   },
   "hells-kitchen": {
-    "lines": ["A", "C", "E", "1"],
+    "lines": [
+      "A",
+      "C",
+      "E",
+      "1"
+    ],
     "ferry": false,
     "timeMin": 10,
     "timeMax": 20,
@@ -81,12 +119,133 @@
     "note": "Now a 15-20 min walk from the upper 40s and 50s, or a one-stop A/C/E or 1 hop to Penn on rainy days."
   },
   "yorkville": {
-    "lines": ["Q", "6", "4", "5"],
+    "lines": [
+      "Q",
+      "6",
+      "4",
+      "5"
+    ],
     "ferry": false,
     "timeMin": 20,
     "timeMax": 30,
     "transfersMin": 0,
     "transfersMax": 1,
     "note": "Q direct to Times Sq and Herald Sq is the play; the Lex 4/5/6 now mean the 42 St shuttle or a long crosstown walk."
+  },
+  "harlem": {
+    "lines": [
+      "2",
+      "3",
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "ferry": false,
+    "timeMin": 20,
+    "timeMax": 30,
+    "transfersMin": 0,
+    "transfersMax": 0,
+    "note": "2/3 from the Lenox Ave stops run express below 96 St straight to Times Sq and Penn; A/D from 125 St on the St. Nicholas side are even faster. The ride is short — it is the walk to your nearest spine that decides the door-to-door."
+  },
+  "ridgewood": {
+    "lines": [
+      "M",
+      "L"
+    ],
+    "ferry": false,
+    "timeMin": 35,
+    "timeMax": 45,
+    "transfersMin": 0,
+    "transfersMax": 1,
+    "note": "M from Forest Av or Fresh Pond Rd runs direct to Herald Sq — no transfer, just a long ride; from the Halsey St end the L means switching to the M at Myrtle-Wyckoff or transferring at 14 St."
+  },
+  "crown-heights": {
+    "lines": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "ferry": false,
+    "timeMin": 30,
+    "timeMax": 40,
+    "transfersMin": 0,
+    "transfersMax": 1,
+    "note": "2/3 from the Eastern Parkway stops run direct to Penn, a block from the door — roughly 33 min from Kingston Av; the 4/5 are faster trains to the wrong avenue, and blocks east of Kingston add real minutes."
+  },
+  "prospect-heights": {
+    "lines": [
+      "B",
+      "Q",
+      "2",
+      "3"
+    ],
+    "ferry": false,
+    "timeMin": 25,
+    "timeMax": 35,
+    "transfersMin": 0,
+    "transfersMax": 1,
+    "note": "Two genuine no-transfer routes — 2/3 from Grand Army Plaza or Bergen St direct to Penn, B/Q from Seven Av to Herald Sq; rare luck for brownstone Brooklyn."
+  },
+  "fort-greene": {
+    "lines": [
+      "C",
+      "N",
+      "Q",
+      "R",
+      "G"
+    ],
+    "ferry": false,
+    "timeMin": 25,
+    "timeMax": 35,
+    "transfersMin": 0,
+    "transfersMax": 1,
+    "note": "C from Lafayette Av runs local but direct to Penn; the Atlantic Av-Barclays hub on the south edge adds N/Q/R to Herald Sq and Times Sq. The G is for Brooklyn crosstown errands, not this commute."
+  },
+  "bed-stuy": {
+    "lines": [
+      "A",
+      "C",
+      "G",
+      "J",
+      "Z"
+    ],
+    "ferry": false,
+    "timeMin": 25,
+    "timeMax": 35,
+    "transfersMin": 0,
+    "transfersMax": 1,
+    "note": "A express from Nostrand or Utica Av reaches Penn in under 30 — quick for this far out; the C crawls the same track, and the G and J/Z edges of the neighborhood mean a transfer. Pick your block by the A."
+  },
+  "chelsea": {
+    "lines": [
+      "1",
+      "A",
+      "C",
+      "E"
+    ],
+    "ferry": false,
+    "timeMin": 10,
+    "timeMax": 20,
+    "transfersMin": 0,
+    "transfersMax": 0,
+    "note": "From the 20s it is a 10-20 min walk up 7th or 8th Ave; the 1 from 18/23/28 St or the A/C/E to Penn covers weather days — the office is barely outside the neighborhood."
+  },
+  "west-village": {
+    "lines": [
+      "1",
+      "2",
+      "3",
+      "A",
+      "C",
+      "E"
+    ],
+    "ferry": false,
+    "timeMin": 10,
+    "timeMax": 20,
+    "transfersMin": 0,
+    "transfersMax": 0,
+    "note": "1 from Christopher St runs straight up 7th Ave to Penn; 2/3 express or A/C/E from 14 St shave it further. Sub-15 most days — the catch in the Village is the rent, not the ride."
   }
 }

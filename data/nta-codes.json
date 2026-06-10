@@ -30,5 +30,33 @@
   ],
   "yorkville": [
     "MN0803"
+  ],
+  "harlem": [
+    "MN1001",
+    "MN1002"
+  ],
+  "ridgewood": [
+    "QN0502"
+  ],
+  "crown-heights": [
+    "BK0802",
+    "BK0901"
+  ],
+  "prospect-heights": [
+    "BK0801"
+  ],
+  "fort-greene": [
+    "BK0203",
+    "BK0204"
+  ],
+  "bed-stuy": [
+    "BK0301",
+    "BK0302"
+  ],
+  "chelsea": [
+    "MN0401"
+  ],
+  "west-village": [
+    "MN0203"
   ]
 }
