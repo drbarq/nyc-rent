@@ -240,7 +240,7 @@ input[type='range']::-moz-range-thumb {
 }
 
 .moto-toggle .hint {
-  color: var(--ink-55);
+  color: var(--ink-62);
   font-size: var(--fs-micro);
 }
 
@@ -290,7 +290,7 @@ input[type='range']::-moz-range-thumb {
   font-size: var(--fs-small);
   width: 18px;
   flex: none;
-  color: var(--ink-55);
+  color: var(--ink-62);
 }
 
 .rank-row .name {
@@ -552,7 +552,7 @@ input[type='range']::-moz-range-thumb {
 .judges-tag {
   font-weight: 400;
   letter-spacing: 0.05em;
-  color: var(--ink-55);
+  color: var(--ink-62);
   margin-left: var(--s1);
 }
 
@@ -616,7 +616,7 @@ input[type='range']::-moz-range-thumb {
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: var(--ink-55);
+  color: var(--ink-62);
 }
 
 .judge-voice {
@@ -625,12 +625,12 @@ input[type='range']::-moz-range-thumb {
 }
 
 .judge-top3 {
-  color: var(--ink-55);
+  color: var(--ink-62);
 }
 
 .judge-method {
   margin: var(--s2) 0 0;
-  color: var(--ink-55);
+  color: var(--ink-62);
   font-style: italic;
 }
 
@@ -676,7 +676,7 @@ input[type='range']::-moz-range-thumb {
   font-weight: 700;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  color: var(--ink-55);
+  color: var(--ink-62);
 }
 
 .detail-head h2 {
@@ -736,7 +736,7 @@ input[type='range']::-moz-range-thumb {
   font-weight: 700;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  color: var(--ink-55);
+  color: var(--ink-62);
 }
 
 .rent-figure {
@@ -762,7 +762,7 @@ input[type='range']::-moz-range-thumb {
 
 .source-line {
   font-size: var(--fs-micro);
-  color: var(--ink-55);
+  color: var(--ink-62);
   margin-top: 2px;
 }
 
@@ -773,7 +773,7 @@ input[type='range']::-moz-range-thumb {
 
 .unknown {
   cursor: help;
-  border-bottom: 1px dotted var(--ink-55);
+  border-bottom: 1px dotted var(--ink-62);
 }
 
 /* budget scale — the visible stretch zone */
@@ -809,7 +809,7 @@ input[type='range']::-moz-range-thumb {
   display: flex;
   justify-content: space-between;
   font-size: var(--fs-micro);
-  color: var(--ink-55);
+  color: var(--ink-62);
   margin-top: 3px;
 }
 
@@ -851,7 +851,7 @@ input[type='range']::-moz-range-thumb {
 .vibe-sources {
   margin-top: var(--s2);
   font-size: var(--fs-micro);
-  color: var(--ink-55);
+  color: var(--ink-62);
 }
 
 .fact-row {
@@ -863,7 +863,7 @@ input[type='range']::-moz-range-thumb {
 }
 
 .fact-row .k {
-  color: var(--ink-55);
+  color: var(--ink-62);
   flex: none;
 }
 
@@ -880,7 +880,7 @@ input[type='range']::-moz-range-thumb {
 
 .fare-note {
   font-size: var(--fs-micro);
-  color: var(--ink-55);
+  color: var(--ink-62);
   padding: var(--s3) var(--s4) var(--s5);
 }
 
@@ -944,7 +944,7 @@ input[type='range']::-moz-range-thumb {
   font-weight: 700;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  color: var(--ink-55);
+  color: var(--ink-62);
 }
 
 .compare-table thead th {

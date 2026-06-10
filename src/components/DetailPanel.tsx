@@ -49,7 +49,10 @@ export function DetailPanel({
         <div className="borough">{hood.borough}</div>
         <h2>{hood.name}</h2>
         <div className="score-line">
-          <span className="score-disc num" style={{ background: scored.color }}>
+          <span
+            className="score-disc num"
+            style={{ background: scored.color, color: scored.textColor }}
+          >
             {Math.round(scored.composite * 100)}
           </span>
           <span>
@@ -75,9 +78,13 @@ export function DetailPanel({
             <span className="amount num">{rentDisplay(rent)}</span>
           )}
           <span className="basis">{basisLabel(rent)}</span>
-          {trend && (
+          {trend ? (
             <span className="trend num" title="Asking-rent trend, year over year">
               {trend.arrow} {trend.text}
+            </span>
+          ) : (
+            <span className="trend num unknown" title="No verified year-over-year trend for this cut.">
+              — YoY
             </span>
           )}
         </div>

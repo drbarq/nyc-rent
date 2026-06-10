@@ -10,7 +10,7 @@
 // budget roughly 5 refreshes a month.
 
 import express from 'express'
-import { readFile, writeFile } from 'node:fs/promises'
+import { readFile, rename, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -34,6 +34,10 @@ app.get('/api/rents', async (_req, res) => {
   }
 })
 
+// One refresh at a time — a concurrent second request would burn another 10
+// free-tier RentCast calls and race the cache write.
+let refreshInFlight = false
+
 app.post('/api/refresh', async (_req, res) => {
   if (!API_KEY) {
     res.status(503).json({
@@ -41,6 +45,11 @@ app.post('/api/refresh', async (_req, res) => {
     })
     return
   }
+  if (refreshInFlight) {
+    res.status(429).json({ error: 'A refresh is already running — try again in a moment.' })
+    return
+  }
+  refreshInFlight = true
 
   try {
     const registry = JSON.parse(await readFile(REGISTRY_FILE, 'utf8'))
@@ -90,11 +99,15 @@ app.post('/api/refresh', async (_req, res) => {
     }
 
     const payload = { updatedAt: new Date().toISOString(), figures }
-    await writeFile(CACHE_FILE, JSON.stringify(payload, null, 2))
+    // Write-then-rename keeps the cache readable even if a write is interrupted.
+    await writeFile(`${CACHE_FILE}.tmp`, JSON.stringify(payload, null, 2))
+    await rename(`${CACHE_FILE}.tmp`, CACHE_FILE)
     res.json(payload)
   } catch (err) {
     console.error(err)
     res.status(500).json({ error: 'Refresh failed — keeping current data.' })
+  } finally {
+    refreshInFlight = false
   }
 })
 

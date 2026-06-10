@@ -22,6 +22,8 @@ export interface Scored {
   /** Composite min-max normalized across the current set, 0..1 — drives the map color. */
   relative: number
   color: string
+  /** Readable text color (ink/white) for use on top of `color`. */
+  textColor: string
   rank: number
   rentUsedForScore: number | null
 }
@@ -91,13 +93,32 @@ const STOPS: Array<[number, number, number]> = [
   [0x2e, 0x6b, 0x4f],
 ]
 
-export function scoreColor(t: number): string {
+function stopAt(t: number): [number, number, number] {
   const x = clamp01(t) * 2
   const i = x < 1 ? 0 : 1
   const f = x - i
   const [a, b] = [STOPS[i], STOPS[i + 1]]
-  const ch = (k: number) => Math.round(a[k] + (b[k] - a[k]) * f)
-  return `rgb(${ch(0)}, ${ch(1)}, ${ch(2)})`
+  return [0, 1, 2].map((k) => Math.round(a[k] + (b[k] - a[k]) * f)) as [number, number, number]
+}
+
+export function scoreColor(t: number): string {
+  const [r, g, b] = stopAt(t)
+  return `rgb(${r}, ${g}, ${b})`
+}
+
+/**
+ * Ink or white, whichever is readable on scoreColor(t) — the warm-yellow middle
+ * of the gradient fails WCAG with white text (same idea as lineTextColor in mta.ts).
+ */
+export function scoreTextColor(t: number): string {
+  const [r, g, b] = stopAt(t)
+  const lum = [r, g, b]
+    .map((v) => {
+      const c = v / 255
+      return c <= 0.03928 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4
+    })
+    .reduce((acc, v, i) => acc + v * [0.2126, 0.7152, 0.0722][i], 0)
+  return lum > 0.3 ? '#0f0f0f' : '#ffffff'
 }
 
 /* ---------- assemble ---------- */
@@ -131,6 +152,7 @@ export function scoreAll(
       nri: Math.round(subs.vibe * centrality * 100) / 10,
       relative: 0,
       color: '',
+      textColor: '#ffffff',
       rank: 0,
       rentUsedForScore: rent,
     }
@@ -148,6 +170,7 @@ export function scoreAll(
   for (const r of rows) {
     r.relative = clamp01((r.composite - lo) / (hi - lo))
     r.color = scoreColor(r.relative)
+    r.textColor = scoreTextColor(r.relative)
   }
 
   const sorted = [...rows].sort((a, b) => b.composite - a.composite)

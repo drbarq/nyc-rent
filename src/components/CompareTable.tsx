@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react'
 import { rentDisplay } from '../lib/format'
 import type { Scored } from '../lib/score'
 import type {
@@ -39,12 +40,37 @@ export function CompareTable({
     .map((id) => registry.neighborhoods.find((n) => n.id === id))
     .filter((n): n is NonNullable<typeof n> => n != null)
 
+  const sheetRef = useRef<HTMLDivElement>(null)
+  const closeRef = useRef<HTMLButtonElement>(null)
+
+  // Modal dialog focus management: focus moves in on open, Tab cycles within.
+  useEffect(() => {
+    closeRef.current?.focus()
+  }, [])
+
+  const trapTab = (e: React.KeyboardEvent) => {
+    if (e.key !== 'Tab' || !sheetRef.current) return
+    const focusables = sheetRef.current.querySelectorAll<HTMLElement>(
+      'button, a[href], [tabindex]:not([tabindex="-1"])',
+    )
+    if (focusables.length === 0) return
+    const first = focusables[0]
+    const last = focusables[focusables.length - 1]
+    if (e.shiftKey && document.activeElement === first) {
+      e.preventDefault()
+      last.focus()
+    } else if (!e.shiftKey && document.activeElement === last) {
+      e.preventDefault()
+      first.focus()
+    }
+  }
+
   return (
     <div className="compare-overlay" role="dialog" aria-modal="true" aria-label="Compare neighborhoods">
-      <div className="compare-sheet">
+      <div className="compare-sheet" ref={sheetRef} onKeyDown={trapTab}>
         <div className="sheet-head">
           <h2>Side by side</h2>
-          <button type="button" className="btn" onClick={onClose}>
+          <button type="button" className="btn" onClick={onClose} ref={closeRef}>
             Close
           </button>
         </div>
@@ -60,6 +86,7 @@ export function CompareTable({
                     type="button"
                     className="pin-btn"
                     style={{ position: 'static', marginTop: 4 }}
+                    aria-label={`Unpin ${h.name}`}
                     onClick={() => onUnpin(h.id)}
                   >
                     Unpin
@@ -73,7 +100,10 @@ export function CompareTable({
               <td>Score</td>
               {hoods.map((h) => (
                 <td key={h.id}>
-                  <span className="compare-score num" style={{ background: scores[h.id].color }}>
+                  <span
+                    className="compare-score num"
+                    style={{ background: scores[h.id].color, color: scores[h.id].textColor }}
+                  >
                     {Math.round(scores[h.id].composite * 100)}
                   </span>{' '}
                   <span className="num">#{scores[h.id].rank}</span>

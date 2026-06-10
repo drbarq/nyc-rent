@@ -96,7 +96,8 @@ const STYLE: StyleSpecification = {
       type: 'fill',
       source: 'hoods',
       paint: {
-        'fill-color': ['coalesce', ['feature-state', 'color'], '#b9b9b4'],
+        // Fallback is --paper-dim so the pre-score flash stays on palette.
+        'fill-color': ['coalesce', ['feature-state', 'color'], '#f1f0ea'],
         'fill-opacity': [
           'case',
           ['boolean', ['feature-state', 'selected'], false],
