@@ -1,0 +1,51 @@
+/* Design tokens — "MTA service advisory meets apartment hunt" (PRD §7, DESIGN.md) */
+
+:root {
+  /* Paper & ink */
+  --paper: #fafaf7;
+  --paper-dim: #f1f0ea;
+  --ink: #0f0f0f;
+  --ink-70: rgba(15, 15, 15, 0.7);
+  --ink-55: rgba(15, 15, 15, 0.55);
+  --ink-30: rgba(15, 15, 15, 0.3);
+  --ink-15: rgba(15, 15, 15, 0.15);
+
+  /* Official MTA line colors — the only accents in the chrome */
+  --mta-123: #ee352e;
+  --mta-456: #00933c;
+  --mta-7: #b933ad;
+  --mta-ace: #0039a6;
+  --mta-bdfm: #ff6319;
+  --mta-g: #6cbe45;
+  --mta-jz: #996633;
+  --mta-l: #a7a9ac;
+  --mta-nqrw: #fccc0a;
+  --mta-s: #808183;
+
+  /* Score gradient — desaturated, printed (red → warm yellow → deep green) */
+  --score-low: #b5483a;
+  --score-mid: #d9a441;
+  --score-high: #2e6b4f;
+
+  /* Type — the subway face */
+  --font-sans: 'Helvetica Neue', Helvetica, 'Inter', Arial, sans-serif;
+  --fs-display: 30px; /* neighborhood names, one display weight, set big */
+  --fs-title: 17px;
+  --fs-body: 14px;
+  --fs-small: 12.5px;
+  --fs-micro: 11px;
+
+  /* Spacing — 8px grid, tight */
+  --s1: 4px;
+  --s2: 8px;
+  --s3: 12px;
+  --s4: 16px;
+  --s5: 24px;
+  --s6: 32px;
+
+  /* Structure */
+  --rail-w: 352px;
+  --panel-w: 392px;
+  --rule: 1px solid var(--ink);
+  --rule-soft: 1px solid var(--ink-15);
+}
