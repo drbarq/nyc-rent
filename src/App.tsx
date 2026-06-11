@@ -213,7 +213,7 @@ export default function App() {
             ) : (
               <span className="badge live">Live · RentCast</span>
             )}
-            {(import.meta.env.DEV || rents.mode === 'live') && (
+            {(import.meta.env.DEV || rents.proxyUp || rents.mode === 'live') && (
               <button
                 type="button"
                 className="btn"
