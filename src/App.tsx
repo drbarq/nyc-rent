@@ -213,14 +213,16 @@ export default function App() {
             ) : (
               <span className="badge live">Live · RentCast</span>
             )}
-            <button
-              type="button"
-              className="btn"
-              onClick={rents.refresh}
-              disabled={rents.refreshing}
-            >
-              {rents.refreshing ? 'Refreshing…' : 'Refresh rents'}
-            </button>
+            {(import.meta.env.DEV || rents.mode === 'live') && (
+              <button
+                type="button"
+                className="btn"
+                onClick={rents.refresh}
+                disabled={rents.refreshing}
+              >
+                {rents.refreshing ? 'Refreshing…' : 'Refresh rents'}
+              </button>
+            )}
             {rents.lastRefreshed && (
               <span className="num" style={{ fontSize: 'var(--fs-micro)' }}>
                 refreshed {new Date(rents.lastRefreshed).toLocaleString()}
