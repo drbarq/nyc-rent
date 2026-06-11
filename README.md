@@ -1,7 +1,7 @@
 # NYC Move Explorer
 
 An interactive decision map for picking an NYC neighborhood: 18 candidates scored
-against *your* weights (vibe / commute / budget, plus an optional motorcycle factor),
+against _your_ weights (vibe / commute / budget, plus an optional motorcycle factor),
 rendered in an MTA-service-advisory visual language. Built from `prd.md`.
 
 Eight more areas (Park Slope, Murray Hill, FiDi, Washington Heights, Sunnyside,
@@ -95,7 +95,7 @@ passes (June 2026); every entry carries sources. They're data files — edit fre
 
 `data/judges.json` is the output of a 4-judge LLM panel (budget hawk, scene
 maximalist, commute pragmatist, one-year optimizer) that ranked the neighborhoods
-from this repo's own data files, merged by Borda count. It's labeled *advisory* in
+from this repo's own data files, merged by Borda count. It's labeled _advisory_ in
 the UI — the sliders are the real ranking. Regenerate it by re-running the panel
 with your tool of choice; the shape is `JudgesFile` in `src/lib/types.ts`.
 
@@ -112,3 +112,5 @@ with your tool of choice; the shape is `JudgesFile` in `src/lib/types.ts`.
 
 No scraping StreetEasy/Zillow. No fabricated rent numbers — unknowns render "—"
 with a tooltip. Cats are fine basically everywhere; it's NYC.
+
+-
